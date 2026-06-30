@@ -60,7 +60,10 @@ def has_useful_final_answer(text: str) -> bool:
             continue
         tail = text[idx : idx + 5000]
         answer = re.sub(r"termination:.*", "", tail, flags=re.S).strip()
-        if len(answer) > 300 and re.search(r"careers?|jobs?|hiring|guide|leader|instructor|employer", answer, re.I):
+        stripped = re.sub(r"<think>.*?</think>", "", answer, flags=re.S).strip()
+        if not stripped or stripped.startswith("<tool_call>") or "</tool_call>" in stripped:
+            continue
+        if len(stripped) > 300 and re.search(r"careers?|jobs?|hiring|guide|leader|instructor|employer", stripped, re.I):
             return True
     return False
 

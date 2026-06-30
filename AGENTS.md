@@ -66,7 +66,7 @@ FOR EACH AGENT_RUN_DONE with exit_code 0:
   READ reviews/{run_id}.md     # short — NOT the full log
 
   SWITCH review.next_action:
-    mark_findings  → append useful final-answer notes → findings.md → --mark-findings
+    mark_findings  → run ./save-findings.sh --run-id RUN_ID
     edit_prompt_retry → edit prompts/ + CHANGELOG → bg subagent --force {id}
     skip_to_next_prompt → note in findings.md → bg subagent next prompt
     consolidate → master list
@@ -86,7 +86,8 @@ consolidate_master_list:
 |--------|---------|
 | `pending` | Never run successfully |
 | `running` | In progress (interrupted run → re-delegate) |
-| `run_done` | LR finished; worker must append useful findings + `--mark-findings` |
+| `run_done` | LR finished; worker should extract findings |
+| `findings_extracted` | Final answer saved under `runs/extracted/`; run `save-findings.sh` |
 | `findings_saved` | Done; skip unless `--force` |
 
 ```bash
@@ -123,10 +124,9 @@ Run: ./run-next.sh {PROMPT_ID}
 
 When AGENT_RUN_DONE appears with exit_code 0:
 1. Read the log file from the JSON "log" field
-2. Extract the useful employer notes from the final answer (table, bullets, or prose)
-3. Append to findings.md with run_id and log path
-4. Run ./run-next.sh --mark-findings {PROMPT_ID}
-5. Run ./run-status.sh
+2. Run ./extract-findings.sh --run-id {RUN_ID} if not already extracted
+3. Run ./save-findings.sh --run-id {RUN_ID}
+4. Run ./driver-status.sh
 6. Return: row count, top 5 employers, next suggested prompt
 
 If exit_code != 0: report error, suggest retry with ./run-next.sh --force {PROMPT_ID}

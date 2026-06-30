@@ -1,6 +1,6 @@
 # Review loop — adjust prompts from run results
 
-After every literesearcher run, **review before** copying to `findings.md`. Use the **sidecar** (Qwen3.5-4B `:8093`) to compress the log — don't feed raw logs to the main agent.
+After every literesearcher run, use deterministic extraction plus the **sidecar** (Qwen3.5-4B `:8093`) for compression. Don't feed raw logs to the main agent.
 
 ---
 
@@ -13,8 +13,7 @@ ON AGENT_RUN_DONE:
 
   SWITCH review.next_action:
     mark_findings:
-      append useful final-answer notes from log → findings.md
-      RUN ./run-next.sh --mark-findings {id}
+      RUN ./save-findings.sh --run-id {run_id}
     edit_prompt_retry:
       READ ## Prompt feedback from review
       EDIT prompts/{id}-*.txt (minimal change)
@@ -37,7 +36,7 @@ ON AGENT_RUN_DONE:
 ./review-run.sh --no-sidecar      # extractive only (8093 down)
 ```
 
-Output: `reviews/{run_id}.md` + registry fields `review_outcome`, `review_next_action`.
+Output: `reviews/{run_id}.md` + registry fields `review_outcome`, `review_next_action`. Successful runs are also extracted to `runs/extracted/{run_id}.md`.
 
 ---
 
@@ -80,7 +79,8 @@ Review sends a **compressed excerpt** (~visit URLs, termination, prediction snip
 ## Files
 
 ```
-reviews/{run_id}.md     ← read this after each run
-prompts/CHANGELOG.md    ← prompt edits paper trail
-runs/registry.json      ← review_path, review_outcome on each run
+reviews/{run_id}.md       ← sidecar-compressed review
+runs/extracted/{run_id}.md ← deterministic final-answer extraction
+prompts/CHANGELOG.md      ← prompt edits paper trail
+runs/registry.json        ← review/extraction/save state
 ```

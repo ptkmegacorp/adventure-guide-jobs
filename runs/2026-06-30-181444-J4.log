@@ -1,0 +1,8 @@
+# LiteResearcher run: J4
+# run_id: J4-20260630-181444
+# Started: 2026-06-30T18:14:44-05:00
+# Prompt file: /home/bot/adventure-guide-jobs/prompts/J4-norway-scandinavia.txt
+---
+
+Smoke test: Find Norway and Scandinavia adventure travel employers hiring multiday TRIP LEADERS, GUIDES, or EXPEDITION LEADERS for small-group tours (3+ days overnight). ## Regions Norway primary; also include Sweden, Iceland, or Finland if the operator hires English-speaking trip leaders for multiday adventure trips. ## Similar to Nordic hiking/trekking operators, fjord adventure companies, Arctic expedition support, small-group active travel in Scandinavia ## DO NOT USE indeed.com, linkedin.com/jobs, finn.no generic listings only — prefer company careers pages and adventure-industry sources. Do not cite Indeed. ## Sources — USE Company websites, Nordic adventure travel operators, English-language "join our team" pages, coolworks.com, adventure travel industry listings ## Output Use whatever format is natural and compact: bullets, short sections, or a table are all fine. For each useful employer, include company, country, role title, careers URL, trip type, season, hiring signal, and fit. Aim for useful employers; stop when you have enough solid notes rather than forcing a fixed count. Note English language requirement and typical contract length when visible. 
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.

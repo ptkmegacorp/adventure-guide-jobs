@@ -18,10 +18,12 @@ Task(subagent, run_in_background=true) → run ./run-next.sh J1 per AGENTS.md
 # Human — direct:
 cd /home/bot/adventure-guide-jobs
 ./run-batch.sh              # J1 → J2 → J3
-./run-status.sh             # what's done / next
+./run-status.sh             # registry view
+./driver-status.sh          # concise driver view + recommended next command
+./run-and-save-notify.sh J3 # run, save per-run findings, notify active Pi agent
 ```
 
-After each `AGENT_RUN_DONE`: append useful final-answer notes → `findings.md` → `./run-next.sh --mark-findings J1`
+After each `AGENT_RUN_DONE`: `extract-findings.sh` writes `runs/extracted/…`; then run `./save-findings.sh --run-id RUN_ID` to write `findings/RUN_ID.md` and mark saved only when there is a substantive final answer.
 
 Registry: [`runs/registry.json`](./runs/registry.json) · **[`AGENTS.md`](./AGENTS.md)** (full loop)
 
@@ -32,6 +34,10 @@ Registry: [`runs/registry.json`](./runs/registry.json) · **[`AGENTS.md`](./AGEN
 | [`PLAN-J1-J3.md`](./PLAN-J1-J3.md) | Checklist + success criteria |
 | [`REVIEW.md`](./REVIEW.md) | Post-run review loop + prompt adjustments |
 | [`review-run.sh`](./review-run.sh) | Sidecar-compressed run review |
+| [`extract-findings.sh`](./extract-findings.sh) | Deterministically extracts final answer to `runs/extracted/` |
+| [`save-findings.sh`](./save-findings.sh) | Writes per-run `findings/RUN_ID.md`; marks registry saved only for substantive answers |
+| [`driver-status.sh`](./driver-status.sh) | Concise deterministic status/recommended next step |
+| [`run-and-save-notify.sh`](./run-and-save-notify.sh) | Self-contained run → findings → Pi agent notification wrapper |
 | [`reviews/`](./reviews/) | Short review per run (read these, not raw logs) |
 | [`prompts/CHANGELOG.md`](./prompts/CHANGELOG.md) | Prompt edit paper trail |
 | [Job definition](#what-im-looking-for-working-definition) | What counts as a fit |
@@ -242,7 +248,7 @@ experiential education travel instructor jobs
 | `run-next.sh` | Run one literesearcher prompt → `runs/` |
 | `prompts/` | Full prompt text (J1–J4) + writing guide |
 | `research-prompts.md` | Queue checklist |
-| `findings.md` | Accumulated company & job research |
+| `findings/` | Per-run findings, legacy archive, and curated `master.md` |
 | `run-status.sh` | Show run history + next pending prompt |
 | `runs/registry.json` | **Loop state** — all past runs, prompt status |
 | `runs/` | Raw logs (referenced by registry) |

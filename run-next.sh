@@ -140,6 +140,10 @@ if [[ -x "${ROOT}/review-run.sh" ]]; then
     "${ROOT}/review-run.sh" --run-id "$RUN_ID" --no-sidecar 2>/dev/null || \
     echo "WARN: review-run failed (see REVIEW.md)"
 fi
+if [[ "$EXIT_CODE" -eq 0 && -x "${ROOT}/extract-findings.sh" ]]; then
+  "${ROOT}/extract-findings.sh" --run-id "$RUN_ID" || \
+    echo "WARN: extract-findings failed"
+fi
 
 echo "AGENT_RUN_DONE {\"prompt\":\"${PROMPT_ID}\",\"run_id\":\"${RUN_ID}\",\"exit_code\":${EXIT_CODE},\"log\":\"${REL_LOG}\"}"
 echo

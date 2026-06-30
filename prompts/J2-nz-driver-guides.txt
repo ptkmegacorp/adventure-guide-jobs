@@ -1,4 +1,4 @@
-Find New Zealand adventure tour companies that hire DRIVER-GUIDES or TRIP LEADERS for multiday tours (3+ days), similar to Haka Tours, Flying Kiwi, and Stray Travel.
+Find a SMALL set of New Zealand adventure tour companies that hire DRIVER-GUIDES or TRIP LEADERS for multiday tours (3+ days), similar to Haka Tours, Flying Kiwi, and Stray Travel. The priority is to STOP and summarize, not to keep browsing.
 
 ## Must match
 - NZ-based or NZ-departure tours
@@ -6,17 +6,22 @@ Find New Zealand adventure tour companies that hire DRIVER-GUIDES or TRIP LEADER
 - Small-group adventure (not large coach mass tourism)
 
 ## Sources — USE
-workabout.co.nz, company websites, careers pages, tourism industry job listings
+Company websites and careers/work-with-us pages only. Do not use Workabout for this retry because it previously failed.
 
 ## DO NOT USE
 indeed.com, linkedin.com/jobs, ziprecruiter.com, glassdoor.com, or any generic job aggregator. Do not visit or cite them.
 
+## Strict visit budget
+- Visit at most 8 pages total.
+- Visit these anchors first: Haka Tours, Flying Kiwi, Stray Travel, Kiwi Experience, Active Adventures, Wild Kiwi.
+- If a careers page is missing or vague, record that and move on. Do not hunt through many subpages.
+- After 6 useful company pages OR 8 total visits, STOP and write the final answer.
+
 ## Search hints
-- "driver guide" OR "tour leader" New Zealand adventure -site:indeed.com
-- workabout adventure guide
-- {company} careers guide
+Use at most 1 search query only if anchor URLs fail:
+- "driver guide" "New Zealand" "careers" adventure tour -site:indeed.com -site:linkedin.com/jobs
 
 ## Output
 Use whatever format is natural and compact: bullets, short sections, or a table are all fine. For each useful employer, include company, role title, careers URL, trip types, season, hiring signal, fit, and license requirements when visible.
 
-Aim for useful NZ employers; stop when you have enough solid notes rather than forcing a fixed count.
+Aim for 4–6 useful NZ employers. A partial answer is acceptable. Before making any additional tool call after visit 6, write the final answer instead.

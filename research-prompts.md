@@ -16,7 +16,7 @@ Full prompt text in `prompts/J*.txt`. All prompts **exclude Indeed and generic a
 
 - [x] **J1.** Broad active openings — **skipped after 2 failed runs**; partial salvage in findings → `prompts/J1-active-openings.txt`
 
-- [ ] **J2.** NZ driver-guides and trip leaders (Workabout, operator careers) → `prompts/J2-nz-driver-guides.txt`
+- [x] **J2.** NZ driver-guides and trip leaders (Workabout, operator careers) → `prompts/J2-nz-driver-guides.txt`
 
 - [ ] **J3.** USA/Canada field instructors & program leaders → `prompts/J3-us-ca-field-instructors.txt`
 

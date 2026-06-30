@@ -1,0 +1,87 @@
+# LiteResearcher run: J3
+# run_id: J3-20260630-175918
+# Started: 2026-06-30T17:59:18-05:00
+# Prompt file: /home/bot/adventure-guide-jobs/prompts/J3-us-ca-field-instructors.txt
+---
+
+Smoke test: Find USA and Canada employers hiring FIELD INSTRUCTORS, PROGRAM LEADERS, or TRIP LEADERS for multiday experiential travel programs (2 weeks to one semester), similar to Pacific Discovery, Where There Be Dragons, ARCC Programs, Rustic Pathways, and Broadreach. ## Regions United States and Canada only. ## Must match - Multiday programs with overnight travel - Lead/facilitate a student or young-adult group (gap year, summer, study abroad OK) - Outdoor/adventure/service/cultural immersion focus ## DO NOT USE indeed.com, linkedin.com/jobs, ziprecruiter.com, glassdoor.com, monster.com. Skip all generic aggregators. ## Sources — USE coolworks.com, backdoorjobs.com, seasonaljobs.com, company careers pages, "work with us" on program operator sites ## Output Use whatever format is natural and compact: bullets, short sections, or a table are all fine. For each useful employer, include company, country, role title, careers URL, program length, audience, hiring signal, and fit. Aim for useful employers; stop when you have enough solid notes rather than forcing a fixed count. Flag active 2025–2026 summer or fall hiring pages when visible. 
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[start] Find USA and Canada employers hiring FIELD INSTRUCTORS, PROGRAM LEADERS, or TRIP LEADERS for multiday experiential travel programs (2 weeks to one semester), similar to Pacific Discovery, Where There 
+[turn] calling model
+[model] <think> We need to find USA and Canada employers hiring FIELD INSTRUCTORS, PROGRAM LEADERS, or TRIP LEADERS for multiday experiential travel programs (2 weeks to one semester), similar to Pacific Disc
+[search] {"query": ["FIELD INSTRUCTOR travel program USA", "PROGRAM LEADER travel program USA", "TRIP LEADER travel program USA", "Pacific Discovery job posting", "Where There Be Dragons job posting", "ARCC Pr
+[search_result] A web search for 'FIELD INSTRUCTOR travel program USA' found 10 results:
+
+## Web Results
+1. [Become a NOLS U.S. Field Instructor in Training! Our U.S. ... - Facebook](https://www.facebook.com/NOLS/pos
+[turn] calling model
+[model] <think> We need to compile a list of employers (companies) that hire FIELD INSTRUCTORS, PROGRAM LEADERS, or TRIP LEADERS for multiday experiential travel programs in USA and Canada.  The user wants: "
+[visit] {"url": ["https://www.pacificdiscovery.org/contact-us/employment"], "goal": "Extract job postings for field instructors, program leaders, trip leaders, program length, audience, and any hiring signals
+[visit_result] The useful information in https://www.pacificdiscovery.org/contact-us/employment for user goal Extract job postings for field instructors, program leaders, trip leaders, program length, audience, and 
+[turn] calling model
+[model] <think> The page summary is not very detailed. We might need to scroll further.  Let's open again with more detail. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.pacificdi
+[visit] {"url": ["https://www.pacificdiscovery.org/contact-us/employment"], "goal": "List specific job titles (field instructor, program leader, trip leader) and details about program length, audience, and hi
+[visit_result] The useful information in https://www.pacificdiscovery.org/contact-us/employment for user goal List specific job titles (field instructor, program leader, trip leader) and details about program length
+[turn] calling model
+[model] <think> We have some details. However, we need to extract specific job titles: "FIELD INSTRUCTOR", "PROGRAM LEADER", "TRIP LEADER". The Pacific Discovery page uses "Program Instructor". That might be 
+[visit] {"url": ["https://www.wheretherebedragons.com/employment"], "goal": "Extract job postings for field instructors, program leaders, trip leaders, program length, audience, and hiring status."}
+[visit_result] The useful information in https://www.wheretherebedragons.com/employment for user goal Extract job postings for field instructors, program leaders, trip leaders, program length, audience, and hiring s
+[turn] calling model
+[model] <think> The page includes "Instructor" role but we need field instructors. It says "Field Instructors (applications accepted on a rolling basis for Gap Year or Summer programs)". That matches.  Thus w
+[visit] {"url": ["https://arccprograms.com/job-opportunities/"], "goal": "Extract job postings for field instructors, program leaders, trip leaders, program length, audience, hiring status."}
+[visit_result] The useful information in https://arccprograms.com/job-opportunities/ for user goal Extract job postings for field instructors, program leaders, trip leaders, program length, audience, hiring status. 
+[turn] calling model
+[model] <think> We might need to try a different URL. The search result shows "Job Opportunities - ARCC Programs". Let's open that. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://arccp
+[visit] {"url": ["https://arccprograms.com/job-opportunities/"], "goal": "Extract any job postings for field instructors, program leaders, trip leaders."}
+[visit_result] The useful information in https://arccprograms.com/job-opportunities/ for user goal Extract any job postings for field instructors, program leaders, trip leaders. as follows: 
+
+Evidence in page: 
+The 
+[turn] calling model
+[model] <think> Maybe there is a different URL like /job-opportunities/gap-semester-instructor or something. Let's open the other result: "Gap Semester Instructor - ARCC Programs". </think>  <tool_call> {"nam
+[visit] {"url": ["https://arccprograms.com/job-opportunities/gap-semester-instructor/"], "goal": "Extract details about the role, program length, audience, and hiring status."}
+[visit_result] The useful information in https://arccprograms.com/job-opportunities/gap-semester-instructor/ for user goal Extract details about the role, program length, audience, and hiring status. as follows: 
+
+E
+[turn] calling model
+[model] <think> Maybe the site blocks bots. Could use a simpler approach: maybe we can get data from other sources like WanderJobs, which often aggregates these job postings. But the user says "Sources — USE 
+[visit] {"url": ["https://www.coolworks.com/guide-jobs"], "goal": "Identify any job postings for field instructors, program leaders, or trip leaders for travel programs in USA and Canada."}
+[visit_result] The useful information in https://www.coolworks.com/guide-jobs for user goal Identify any job postings for field instructors, program leaders, or trip leaders for travel programs in USA and Canada. as
+[turn] calling model
+[model] <think> Maybe we can use the "All Jobs" page. But likely many are blocked.  We could also check "seasonaljobs.com" for travel programs. However, seasonaljobs.com is more for US seasonal jobs, maybe in
+[visit] {"url": ["https://www.seasonaljobs.com/"], "goal": "Find job postings for field instructors, program leaders, trip leaders for experiential travel programs in USA and Canada."}
+[visit_result] The useful information in https://www.seasonaljobs.com/ for user goal Find job postings for field instructors, program leaders, trip leaders for experiential travel programs in USA and Canada. as foll
+[turn] calling model
+[model] <think> We could use the site's search functionality but we cannot interact with forms. However, we could try to guess a URL pattern like https://www.seasonaljobs.com/jobs/field-instructor or similar.
+[visit] {"url": ["https://jobs.rusticpathways.com/"], "goal": "Extract current job postings for Program Leader, Trip Leader, Field Instructor roles."}
+[visit_result] The useful information in https://jobs.rusticpathways.com/ for user goal Extract current job postings for Program Leader, Trip Leader, Field Instructor roles. as follows: 
+
+Evidence in page: 
+Current 
+[turn] calling model
+[model] <think> We need to see the actual job posting page for Program Leader. Let's open that. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://jobs.rusticpathways.com/apply/loCB3oIZlM/
+[visit] {"url": ["https://jobs.rusticpathways.com/apply/loCB3oIZlM/Program-Leader-Spring-Summer-2026"], "goal": "Extract role title, program length, audience, hiring status."}
+[visit_result] The useful information in https://jobs.rusticpathways.com/apply/loCB3oIZlM/Program-Leader-Spring-Summer-2026 for user goal Extract role title, program length, audience, hiring status. as follows: 
+
+Ev
+[turn] calling model
+[model] <think> We might need to limit calls. However, we can attempt. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://jobs.rusticpathways.com/apply/loCB3oIZlM/Program-Leader-Spring-Sum
+[answer] <think>
+We might need to limit calls. However, we can attempt.
+</think>
+
+<tool_call>
+{"name": "visit", "arguments": {"url": ["https://jobs.rusticpathways.com/apply/loCB3oIZlM/Program-Leader-Spring-Sum
+[done] context_limit_no_format
+---
+prediction: <think>
+We might need to limit calls. However, we can attempt.
+</think>
+
+<tool_call>
+{"name": "visit", "arguments": {"url": ["https://jobs.rusticpathways.com/apply/loCB3oIZlM/Program-Leader-Spring-Summer-2026"], "goal": "Extract role title, program length, audience, hiring status."}}
+</tool_call>
+termination: context_limit_no_format
+tool_calls: 12
+tools used: ['search', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit']
+PASS

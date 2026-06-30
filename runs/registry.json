@@ -52,7 +52,61 @@
       "findings_saved": false,
       "review_path": "reviews/J2-20260630-173011.md",
       "review_outcome": "partial",
-      "review_next_action": "edit_prompt_retry"
+      "review_next_action": "edit_prompt_retry",
+      "extracted_path": "runs/extracted/J2-20260630-173011.md",
+      "extracted_at": "2026-06-30T17:44:40-05:00",
+      "answer_chars": 0,
+      "extraction_status": "no_final_answer"
+    },
+    {
+      "run_id": "J2-20260630-174820",
+      "prompt_id": "J2",
+      "prompt_file": "/home/bot/adventure-guide-jobs/prompts/J2-nz-driver-guides.txt",
+      "log": "runs/2026-06-30-174807-J2.log",
+      "started_at": "2026-06-30T17:48:20-05:00",
+      "finished_at": "2026-06-30T17:50:42-05:00",
+      "exit_code": 0,
+      "status": "completed",
+      "findings_saved": false,
+      "review_path": "reviews/J2-20260630-174820.md",
+      "review_outcome": "fail",
+      "review_next_action": "edit_prompt_retry",
+      "extracted_path": "runs/extracted/J2-20260630-174820.md",
+      "extracted_at": "2026-06-30T17:56:49-05:00",
+      "answer_chars": 0,
+      "extraction_status": "no_final_answer",
+      "findings_path": "findings/J2-20260630-174820.md",
+      "findings_status": "partial",
+      "findings_written_at": "2026-06-30T17:56:49-05:00"
+    },
+    {
+      "run_id": "J3-20260630-175918",
+      "prompt_id": "J3",
+      "prompt_file": "/home/bot/adventure-guide-jobs/prompts/J3-us-ca-field-instructors.txt",
+      "log": "runs/2026-06-30-175918-J3.log",
+      "started_at": "2026-06-30T17:59:18-05:00",
+      "finished_at": "2026-06-30T18:01:06-05:00",
+      "exit_code": 0,
+      "status": "completed",
+      "findings_saved": false,
+      "review_path": "reviews/J3-20260630-175918.md",
+      "review_outcome": "fail",
+      "review_next_action": "edit_prompt_retry",
+      "extracted_path": "runs/extracted/J3-20260630-175918.md",
+      "extracted_at": "2026-06-30T18:01:10-05:00",
+      "answer_chars": 0,
+      "extraction_status": "no_final_answer"
+    },
+    {
+      "run_id": "J4-20260630-181444",
+      "prompt_id": "J4",
+      "prompt_file": "/home/bot/adventure-guide-jobs/prompts/J4-norway-scandinavia.txt",
+      "log": "runs/2026-06-30-181444-J4.log",
+      "started_at": "2026-06-30T18:14:44-05:00",
+      "finished_at": null,
+      "exit_code": null,
+      "status": "running",
+      "findings_saved": false
     }
   ],
   "prompts": {
@@ -68,13 +122,36 @@
     },
     "J2": {
       "status": "run_done",
-      "run_count": 1,
-      "last_run_at": "2026-06-30T17:37:22-05:00",
-      "last_log": "runs/2026-06-30-173000-J2.log",
+      "run_count": 2,
+      "last_run_at": "2026-06-30T17:50:42-05:00",
+      "last_log": "runs/2026-06-30-174807-J2.log",
       "findings_saved_at": null,
-      "last_review": "reviews/J2-20260630-173011.md",
-      "last_review_outcome": "partial",
-      "last_review_action": "edit_prompt_retry"
+      "last_review": "reviews/J2-20260630-174820.md",
+      "last_review_outcome": "fail",
+      "last_review_action": "edit_prompt_retry",
+      "last_extracted": "runs/extracted/J2-20260630-174820.md",
+      "last_extraction_status": "no_final_answer",
+      "last_findings": "findings/J2-20260630-174820.md",
+      "last_findings_status": "partial"
+    },
+    "J3": {
+      "status": "run_done",
+      "run_count": 1,
+      "last_run_at": "2026-06-30T18:01:06-05:00",
+      "last_log": "runs/2026-06-30-175918-J3.log",
+      "findings_saved_at": null,
+      "last_review": "reviews/J3-20260630-175918.md",
+      "last_review_outcome": "fail",
+      "last_review_action": "edit_prompt_retry",
+      "last_extracted": "runs/extracted/J3-20260630-175918.md",
+      "last_extraction_status": "no_final_answer"
+    },
+    "J4": {
+      "status": "running",
+      "run_count": 1,
+      "last_run_at": "2026-06-30T18:14:44-05:00",
+      "last_log": "runs/2026-06-30-181444-J4.log",
+      "findings_saved_at": null
     }
   }
 }

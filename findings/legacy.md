@@ -73,3 +73,5 @@ Broad J1 failed twice (`exceed_max_turns` / `context_limit_no_format`). Salvaged
 - **Action:** Re-run `./run-next.sh --force J1` or proceed with narrower J2/J3 prompts.
 
 *(No employer table yet — do not mark findings_saved.)*
+
+
