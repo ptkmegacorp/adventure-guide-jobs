@@ -49,5 +49,18 @@ lr_ready() {
   curl -sf http://127.0.0.1:8092/health >/dev/null 2>&1 \
     && curl -sf http://127.0.0.1:8093/health >/dev/null 2>&1 \
     && curl -sf http://127.0.0.1:8001/health >/dev/null 2>&1 \
-    && curl -sf http://127.0.0.1:8002/health >/dev/null 2>&1
+    && curl -sf http://127.0.0.1:8002/health >/dev/null 2>&1 \
+    && lr_ctx_ok
+}
+
+lr_ctx_ok() {
+  local profile="${HOME}/.config/pig-stack/profiles/literesearcher.env"
+  local desired=""
+  if [[ -f "$profile" ]]; then
+    desired="$(grep -E '^LR_CTX=' "$profile" | tail -1 | cut -d= -f2-)"
+  fi
+  [[ -z "$desired" ]] && return 0
+  local current
+  current="$(curl -sf http://127.0.0.1:8092/props 2>/dev/null | python3 -c 'import json,sys; d=json.load(sys.stdin); s=d.get("default_generation_settings",{}); print(s.get("n_ctx") or s.get("params",{}).get("n_ctx") or "")' 2>/dev/null || true)"
+  [[ "$current" == "$desired" ]]
 }

@@ -1,4 +1,4 @@
-Find USA and Canada employers hiring FIELD INSTRUCTORS, PROGRAM LEADERS, or TRIP LEADERS for multiday experiential travel programs (2 weeks to one semester), similar to Pacific Discovery, Where There Be Dragons, ARCC Programs, Rustic Pathways, and Broadreach.
+Investigate this SPECIFIC candidate set of USA/Canada-adjacent multiday group travel / experiential program employers for on-trip GROUP LEADER hiring signals. The core target is multiday group travel leadership, not only rugged outdoor/adventure instruction. Look for field instructor, program leader, trip leader, tour leader, trip manager, travel director, destination host, or guide roles. Do not do broad discovery first; use search only to find a missing careers/work-with-us page for a listed candidate.
 
 ## Regions
 United States and Canada only.
@@ -6,15 +6,27 @@ United States and Canada only.
 ## Must match
 - Multiday programs with overnight travel
 - Lead/facilitate a student or young-adult group (gap year, summer, study abroad OK)
-- Outdoor/adventure/service/cultural immersion focus
+- Outdoor/adventure/service/cultural immersion focus preferred, but broader multiday educational or small-group travel leadership is also relevant
 
 ## DO NOT USE
 indeed.com, linkedin.com/jobs, ziprecruiter.com, glassdoor.com, monster.com. Skip all generic aggregators.
 
+## Candidate set — inspect these first
+- Pacific Discovery — https://www.pacificdiscovery.org/
+- Where There Be Dragons — https://www.wheretherebedragons.com/
+- ARCC Programs — https://www.adventurescrosscountry.com/
+- Rustic Pathways — https://rusticpathways.com/
+- Broadreach — https://www.gobroadreach.com/
+- NOLS — https://www.nols.edu/
+- Outward Bound — https://www.outwardbound.org/
+- Overland Summers — https://overlandsummers.com/
+- Apogee Adventures — https://www.apogeeadventures.com/
+- Deer Hill Expeditions — https://deerhillexpeditions.com/
+
 ## Sources — USE
-coolworks.com, backdoorjobs.com, seasonaljobs.com, company careers pages, "work with us" on program operator sites
+Company careers pages, "work with us" pages, and direct program operator sites for the candidates above. Use coolworks.com, backdoorjobs.com, or seasonaljobs.com only if a company page is unavailable.
 
 ## Output
-Use whatever format is natural and compact: bullets, short sections, or a table are all fine. For each useful employer, include company, country, role title, careers URL, program length, audience, hiring signal, and fit.
+Use whatever format is natural and compact: bullets, short sections, or a table are all fine. For each useful employer or watchlist candidate, include company, country, possible role title(s), careers/work-with-us URL, program length, audience, hiring signal, and fit.
 
-Aim for useful employers; stop when you have enough solid notes rather than forcing a fixed count. Flag active 2025–2026 summer or fall hiring pages when visible.
+Aim for 5–8 useful candidates from the list. If evidence is incomplete but the company clearly runs multiday programs, preserve it as a watchlist candidate rather than discarding it. Flag active 2025–2026 summer or fall hiring pages when visible.

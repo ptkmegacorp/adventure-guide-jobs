@@ -42,7 +42,7 @@ Registry: [`runs/registry.json`](./runs/registry.json) · **[`AGENTS.md`](./AGEN
 | [`prompts/CHANGELOG.md`](./prompts/CHANGELOG.md) | Prompt edit paper trail |
 | [Job definition](#what-im-looking-for-working-definition) | What counts as a fit |
 
-LiteResearcher runs via [`literesearcher-app`](../projects/literesearcher-app) — stops Pig `:8091` while active; no need to switch pig-stack profiles afterward unless you want voice/Pig back.
+LiteResearcher runs via [`literesearcher-app`](../projects/literesearcher-app) — stops Pig `:8091` while active; no need to switch pig-stack profiles afterward unless you want voice/Pig back. Local LR context is configured in `~/.config/pig-stack/profiles/literesearcher.env`; this project now favors larger-context candidate-set runs rather than broad first-pass discovery.
 
 ---
 
@@ -247,6 +247,7 @@ experiential education travel instructor jobs
 | `run-batch.sh` | Run J1 J2 J3 (or custom list) sequentially |
 | `run-next.sh` | Run one literesearcher prompt → `runs/` |
 | `prompts/` | Full prompt text (J1–J4) + writing guide |
+| `seeds/` | Candidate company sets used to keep LiteResearcher focused |
 | `research-prompts.md` | Queue checklist |
 | `findings/` | Per-run findings, legacy archive, and curated `master.md` |
 | `run-status.sh` | Show run history + next pending prompt |

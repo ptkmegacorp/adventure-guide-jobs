@@ -6,3 +6,71 @@
 
 Smoke test: Find Norway and Scandinavia adventure travel employers hiring multiday TRIP LEADERS, GUIDES, or EXPEDITION LEADERS for small-group tours (3+ days overnight). ## Regions Norway primary; also include Sweden, Iceland, or Finland if the operator hires English-speaking trip leaders for multiday adventure trips. ## Similar to Nordic hiking/trekking operators, fjord adventure companies, Arctic expedition support, small-group active travel in Scandinavia ## DO NOT USE indeed.com, linkedin.com/jobs, finn.no generic listings only — prefer company careers pages and adventure-industry sources. Do not cite Indeed. ## Sources — USE Company websites, Nordic adventure travel operators, English-language "join our team" pages, coolworks.com, adventure travel industry listings ## Output Use whatever format is natural and compact: bullets, short sections, or a table are all fine. For each useful employer, include company, country, role title, careers URL, trip type, season, hiring signal, and fit. Aim for useful employers; stop when you have enough solid notes rather than forcing a fixed count. Note English language requirement and typical contract length when visible. 
 [transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[start] Find Norway and Scandinavia adventure travel employers hiring multiday TRIP LEADERS, GUIDES, or EXPEDITION LEADERS for small-group tours (3+ days overnight). ## Regions Norway primary; also include Sw
+[turn] calling model
+[model] <think> We need to answer: "Find Norway and Scandinavia adventure travel employers hiring multiday TRIP LEADERS, GUIDES, or EXPEDITION LEADERS for small-group tours (3+ days overnight). Regions Norway
+[search] {"query": ["Norway adventure travel employers hiring trip leaders", "Scandinavia small group adventure tours hiring trip leaders", "Nordic hiking trekking operator jobs Norway", "Fjord adventure compa
+[search_result] A web search for 'Norway adventure travel employers hiring trip leaders' found 10 results:
+
+## Web Results
+1. [Careers Job Opportunities Guides and Trip Leaders - Alpenwild](https://www.alpenwild.com/
+[turn] calling model
+[model] <think> We need to compile a list of employers hiring multiday trip leaders, guides, expedition leaders for small-group tours (3+ days overnight) in Norway primary; also include Sweden, Iceland, Finla
+[visit] {"url": ["https://www.norway-adventures.com/about-us/jobs-at-norway-adventures/"], "goal": "Extract information about job openings for trip leaders, guides, or expedition leaders for small-group tours
+[visit_result] The useful information in https://www.norway-adventures.com/about-us/jobs-at-norway-adventures/ for user goal Extract information about job openings for trip leaders, guides, or expedition leaders for
+[turn] calling model
+[model] <think> The page might be blocked. Let's try a different URL: maybe the careers page is at /careers or something else. Let's search for "norway-adventures.com jobs". </think>  <tool_call> {"name": "vi
+[visit] {"url": ["https://www.norway-adventures.com/careers"], "goal": "Extract information about job openings for trip leaders, guides, or expedition leaders for small-group tours (3+ days overnight) in Norw
+[visit_result] The useful information in https://www.norway-adventures.com/careers for user goal Extract information about job openings for trip leaders, guides, or expedition leaders for small-group tours (3+ days 
+[turn] calling model
+[model] <think> Maybe the site uses a different structure. Let's try to view the homepage and see if there's a jobs link. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.norway-adve
+[visit] {"url": ["https://www.norway-adventures.com/"], "goal": "Identify any job postings or 'join our team' pages for trip leaders, guides, or expedition leaders for small-group tours in Norway."}
+[visit_result] The useful information in https://www.norway-adventures.com/ for user goal Identify any job postings or 'join our team' pages for trip leaders, guides, or expedition leaders for small-group tours in N
+[turn] calling model
+[model] <think> It appears the site may block bots. We might need to use a different approach: maybe there is a "jobs" page on other domains like "jobs.norway-adventures.com"? But likely we can find other sou
+[visit] {"url": ["https://nordicventures.com/guide-jobs-norway/"], "goal": "Extract information about job openings for guides or trip leaders for multi-day adventure tours in Norway."}
+[visit_result] The useful information in https://nordicventures.com/guide-jobs-norway/ for user goal Extract information about job openings for guides or trip leaders for multi-day adventure tours in Norway. as foll
+[turn] calling model
+[model] <think> The page includes details about Sea Kayak Guide positions, but the question asks for "trip leaders, guides, or expedition leaders for small-group tours (3+ days overnight)". This is relevant: 
+[visit] {"url": ["https://europeanjobdays.eu/en/company/adventure-tours"], "goal": "Extract information about job openings for trip leaders, guides, or expedition leaders for small-group tours in Norway."}
+[visit_result] The useful information in https://europeanjobdays.eu/en/company/adventure-tours for user goal Extract information about job openings for trip leaders, guides, or expedition leaders for small-group tou
+[turn] calling model
+[model] <think> This page mentions they are looking for guides, but not specific role titles. However, we can extract that they have positions for guides. But we need to provide a table with company, country,
+[visit] {"url": ["https://www.outdoornorway.com/career"], "goal": "Identify any job postings for trip leaders, guides, or expedition leaders for small-group tours (3+ days overnight) in Norway."}
+[visit_result] The useful information in https://www.outdoornorway.com/career for user goal Identify any job postings for trip leaders, guides, or expedition leaders for small-group tours (3+ days overnight) in Norw
+[turn] calling model
+[model] <think> Again, not explicit.  Let's check "Uteguiden". </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://uteguiden.com/en/work-for-us"], "goal": "Extract information about job ope
+[visit] {"url": ["https://uteguiden.com/en/work-for-us"], "goal": "Extract information about job openings for trip leaders, guides, or expedition leaders for small-group tours in Norway."}
+[visit_result] The useful information in https://uteguiden.com/en/work-for-us for user goal Extract information about job openings for trip leaders, guides, or expedition leaders for small-group tours in Norway. as 
+[turn] calling model
+[model] <think> Again, not explicit about trip leaders. However, we can still use this as a source.  We also have "Norway Excursions". </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://ww
+[visit] {"url": ["https://www.norwayexcursions.com/en/about-us/jobs/"], "goal": "Identify any job postings for trip leaders, guides, or expedition leaders for small-group tours (3+ days overnight) in Norway."
+[visit_result] The useful information in https://www.norwayexcursions.com/en/about-us/jobs/ for user goal Identify any job postings for trip leaders, guides, or expedition leaders for small-group tours (3+ days over
+[turn] calling model
+[model] <think> We might need to open the specific page for Ålesund job. But it's not necessary; we can still note that there is a tour guide position.  Now, let's consider other companies: "Adventure Women" 
+[search] {"query": ["trip leader Norway adventure travel", "trip leader Norway small group tours", "guide Norway small group tours 3 days", "expedition leader Norway fjord tours", "Norway adventure travel comp
+[search_result] A web search for 'trip leader Norway adventure travel' found 10 results:
+
+## Web Results
+1. [Norway Multi-Adventure: Bergen & the Sognefjord Region](https://www.efadventures.com/guided-tours/multi-adv
+[turn] calling model
+[model] <think> We might need to break down the search results. Let's open the "Trip Leader Jobs - Wilderness Adventures" page. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.wilde
+[answer] <think>
+We might need to break down the search results. Let's open the "Trip Leader Jobs - Wilderness Adventures" page.
+</think>
+
+<tool_call>
+{"name": "visit", "arguments": {"url": ["https://www.wilde
+[done] context_limit_no_format
+---
+prediction: <think>
+We might need to break down the search results. Let's open the "Trip Leader Jobs - Wilderness Adventures" page.
+</think>
+
+<tool_call>
+{"name": "visit", "arguments": {"url": ["https://www.wildernessadventures.com/trip-leader/"], "goal": "Extract information about job openings for trip leaders in Norway or Scandinavia."}}
+</tool_call>
+termination: context_limit_no_format
+tool_calls: 11
+tools used: ['search', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'search', 'visit']
+PASS

@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-30",
+  "candidates": [
+    {
+      "company": "Norrøna (Adventure Division)",
+      "region": "Norway",
+      "primary_url": "https://www.norrona.com/en-GB/about-norrona-adventure/careers/",
+      "careers_url": "https://www.norrona.com/en-GB/about-norrona-adventure/careers/",
+      "role_titles": [
+        "Expedition Leader",
+        "Field Instructor",
+        "Guide",
+        "Tour Director",
+        "Trip Leader"
+      ],
+      "trip_type": "Multiday Adventure",
+      "hiring_signal": "Careers Page",
+      "signal_strength": "careers",
+      "fit": "Medium",
+      "evidence": "The webpage content confirms Norrøna's presence in the travel sector through a dedicated 'Careers' link in the navigation menu under 'About Norrøna Adventure'. The 'Guides' directory lists 100+ current guides, confirming operational scale for multiday programs like 'The Best of Lofoten' and 'Dolomites Enduro Mountain Biking Adventure'. No live job postings were visible, but the careers page signal indicates active recruitment infrastructure.",
+      "notes": "Company is a primary operator of high-altitude mountaineering and long-duration expeditions. While no live postings were found in the snippet, the presence of a careers page and large guide team confirms fit for multiday trip leader roles.",
+      "source_runs": [
+        "J4-20260630-183348",
+        "J4-20260630-184454"
+      ],
+      "last_seen": "2026-06-30"
+    },
+    {
+      "company": "Up Norway",
+      "region": "Norway",
+      "primary_url": "https://upnorway.com/work-with-us",
+      "careers_url": "https://upnorway.com/work-with-us",
+      "role_titles": [],
+      "trip_type": "multiday",
+      "hiring_signal": "work-with-us",
+      "signal_strength": "work-with-us",
+      "fit": "Medium",
+      "evidence": "The 'Work with us' page confirms an open culture for hiring and invites applicants to join the team, but does not list specific job titles, requirements, or live postings. The dedicated /jobs URL returned a 404 error.",
+      "notes": "General invitation to join found on work-with-us page. No specific role details available.",
+      "source_runs": [
+        "J4-20260630-183348"
+      ],
+      "last_seen": "2026-06-30"
+    },
+    {
+      "company": "Hvitserk",
+      "region": "Norway",
+      "primary_url": "",
+      "careers_url": "",
+      "role_titles": [
+        "Expedition Leader",
+        "Tour Director",
+        "Trip Leader"
+      ],
+      "trip_type": "Multiday Adventure",
+      "hiring_signal": "inaccessible",
+      "signal_strength": "inaccessible",
+      "fit": "Watchlist",
+      "evidence": "The domain hvitserk.com is associated with the Hvitserk mountain area in Norway, a hub for adventure tourism. However, the provided URLs returned connection errors (404, 403, or connection refused). No live posting, careers page, or work-with-us page could be accessed.",
+      "notes": "Geographic location is relevant to multiday adventure guiding, but website inaccessibility prevents verification of current hiring status or operational scale. Included as a Future/Watchlist candidate due to potential relevance.",
+      "source_runs": [
+        "J4-20260630-183348",
+        "J4-20260630-184454"
+      ],
+      "last_seen": "2026-06-30"
+    }
+  ]
+}

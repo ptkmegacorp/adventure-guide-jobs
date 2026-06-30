@@ -1,0 +1,7 @@
+# Company | URL | why candidate
+Haka Tours | https://www.hakatours.com/ | NZ multiday adventure tours; guide/driver-guide reference anchor
+Flying Kiwi | https://www.flyingkiwi.com/ | NZ camping/adventure bus tours; guide/driver-guide anchor
+Stray Travel | https://www.straytravel.com/ | NZ adventure bus / small-group tour operator
+Kiwi Experience | https://www.kiwiexperience.com/ | NZ bus adventure tours with driver-guide model
+Active Adventures | https://activeadventures.com/ | NZ-origin multiday hiking/adventure operator
+Wild Kiwi | https://www.wildkiwi.com/ | NZ small-group adventure tours
