@@ -1,0 +1,166 @@
+# LiteResearcher run: J2
+# run_id: J2-20260630-173011
+# Started: 2026-06-30T17:30:11-05:00
+# Prompt file: /home/bot/adventure-guide-jobs/prompts/J2-nz-driver-guides.txt
+---
+
+Smoke test: Find New Zealand adventure tour companies that hire DRIVER-GUIDES or TRIP LEADERS for multiday tours (3+ days), similar to Haka Tours, Flying Kiwi, and Stray Travel. ## Must match - NZ-based or NZ-departure tours - Driver drives the vehicle AND guides the trip (or dedicated trip leader on multiday loops) - Small-group adventure (not large coach mass tourism) ## Sources — USE workabout.co.nz, company websites, careers pages, tourism industry job listings ## DO NOT USE indeed.com, linkedin.com/jobs, ziprecruiter.com, glassdoor.com, or any generic job aggregator. Do not visit or cite them. ## Search hints - "driver guide" OR "tour leader" New Zealand adventure -site:indeed.com - workabout adventure guide - {company} careers guide ## Output Markdown table: | Company | Role title | Careers URL | Trip types | Season | Hiring signal | Fit (High/Med/Low) | Find at least 12 NZ employers. Note license requirements (NZ full license, P endorsement, etc.) when visible. 
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[start] Find New Zealand adventure tour companies that hire DRIVER-GUIDES or TRIP LEADERS for multiday tours (3+ days), similar to Haka Tours, Flying Kiwi, and Stray Travel. ## Must match - NZ-based or NZ-dep
+[turn] calling model
+[model] <think> We need to find New Zealand adventure tour companies that hire DRIVER-GUIDES or TRIP LEADERS for multiday tours (3+ days), similar to Haka Tours, Flying Kiwi, and Stray Travel. Must be NZ-base
+[search] {"query": ["New Zealand adventure tour driver guide", "Haka Tours driver guide", "Flying Kiwi driver guide", "Stray Travel driver guide", "workabout adventure guide New Zealand", "NZ small group adven
+[search_result] A web search for 'New Zealand adventure tour driver guide' found 10 results:
+
+## Web Results
+1. [The Road Trip New Zealand | Private Guide & Self Drive Tours](https://www.theroadtrip.co.nz/)
+Explore N
+[turn] calling model
+[model] <think> We have some results. Let's open the Haka Tours page to see if there is a careers page listing driver guides. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://hakatours.c
+[visit] {"url": ["https://hakatours.com/careers"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://hakatours.com/careers for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as follows: 
+
+Evidence in page
+[turn] calling model
+[model] <think> The careers page might be at a different URL. Let's check the main site for careers. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://hakatours.com/"], "goal": "Find info
+[visit] {"url": ["https://hakatours.com/"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://hakatours.com/ for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as follows: 
+
+Evidence in page: 
+Afte
+[turn] calling model
+[model] <think> The site might have a "Careers" page that is not accessible directly. Let's try to open "https://hakatours.com/careers/" again but maybe it's blocked. Could also be "https://hakatours.com/abou
+[visit] {"url": ["https://hakatours.com/blog/what-it-takes-to-be-a-haka-tours-guide"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://hakatours.com/blog/what-it-takes-to-be-a-haka-tours-guide for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirem
+[turn] calling model
+[model] <think> It appears the site might have dynamic content or the tool didn't capture all. However, we can still extract from other pages like "Meet Our Amazing Tour Guides and Head Office Staff". Let's o
+[visit] {"url": ["https://hakatours.com/about-us/our-people/"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://hakatours.com/about-us/our-people/ for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as follows: 
+
+Evi
+[turn] calling model
+[model] <think> Maybe we need to use workabout.co.nz for job postings. The user says: "Sources — USE workabout.co.nz, company websites, careers pages, tourism industry job listings". So we should search worka
+[search] {"query": ["site:workabout.co.nz driver guide New Zealand", "workabout.co.nz adventure tour driver guide", "workabout.co.nz small group tour driver guide", "workabout.co.nz NZ tour operator driver gui
+[search_result] No results found for 'site:workabout.co.nz driver guide New Zealand'.
+=======
+No results found for 'workabout.co.nz adventure tour driver guide'.
+=======
+No results found for 'workabout.co.nz small gr
+[turn] calling model
+[model] <think> Maybe workabout has a directory of tour operators. Let's search for "workabout New Zealand tour operator". </think>  <tool_call> {"name": "search", "arguments": {"query": ["workabout New Zeala
+[search] {"query": ["workabout New Zealand tour operator", "workabout.co.nz New Zealand travel"]}
+[search_result] No results found for 'workabout New Zealand tour operator'.
+=======
+No results found for 'workabout.co.nz New Zealand travel'.
+[turn] calling model
+[model] <think> Perhaps workabout is not easily searchable. We might need to manually browse the website. Let's try to open https://workabout.co.nz/. </think>  <tool_call> {"name": "visit", "arguments": {"url
+[visit] {"url": ["https://workabout.co.nz/"], "goal": "Find information about New Zealand adventure tour companies that hire driver-guides or trip leaders for multiday tours."}
+[visit_result] The useful information in https://workabout.co.nz/ for user goal Find information about New Zealand adventure tour companies that hire driver-guides or trip leaders for multiday tours. as follows: 
+
+E
+[turn] calling model
+[model] <think> Maybe the domain is blocked. Could try http. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["http://workabout.co.nz/"], "goal": "Find information about New Zealand adventure tou
+[visit] {"url": ["http://workabout.co.nz/"], "goal": "Find information about New Zealand adventure tour companies that hire driver-guides or trip leaders for multiday tours."}
+[visit_result] The useful information in http://workabout.co.nz/ for user goal Find information about New Zealand adventure tour companies that hire driver-guides or trip leaders for multiday tours. as follows: 
+
+Ev
+[turn] calling model
+[model] <think> It appears workabout might be blocked or not reachable. Let's try a different approach: Use search for "driver guide" on Haka Tours site may show job postings. But we might need to rely on oth
+[visit] {"url": ["https://www.flyingkiwi.com/careers"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://www.flyingkiwi.com/careers for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as follows: 
+
+Evidence in
+[turn] calling model
+[model] <think> Maybe the careers page is under /about-us/careers or similar. Let's try "https://www.flyingkiwi.com/about-us". </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.flying
+[visit] {"url": ["https://www.flyingkiwi.com/about-us"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://www.flyingkiwi.com/about-us for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as follows: 
+
+Evidence i
+[turn] calling model
+[model] <think> We need to find driver-guide roles. Perhaps there is a "Jobs" section on their website, but maybe not publicly listed. Could use search for "Flying Kiwi driver guide job". </think>  <tool_call
+[search] {"query": ["\"Flying Kiwi\" driver guide", "\"Flying Kiwi\" tour guide driver", "\"Flying Kiwi\" New Zealand tour driver"]}
+[search_result] No results found for '"Flying Kiwi" driver guide'.
+=======
+No results found for '"Flying Kiwi" tour guide driver'.
+=======
+No results found for '"Flying Kiwi" New Zealand tour driver'.
+[turn] calling model
+[model] <think> Maybe the site uses a different domain for UK, but we have that.  Now Stray Travel. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.straytravel.com/careers"], "goal"
+[visit] {"url": ["https://www.straytravel.com/careers"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://www.straytravel.com/careers for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as follows: 
+
+Evidence i
+[turn] calling model
+[model] <think> Try "https://www.straytravel.com/about". </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.straytravel.com/about"], "goal": "Find information about driver-guide roles,
+[visit] {"url": ["https://www.straytravel.com/about"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://www.straytravel.com/about for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as follows: 
+
+Evidence in 
+[turn] calling model
+[model] <think> Thus, we need to find other companies. Let's think of known NZ adventure tour operators: Haka Tours, Flying Kiwi, Stray Travel, Active Adventures, Kiwi Experience, Adventure Junkies, Wild Kiwi
+[search] {"query": ["New Zealand small group adventure tour driver guide", "NZ adventure tour driver guide role", "New Zealand tour operator driver guide hire", "NZ full licence driver guide tourism"]}
+[search_result] No results found for 'New Zealand small group adventure tour driver guide'.
+=======
+No results found for 'NZ adventure tour driver guide role'.
+=======
+No results found for 'New Zealand tour operator 
+[turn] calling model
+[model] <think> Maybe the search tool is limited. Could be that we need to use a different approach: Use the "visit" tool on other sites like "activeadventures.com". Let's open that. </think>  <tool_call> {"n
+[visit] {"url": ["https://activeadventures.com/"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://activeadventures.com/ for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as follows: 
+
+Evidence in page
+[turn] calling model
+[model] <think> That page is generic. It may not be accurate. However, we can find more details on other pages like "Get Your New Zealand Guide". Let's open that. </think>  <tool_call> {"name": "visit", "argu
+[visit] {"url": ["https://activeadventures.com/get-your-new-zealand-guide"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://activeadventures.com/get-your-new-zealand-guide for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as f
+[turn] calling model
+[model] <think> Thus, we have a source that indicates they hire driver guides. However, we need to find at least 12 NZ employers. The question: "Find New Zealand adventure tour companies that hire DRIVER-GUID
+[visit] {"url": ["https://www.kiwiexperience.com/"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://www.kiwiexperience.com/ for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as follows: 
+
+Evidence in pa
+[turn] calling model
+[model] <think> Maybe there's a page for "Our Bus Driver Guides". Let's open that. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.kiwiexperience.com/about-kiwi-experience/driver-gu
+[visit] {"url": ["https://www.kiwiexperience.com/about-kiwi-experience/driver-guides"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://www.kiwiexperience.com/about-kiwi-experience/driver-guides for user goal Find information about driver-guide roles, hiring signals, and any mention of license require
+[turn] calling model
+[model] <think> Thus Kiwi Experience has driver guides.  Now we need to find other companies. Let's check "Adventure Junkies". </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.advent
+[visit] {"url": ["https://www.adventurejunkies.com/"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://www.adventurejunkies.com/ for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as follows: 
+
+Evidence in 
+[turn] calling model
+[model] <think> Thus we have driver guides.  Now "Wild Kiwi". </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.wildkiwi.com/"], "goal": "Find information about driver-guide roles, hi
+[visit] {"url": ["https://www.wildkiwi.com/"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://www.wildkiwi.com/ for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as follows: 
+
+Evidence in page: 
+N
+[turn] calling model
+[model] <think> This page is huge and truncated. We need to find driver-guide roles. Possibly there is a "Our Guides" page.  Let's try "https://www.wildkiwi.com/about-us". </think>  <tool_call> {"name": "visi
+[visit] {"url": ["https://www.wildkiwi.com/about-us"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}
+[visit_result] The useful information in https://www.wildkiwi.com/about-us for user goal Find information about driver-guide roles, hiring signals, and any mention of license requirements. as follows: 
+
+Evidence in 
+[turn] calling model
+[model] <think> We might need to scroll further. However, the tool may have limitations. Let's try to open a specific subpage like "https://www.wildkiwi.com/guides". </think>  <tool_call> {"name": "visit", "a
+[answer] <think>
+We might need to scroll further. However, the tool may have limitations. Let's try to open a specific subpage like "https://www.wildkiwi.com/guides".
+</think>
+
+<tool_call>
+{"name": "visit", "a
+[done] context_limit_no_format
+---
+prediction: <think>
+We might need to scroll further. However, the tool may have limitations. Let's try to open a specific subpage like "https://www.wildkiwi.com/guides".
+</think>
+
+<tool_call>
+{"name": "visit", "arguments": {"url": ["https://www.wildkiwi.com/guides"], "goal": "Find information about driver-guide roles, hiring signals, and any mention of license requirements."}}
+</tool_call>
+termination: context_limit_no_format
+tool_calls: 23
+tools used: ['search', 'visit', 'visit', 'visit', 'visit', 'search', 'search', 'visit', 'visit', 'visit', 'visit', 'search', 'visit', 'visit', 'search', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit']
+PASS

@@ -1,0 +1,22 @@
+Find New Zealand adventure tour companies that hire DRIVER-GUIDES or TRIP LEADERS for multiday tours (3+ days), similar to Haka Tours, Flying Kiwi, and Stray Travel.
+
+## Must match
+- NZ-based or NZ-departure tours
+- Driver drives the vehicle AND guides the trip (or dedicated trip leader on multiday loops)
+- Small-group adventure (not large coach mass tourism)
+
+## Sources — USE
+workabout.co.nz, company websites, careers pages, tourism industry job listings
+
+## DO NOT USE
+indeed.com, linkedin.com/jobs, ziprecruiter.com, glassdoor.com, or any generic job aggregator. Do not visit or cite them.
+
+## Search hints
+- "driver guide" OR "tour leader" New Zealand adventure -site:indeed.com
+- workabout adventure guide
+- {company} careers guide
+
+## Output
+Use whatever format is natural and compact: bullets, short sections, or a table are all fine. For each useful employer, include company, role title, careers URL, trip types, season, hiring signal, fit, and license requirements when visible.
+
+Aim for useful NZ employers; stop when you have enough solid notes rather than forcing a fixed count.

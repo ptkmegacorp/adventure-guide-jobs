@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "runs": [
+    {
+      "run_id": "J1-20260630-171352",
+      "prompt_id": "J1",
+      "prompt_file": "/home/bot/adventure-guide-jobs/prompts/J1-active-openings.txt",
+      "log": "runs/2026-06-30-171343-J1.log",
+      "started_at": "2026-06-30T17:13:52-05:00",
+      "finished_at": "2026-06-30T17:14:47-05:00",
+      "exit_code": 130,
+      "status": "failed",
+      "findings_saved": false
+    },
+    {
+      "run_id": "J1-20260630-171457",
+      "prompt_id": "J1",
+      "prompt_file": "/home/bot/adventure-guide-jobs/prompts/J1-active-openings.txt",
+      "log": "runs/2026-06-30-171448-J1.log",
+      "started_at": "2026-06-30T17:14:57-05:00",
+      "finished_at": "2026-06-30T17:21:26-05:00",
+      "exit_code": 0,
+      "status": "completed",
+      "findings_saved": false,
+      "review_path": "reviews/J1-20260630-171457.md",
+      "review_outcome": "partial",
+      "review_next_action": "edit_prompt_retry"
+    },
+    {
+      "run_id": "J1-20260630-172531",
+      "prompt_id": "J1",
+      "prompt_file": "/home/bot/adventure-guide-jobs/prompts/J1-active-openings.txt",
+      "log": "runs/2026-06-30-172520-J1.log",
+      "started_at": "2026-06-30T17:25:31-05:00",
+      "finished_at": "2026-06-30T17:29:05-05:00",
+      "exit_code": 0,
+      "status": "completed",
+      "findings_saved": false,
+      "review_path": "reviews/J1-20260630-172531.md",
+      "review_outcome": "fail",
+      "review_next_action": "consolidate"
+    },
+    {
+      "run_id": "J2-20260630-173011",
+      "prompt_id": "J2",
+      "prompt_file": "/home/bot/adventure-guide-jobs/prompts/J2-nz-driver-guides.txt",
+      "log": "runs/2026-06-30-173000-J2.log",
+      "started_at": "2026-06-30T17:30:11-05:00",
+      "finished_at": null,
+      "exit_code": null,
+      "status": "running",
+      "findings_saved": false
+    }
+  ],
+  "prompts": {
+    "J1": {
+      "status": "run_done",
+      "run_count": 3,
+      "last_run_at": "2026-06-30T17:29:05-05:00",
+      "last_log": "runs/2026-06-30-172520-J1.log",
+      "findings_saved_at": null,
+      "last_review": "reviews/J1-20260630-172531.md",
+      "last_review_outcome": "fail",
+      "last_review_action": "consolidate"
+    },
+    "J2": {
+      "status": "running",
+      "run_count": 1,
+      "last_run_at": "2026-06-30T17:30:11-05:00",
+      "last_log": "runs/2026-06-30-173000-J2.log",
+      "findings_saved_at": null
+    }
+  }
+}

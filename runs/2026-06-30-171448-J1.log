@@ -1,0 +1,220 @@
+# LiteResearcher run: J1
+# run_id: J1-20260630-171457
+# Started: 2026-06-30T17:14:57-05:00
+# Prompt file: /home/bot/adventure-guide-jobs/prompts/J1-active-openings.txt
+---
+
+Smoke test: Find multiday adventure travel employers that hire TRIP LEADERS, DRIVER-GUIDES, or FIELD INSTRUCTORS — companies similar to Haka Tours (NZ overland/driver-guide tours) and Pacific Discovery (gap year / experiential education programs). ## Regions (priority order) New Zealand, United States, Canada, Norway. Include global operators only if they hire for these regions. ## Role types to find - Driver-guide / overland leader (drive + guide multiday tours) - Trip leader / tour leader (small-group adventure, 3+ days) - Field instructor / program leader (student, gap year, or young-adult programs) - Chief Experience Officer / on-trip leader (G Adventures, Intrepid-style) ## Must match - Multiday overnight trips (not day-only city tours) - Small groups (~6–20 guests) - You lead the group in the field (not desk-only operations) ## Sources — USE these - Company careers / jobs / "work with us" / "join our team" pages - coolworks.com, backdoorjobs.com, seasonaljobs.com, workabout.co.nz - adventuretravel.biz and direct operator websites - Search queries should include: -site:indeed.com -site:linkedin.com/jobs ## Sources — DO NOT USE Do not search, visit, or cite: indeed.com, linkedin.com/jobs, ziprecruiter.com, glassdoor.com, monster.com, simplyhired.com, talent.com. Skip generic job aggregators entirely. ## Anchor companies (find others like these) Haka Tours, Flying Kiwi, Pacific Discovery, G Adventures, Intrepid Travel, Where There Be Dragons, ARCC Programs, Rustic Pathways, Stray Travel, Dragoman, Broadreach, NOLS, Outward Bound ## Task 1. Search for employers matching the above across NZ, USA, Canada, and Norway. 2. Visit company careers pages and niche job boards (not Indeed). 3. For each employer found, note whether they have a LIVE job posting, a careers page indicating seasonal hiring, or are a known recruiter in this space. ## Output format Return a markdown table with exactly these columns: | Company | Region | Role title(s) | Careers / jobs URL | Typical trip length | Hiring signal | Why similar to anchors | Find at least 20 distinct employers. Prefer ones with a direct URL to apply or a clear "we're hiring guides" page. At the end, list the 5 best-matched employers for someone who wants Haka Tours-style driver-guiding AND Pacific Discovery-style field instructing. 
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[start] Find multiday adventure travel employers that hire TRIP LEADERS, DRIVER-GUIDES, or FIELD INSTRUCTORS — companies similar to Haka Tours (NZ overland/driver-guide tours) and Pacific Discovery (gap year 
+[turn] calling model
+[model] <think> We need to answer: Find multiday adventure travel employers that hire TRIP LEADERS, DRIVER-GUIDES, or FIELD INSTRUCTORS — companies similar to Haka Tours (NZ overland/driver-guide tours) and P
+[search] {"query": ["Haka Tours driver guide job", "Haka Tours trip leader job", "Pacific Discovery field instructor job", "Pacific Discovery gap year program leader", "multiday adventure travel driver guide j
+[search_result] No results found for 'Haka Tours driver guide job'.
+=======
+No results found for 'Haka Tours trip leader job'.
+=======
+No results found for 'Pacific Discovery field instructor job'.
+=======
+No results
+[turn] calling model
+[model] <think> The search tool returned no results? Possibly because the tool expects to fetch a list of top 10 results per query, but it's returning "No results found". That suggests maybe we need to adjust
+[search] {"query": ["Haka Tours"]}
+[search_result] No results found for 'Haka Tours'.
+[turn] calling model
+[model] <think> It seems the search tool may not be returning results for these queries. Possibly we need to provide a more generic query like "adventure travel company driver guide job". Let's try that. </th
+[search] {"query": ["adventure travel driver guide job", "multiday tour leader job"]}
+[search_result] No results found for 'adventure travel driver guide job'.
+=======
+No results found for 'multiday tour leader job'.
+[turn] calling model
+[model] <think> It appears the search tool might be broken for these queries. However, we can try to use "site:workabout.co.nz driver guide" or similar. The instructions say we should use company careers page
+[visit] {"url": ["https://www.haka-tours.co.nz/careers"], "goal": "Find job postings for driver guides, trip leaders, field instructors, etc."}
+[visit_result] The useful information in https://www.haka-tours.co.nz/careers for user goal Find job postings for driver guides, trip leaders, field instructors, etc. as follows: 
+
+Evidence in page: 
+The provided we
+[turn] calling model
+[model] <think> The site may not be reachable directly. Perhaps there is a different domain: Haka Tours might be "hakatours.com"? Let's search. </think>  <tool_call> {"name": "search", "arguments": {"query": 
+[search] {"query": ["Haka Tours New Zealand overland tours"]}
+[search_result] No results found for 'Haka Tours New Zealand overland tours'.
+[turn] calling model
+[model] <think> Maybe the tool cannot fetch due to restrictions. We might need to use alternative approach: Use "coolworks.com" for Haka Tours? But likely we need to find other companies.  Given the difficult
+[visit] {"url": ["https://www.gadventures.com/careers"], "goal": "Find job postings for driver guides, trip leaders, field instructors."}
+[visit_result] The useful information in https://www.gadventures.com/careers for user goal Find job postings for driver guides, trip leaders, field instructors. as follows: 
+
+Evidence in page: 
+The webpage content p
+[turn] calling model
+[model] <think> The G Adventures page indicates "Work as a tour leader". However, we need more specifics. But the tool gave a summary but not the actual job postings. We might need to scroll or find more deta
+[visit] {"url": ["https://www.gadventures.com/careers/open-positions"], "goal": "Find open positions for driver guides, trip leaders, field instructors."}
+[visit_result] The useful information in https://www.gadventures.com/careers/open-positions for user goal Find open positions for driver guides, trip leaders, field instructors. as follows: 
+
+Evidence in page: 
+The 
+[turn] calling model
+[model] <think> Maybe the URL is different. Let's try "https://www.gadventures.com/jobs". </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.gadventures.com/jobs"], "goal": "Find job p
+[visit] {"url": ["https://www.gadventures.com/jobs"], "goal": "Find job postings for driver guides, trip leaders, field instructors."}
+[visit_result] The useful information in https://www.gadventures.com/jobs for user goal Find job postings for driver guides, trip leaders, field instructors. as follows: 
+
+Evidence in page: 
+The provided webpage con
+[turn] calling model
+[model] <think> Perhaps the site uses a different domain like "gadventures.com/careers". The earlier page had some content but not listing. Could be that the site blocks scraping. We may need to use other sou
+[search] {"query": ["coolworks driver guide adventure travel", "coolworks trip leader", "coolworks field instructor"]}
+[search_result] No results found for 'coolworks driver guide adventure travel'.
+=======
+No results found for 'coolworks trip leader'.
+=======
+No results found for 'coolworks field instructor'.
+[turn] calling model
+[model] <think> Maybe we can use "adventuretravel.biz" which is a niche site. Let's try visiting that. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.adventuretravel.biz"], "goal":
+[visit] {"url": ["https://www.adventuretravel.biz"], "goal": "Find list of adventure travel companies and job postings for driver guides, trip leaders, field instructors."}
+[visit_result] The useful information in https://www.adventuretravel.biz for user goal Find list of adventure travel companies and job postings for driver guides, trip leaders, field instructors. as follows: 
+
+Evide
+[turn] calling model
+[model] <think> The site may have a "Career Center" that might list jobs. Let's try the link for career center. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.adventuretravel.biz/c
+[visit] {"url": ["https://www.adventuretravel.biz/career-center"], "goal": "Find job postings for adventure travel roles."}
+[visit_result] The useful information in https://www.adventuretravel.biz/career-center for user goal Find job postings for adventure travel roles. as follows: 
+
+Evidence in page: 
+The provided webpage content could 
+[turn] calling model
+[model] <think> We might need to use other sources like "backdoorjobs.com" or "seasonaljobs.com". Let's try searching for "driver guide job New Zealand adventure". </think>  <tool_call> {"name": "search", "ar
+[search] {"query": ["driver guide job New Zealand adventure travel", "trip leader job New Zealand", "field instructor job Canada adventure", "multiday tour leader job United States"]}
+[search_result] No results found for 'driver guide job New Zealand adventure travel'.
+=======
+No results found for 'trip leader job New Zealand'.
+=======
+No results found for 'field instructor job Canada adventure'.
+
+[turn] calling model
+[model] <think> It appears the search tool is not returning results at all. Possibly the tool expects a different format: maybe we need to provide a single query string rather than an array? The description s
+[visit] {"url": ["https://www.flyingkiwi.co.nz/careers"], "goal": "Find job postings for driver guides, trip leaders, field instructors."}
+[visit_result] The useful information in https://www.flyingkiwi.co.nz/careers for user goal Find job postings for driver guides, trip leaders, field instructors. as follows: 
+
+Evidence in page: 
+The provided webpage
+[turn] calling model
+[model] <think> Maybe the domain is not accessible due to blocking. Could try alternative: "https://www.flyingkiwi.com/careers". </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.flyi
+[visit] {"url": ["https://www.flyingkiwi.com/careers"], "goal": "Find job postings for driver guides, trip leaders, field instructors."}
+[visit_result] The useful information in https://www.flyingkiwi.com/careers for user goal Find job postings for driver guides, trip leaders, field instructors. as follows: 
+
+Evidence in page: 
+The provided webpage c
+[turn] calling model
+[model] <think> Perhaps the site uses a different path like "/work-with-us". Let's try "https://www.flyingkiwi.com/work-with-us". </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.fly
+[visit] {"url": ["https://www.flyingkiwi.com/work-with-us"], "goal": "Find information about employment opportunities."}
+[visit_result] The useful information in https://www.flyingkiwi.com/work-with-us for user goal Find information about employment opportunities. as follows: 
+
+Evidence in page: 
+The provided webpage content could not
+[turn] calling model
+[model] <think> It appears many sites may be blocked. However, we can still proceed by using other sources like "Pacific Discovery" site. Let's try that. </think>  <tool_call> {"name": "visit", "arguments": {
+[visit] {"url": ["https://www.pacificdiscovery.com/careers"], "goal": "Find job postings for field instructors, program leaders."}
+[visit_result] The useful information in https://www.pacificdiscovery.com/careers for user goal Find job postings for field instructors, program leaders. as follows: 
+
+Evidence in page: 
+The webpage content provided
+[turn] calling model
+[model] <think> The page indicates an "Employment Login Apply Now" but not listing. We might need to click that link, but we cannot interact with dynamic content. However, maybe the site has a form for applyi
+[search] {"query": ["Pacific Discovery coolworks"]}
+[search_result] No results found for 'Pacific Discovery coolworks'.
+[turn] calling model
+[model] <think> Maybe we can use "coolworks.com" directly: "https://www.coolworks.com/jobs". But likely that site also blocks.  Alternatively, we could use "workabout.co.nz". Let's try visiting that. </think>
+[visit] {"url": ["https://www.workabout.co.nz"], "goal": "Find job postings for adventure travel roles."}
+[visit_result] The useful information in https://www.workabout.co.nz for user goal Find job postings for adventure travel roles. as follows: 
+
+Evidence in page: 
+The provided webpage content could not be accessed (H
+[turn] calling model
+[model] <think> Maybe the domain is "workabout.co.nz". Could be blocked. Let's try "https://workabout.co.nz". </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://workabout.co.nz"], "goal": 
+[visit] {"url": ["https://workabout.co.nz"], "goal": "Find job postings for adventure travel roles."}
+[visit_result] The useful information in https://workabout.co.nz for user goal Find job postings for adventure travel roles. as follows: 
+
+Evidence in page: 
+The provided webpage content could not be accessed (HTTPS
+[turn] calling model
+[model] <think> It appears many external sites are not accessible. However, we can still gather data from known sources like Wikipedia pages for each company that list job postings. But the instructions say t
+[search] {"query": ["Intrepid Travel driver guide job"]}
+[search_result] No results found for 'Intrepid Travel driver guide job'.
+[turn] calling model
+[model] <think> Perhaps we can use "site:workabout.co.nz Intrepid Travel". But again not accessible.  Alternatively, we could rely on other sources like "Backdoor Jobs" which is a site that lists travel jobs.
+[visit] {"url": ["https://www.backdoorjobs.com/travel"], "goal": "Find job postings for adventure travel roles."}
+[visit_result] The useful information in https://www.backdoorjobs.com/travel for user goal Find job postings for adventure travel roles. as follows: 
+
+Evidence in page: 
+The provided webpage content could not be acc
+[turn] calling model
+[model] <think> Maybe the site is blocked. Could try "https://www.backdoorjobs.com". </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.backdoorjobs.com"], "goal": "Find travel job pos
+[visit] {"url": ["https://www.backdoorjobs.com"], "goal": "Find travel job postings."}
+[visit_result] The useful information in https://www.backdoorjobs.com for user goal Find travel job postings. as follows: 
+
+Evidence in page: 
+Are you looking for opportunities to work, travel, play, live, learn, he
+[turn] calling model
+[model] <think> The backdoorjobs page includes a description of a "Bindlestiff Tour Guide" position. That is a driver-guide role. However, we need to find employers that hire for multiday trips. The Bindlesti
+[visit] {"url": ["https://www.backdoorjobs.com/adventure-jobs-north-america"], "goal": "Find job postings for driver guides, trip leaders, field instructors."}
+[visit_result] The useful information in https://www.backdoorjobs.com/adventure-jobs-north-america for user goal Find job postings for driver guides, trip leaders, field instructors. as follows: 
+
+Evidence in page: 
+[turn] calling model
+[model] <think> Maybe the site uses dynamic routing and we cannot fetch. However, we have some info from the main page that includes a list of categories and maybe job listings. We could attempt to search for
+[visit] {"url": ["https://www.seasonaljobs.com"], "goal": "Find adventure travel job postings."}
+[visit_result] The useful information in https://www.seasonaljobs.com for user goal Find adventure travel job postings. as follows: 
+
+Evidence in page: 
+The webpage content indicates that SeasonalJobs.com 'focuses o
+[turn] calling model
+[model] <think> SeasonalJobs.com is not directly accessible but we have a summary. However, we might not be able to fetch job listings.  Given the constraints, perhaps we can produce a table with 20 entries b
+[visit] {"url": ["https://www.backdoorjobs.com/bindlestiff"], "goal": "Find information about Bindlestiff Tour Guides."}
+[visit_result] The useful information in https://www.backdoorjobs.com/bindlestiff for user goal Find information about Bindlestiff Tour Guides. as follows: 
+
+Evidence in page: 
+The provided webpage content could not
+[turn] calling model
+[model] <think> Maybe the page is not accessible. However, we can still cite the backdoorjobs.com page for the presence of Bindlestiff. But we need to provide a URL for that employer. The backdoorjobs.com pag
+[visit] {"url": ["https://www.backdoorjobs.com/adventure-jobs-worldwide"], "goal": "Find job postings for adventure travel roles."}
+[visit_result] The useful information in https://www.backdoorjobs.com/adventure-jobs-worldwide for user goal Find job postings for adventure travel roles. as follows: 
+
+Evidence in page: 
+The provided webpage conten
+[turn] calling model
+[model] <think> Perhaps the site is not accessible due to restrictions. We might need to use other sources like "coolworks.com" which may have a list of job postings for adventure travel.  Alternatively, we c
+[visit] {"url": ["https://www.intrepidtravel.com/careers"], "goal": "Find job postings for driver guides, tour leaders."}
+[visit_result] The useful information in https://www.intrepidtravel.com/careers for user goal Find job postings for driver guides, tour leaders. as follows: 
+
+Evidence in page: 
+The provided webpage content could no
+[turn] calling model
+[model] <think> Maybe the site uses /careers page but not accessible. Could try "https://www.intrepidtravel.com/jobs". </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://www.intrepidtravel
+[visit] {"url": ["https://www.intrepidtravel.com/jobs"], "goal": "Find job postings."}
+[visit_result] The useful information in https://www.intrepidtravel.com/jobs for user goal Find job postings. as follows: 
+
+Evidence in page: 
+The webpage content provides the following relevant sections:
+
+1. **Intr
+[turn] calling model
+[model] <think> The Intrepid page includes a "Tour Leaders" role. That is relevant. However, we need to find actual job postings. But the page suggests there are open roles.  Thus we can use this as a source 
+[visit] {"url": ["https://www.where-there-be-dragons.com/careers"], "goal": "Find job postings."}
+[visit_result] The useful information in https://www.where-there-be-dragons.com/careers for user goal Find job postings. as follows: 
+
+Evidence in page: 
+The provided webpage content could not be accessed (HTTPSConn
+[turn] calling model
+[model] <think> Maybe the site is "where-there-be-dragons.com". Let's try without trailing slash. </think>  <tool_call> {"name": "visit", "arguments": {"url": ["https://where-there-be-dragons.com"], "goal": "
+[visit] {"url": ["https://where-there-be-dragons.com"], "goal": "Find employment information."}
+[visit_result] The useful information in https://where-there-be-dragons.com for user goal Find employment information. as follows: 
+
+Evidence in page: 
+The provided webpage content could not be accessed (HTTPSConnec
+[answer] No answer found.
+[done] exceed_max_turns
+---
+prediction: No answer found.
+termination: exceed_max_turns
+tool_calls: 30
+tools used: ['search', 'search', 'search', 'visit', 'search', 'visit', 'visit', 'visit', 'search', 'visit', 'visit', 'search', 'visit', 'visit', 'visit', 'visit', 'search', 'visit', 'visit', 'search', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit', 'visit']
+PASS

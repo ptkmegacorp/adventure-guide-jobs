@@ -1,0 +1,41 @@
+Find multiday adventure travel employers that hire TRIP LEADERS, DRIVER-GUIDES, or FIELD INSTRUCTORS — companies similar to Haka Tours (NZ overland/driver-guide tours) and Pacific Discovery (gap year / experiential education programs).
+
+## Regions (priority order)
+New Zealand, United States, Canada, Norway. Include global operators only if they hire for these regions.
+
+## Role types to find
+- Driver-guide / overland leader (drive + guide multiday tours)
+- Trip leader / tour leader (small-group adventure, 3+ days)
+- Field instructor / program leader (student, gap year, or young-adult programs)
+- Chief Experience Officer / on-trip leader (G Adventures, Intrepid-style)
+
+## Must match
+- Multiday overnight trips (not day-only city tours)
+- Small groups (~6–20 guests)
+- You lead the group in the field (not desk-only operations)
+
+## Strategy (important — stay efficient)
+1. **First:** visit careers/jobs pages for anchor companies below (direct operator sites).
+2. **Then:** search for similar operators by name + "careers" or "work with us" (max 3 search queries).
+3. **Last:** niche boards only if reachable (backdoorjobs.com, seasonaljobs.com). Skip any site that fails to load — do not retry.
+4. **Stop and write the final answer** once you have useful employer notes OR after 12 visit tool calls (whichever comes first). Do not keep researching just to satisfy a format.
+
+## Sources — USE these
+- Company careers / jobs / "work with us" / "join our team" pages (primary)
+- backdoorjobs.com, seasonaljobs.com (secondary — skip if blocked)
+- Direct operator websites from anchor list
+- Search queries must include: -site:indeed.com -site:linkedin.com/jobs
+
+## Sources — DO NOT USE
+Do not search, visit, or cite: indeed.com, linkedin.com/jobs, ziprecruiter.com, glassdoor.com, monster.com, simplyhired.com, talent.com. Skip generic job aggregators entirely. Do not spend visits on coolworks.com or workabout.co.nz if they error.
+
+## Anchor companies (visit these careers pages first)
+Haka Tours, Flying Kiwi, Pacific Discovery, G Adventures, Intrepid Travel, Where There Be Dragons, ARCC Programs, Rustic Pathways, Stray Travel, Dragoman, Broadreach, NOLS, Outward Bound
+
+## Task
+For each employer found, note: LIVE job posting | seasonal recruiter | careers page only.
+
+## Output
+Use whatever format is natural and compact: bullets, short sections, or a table are all fine. For each useful employer, include the company, region, role titles, careers/jobs URL, trip length if known, hiring signal, and why it matches.
+
+Aim for up to **10 distinct employers** (quality over quantity). At the end, list the 3 best-matched for Haka Tours-style driver-guiding and Pacific Discovery-style field instructing if the evidence supports it.
