@@ -7,7 +7,8 @@ Each **batch** selects a different slice per prompt (`J1`–`J4`) for LiteResear
 ```bash
 ./apply-seed-batch.sh              # apply active batch from seeds/batches.json
 ./apply-seed-batch.sh --batch 3    # switch to batch 3 and patch prompts
-./apply-seed-batch.sh --status     # show catalog size + batch assignments
+./apply-seed-batch.sh --unseen --prompt J2   # lowest-coverage J2 seeds + skip list from candidates.json
+./apply-seed-batch.sh --status     # show catalog size + batch assignments + unseen preview
 ```
 
 Generated per-run slices: `seeds/active/J*.txt`  

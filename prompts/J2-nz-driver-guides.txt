@@ -8,17 +8,24 @@ Investigate this SPECIFIC candidate set of New Zealand adventure tour operators 
 ## DO NOT USE
 indeed.com, linkedin.com/jobs, ziprecruiter.com, glassdoor.com, workabout.co.nz. Skip generic aggregators.
 
-## Candidate set — batch 3 (inspect these first)
-- Haka Tours — https://www.hakatours.com/
-- Kiwi Experience — https://www.kiwiexperience.com/
+## Already researched — DO NOT VISIT
+- Haka Tours — https://www.hakatours.com/ (inaccessible, 2 prior run(s))
+- Kiwi Experience — https://www.kiwiexperience.com/ (careers, 2 prior run(s))
+- Adventure Junkies — https://www.adventurejunkies.com/ (live, 1 prior run(s))
+- MoaTrek — https://www.moatrek.com/ (live, 2 prior run(s))
+- New Zealand Trails — https://www.newzealandtrails.com/ (inaccessible, 3 prior run(s))
+
+## Candidate set — batch 4 (inspect these first)
 - Active Adventures — https://activeadventures.com/
-- Wild Kiwi — https://www.wildkiwi.com/
-- Infinite Adventures — https://www.infiniteadventures.co.nz/
+- Adventure Junkies NZ — https://www.adventurejunkies.co.nz/
+- Ahi Ka Tours — https://www.ahika.co.nz/
 - Cheeky Kiwi Travel — https://www.cheekykiwi.travel/
-- Great Kiwi — https://www.greatkiwi.com/
-- Small Group Tours NZ — https://www.smallgrouptours.co.nz/
 - EPIC NZ Tours — https://www.epicnz.co.nz/
+- Grand Pacific Tours — https://www.grandpacifictours.co.nz/
+- Great Kiwi — https://www.greatkiwi.com/
+- Infinite Adventures — https://www.infiniteadventures.co.nz/
 - Magic Bus NZ — https://www.magicbus.co.nz/
+- Ridgeline Adventures — https://www.ridgelineadventures.co.nz/
 
 ## Strict visit budget
 - **ONE URL per visit tool call.** Never batch multiple companies in a single visit.

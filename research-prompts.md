@@ -26,7 +26,9 @@ Full prompt text in `prompts/J*.txt`. All prompts **exclude Indeed and generic a
 
 ## Batch A — Companies like our anchors (NZ / USA / Canada / Norway)
 
-- [ ] **A1.** List adventure tour companies in **New Zealand** similar to Haka Tours that hire driver-guides for multiday tours. Include careers/jobs page URLs.
+> **Superseded for NZ:** use `./apply-seed-batch.sh --unseen --prompt J2` + `./run-next.sh --force J2` instead of A1. J2 has no anchor homepages; `--unseen` picks fresh catalog seeds and auto-skips well-researched employers from `findings/candidates.json`.
+
+- [x] **A1.** List adventure tour companies in **New Zealand** similar to Haka Tours — **superseded by J2 `--unseen`** (A1 revisited known anchors)
 
 - [ ] **A2.** List experiential education and gap year organizations in the **USA and Canada** similar to Pacific Discovery that hire field instructors or program leaders (2–12 week programs).
 

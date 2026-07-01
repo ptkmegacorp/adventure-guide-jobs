@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "active_batch": 3,
+  "active_batch": 4,
   "per_run_limit": 10,
   "batches": {
     "1": {
@@ -152,6 +152,20 @@
         "up-norway",
         "visit-norway-tours"
       ]
+    },
+    "4": {
+      "J2": [
+        "active-adventures",
+        "adventure-junkies-nz",
+        "ahi-ka-tours",
+        "cheeky-kiwi-travel",
+        "epic-nz",
+        "grand-pacific-tours",
+        "great-kiwi",
+        "infinite-adventures",
+        "magic-bus-nz",
+        "ridgeline-adventures"
+      ]
     }
   },
   "history": [
@@ -169,6 +183,11 @@
       "batch": 3,
       "applied_at": "2026-06-30T20:10:10-05:00",
       "note": "batch-3 rotation — shift slices; catalog preserved"
+    },
+    {
+      "batch": 4,
+      "applied_at": "2026-07-01T12:39:32-05:00",
+      "note": "unseen slice — lowest-coverage seeds from candidates.json (J2)"
     }
   ]
 }

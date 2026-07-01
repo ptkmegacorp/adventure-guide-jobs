@@ -1,12 +1,12 @@
-# Company | URL | active batch 3 slice
+# Company | URL | active batch 4 slice
 
-Haka Tours | https://www.hakatours.com/ | catalog slice batch 3
-Kiwi Experience | https://www.kiwiexperience.com/ | catalog slice batch 3
-Active Adventures | https://activeadventures.com/ | catalog slice batch 3
-Wild Kiwi | https://www.wildkiwi.com/ | catalog slice batch 3
-Infinite Adventures | https://www.infiniteadventures.co.nz/ | catalog slice batch 3
-Cheeky Kiwi Travel | https://www.cheekykiwi.travel/ | catalog slice batch 3
-Great Kiwi | https://www.greatkiwi.com/ | catalog slice batch 3
-Small Group Tours NZ | https://www.smallgrouptours.co.nz/ | catalog slice batch 3
-EPIC NZ Tours | https://www.epicnz.co.nz/ | catalog slice batch 3
-Magic Bus NZ | https://www.magicbus.co.nz/ | catalog slice batch 3
+Active Adventures | https://activeadventures.com/ | catalog slice batch 4
+Adventure Junkies NZ | https://www.adventurejunkies.co.nz/ | catalog slice batch 4
+Ahi Ka Tours | https://www.ahika.co.nz/ | catalog slice batch 4
+Cheeky Kiwi Travel | https://www.cheekykiwi.travel/ | catalog slice batch 4
+EPIC NZ Tours | https://www.epicnz.co.nz/ | catalog slice batch 4
+Grand Pacific Tours | https://www.grandpacifictours.co.nz/ | catalog slice batch 4
+Great Kiwi | https://www.greatkiwi.com/ | catalog slice batch 4
+Infinite Adventures | https://www.infiniteadventures.co.nz/ | catalog slice batch 4
+Magic Bus NZ | https://www.magicbus.co.nz/ | catalog slice batch 4
+Ridgeline Adventures | https://www.ridgelineadventures.co.nz/ | catalog slice batch 4

@@ -1,13 +1,13 @@
-# Active seed slice — J2 batch 3
-# generated: 2026-06-30T20:10:10-05:00
+# Active seed slice — J2 batch 4
+# generated: 2026-07-01T12:39:32-05:00
 
-- Haka Tours — https://www.hakatours.com/
-- Kiwi Experience — https://www.kiwiexperience.com/
 - Active Adventures — https://activeadventures.com/
-- Wild Kiwi — https://www.wildkiwi.com/
-- Infinite Adventures — https://www.infiniteadventures.co.nz/
+- Adventure Junkies NZ — https://www.adventurejunkies.co.nz/
+- Ahi Ka Tours — https://www.ahika.co.nz/
 - Cheeky Kiwi Travel — https://www.cheekykiwi.travel/
-- Great Kiwi — https://www.greatkiwi.com/
-- Small Group Tours NZ — https://www.smallgrouptours.co.nz/
 - EPIC NZ Tours — https://www.epicnz.co.nz/
+- Grand Pacific Tours — https://www.grandpacifictours.co.nz/
+- Great Kiwi — https://www.greatkiwi.com/
+- Infinite Adventures — https://www.infiniteadventures.co.nz/
 - Magic Bus NZ — https://www.magicbus.co.nz/
+- Ridgeline Adventures — https://www.ridgelineadventures.co.nz/

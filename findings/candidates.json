@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-30",
+  "updated_at": "2026-07-01",
   "candidates": [
     {
       "company": "Norrøna (Adventure Division)",
@@ -27,7 +27,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 38,
-      "rank": 27,
+      "rank": 30,
       "rank_rationale": "signal=inaccessible; fit=Medium; score=38"
     },
     {
@@ -47,7 +47,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 60,
-      "rank": 18,
+      "rank": 19,
       "rank_rationale": "signal=work-with-us; fit=Medium; score=60"
     },
     {
@@ -72,7 +72,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 18,
-      "rank": 34,
+      "rank": 42,
       "rank_rationale": "signal=inaccessible; fit=Watchlist; score=18"
     },
     {
@@ -148,7 +148,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 18,
-      "rank": 35,
+      "rank": 43,
       "rank_rationale": "signal=inaccessible; fit=Watchlist; score=18"
     },
     {
@@ -173,7 +173,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 22,
-      "rank": 31,
+      "rank": 38,
       "rank_rationale": "signal=inaccessible; fit=Watchlist; score=22"
     },
     {
@@ -199,7 +199,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 67,
-      "rank": 16,
+      "rank": 18,
       "rank_rationale": "signal=careers; fit=Medium; score=67"
     },
     {
@@ -274,7 +274,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 45,
-      "rank": 24,
+      "rank": 27,
       "rank_rationale": "signal=watchlist; fit=Medium; score=45"
     },
     {
@@ -285,22 +285,25 @@
       "role_titles": [
         "Driver-Guide",
         "Expedition Leader",
-        "Guide"
+        "Field Instructor",
+        "Guide",
+        "Trip Leader"
       ],
       "trip_type": "Multiday group travel",
       "hiring_signal": "inaccessible",
       "signal_strength": "inaccessible",
       "fit": "Medium",
-      "evidence": "SearXNG found guide-jobs page; salvage notes 403 access but clear guide job path.",
+      "evidence": "Specific 'Guide Jobs' URL exists. However, main site, About page, and Guide Jobs page returned 403 Forbidden errors.",
       "notes": "URL accessible but blocked by 403; included due to clear guide job path.",
       "source_runs": [
+        "A1-20260701-123033",
         "J2-20260630-191258",
         "manual-broader-leads-20260630"
       ],
-      "last_seen": "2026-06-30",
-      "rank_score": 38,
-      "rank": 28,
-      "rank_rationale": "signal=inaccessible; fit=Medium; score=38"
+      "last_seen": "2026-07-01",
+      "rank_score": 46,
+      "rank": 26,
+      "rank_rationale": "signal=inaccessible; fit=Medium; score=46"
     },
     {
       "company": "Hurtigruten",
@@ -327,7 +330,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 80,
-      "rank": 13,
+      "rank": 14,
       "rank_rationale": "signal=live; fit=Medium; score=80"
     },
     {
@@ -401,7 +404,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 37,
-      "rank": 29,
+      "rank": 31,
       "rank_rationale": "signal=watchlist; fit=Watchlist; score=37"
     },
     {
@@ -428,7 +431,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 53,
-      "rank": 21,
+      "rank": 22,
       "rank_rationale": "signal=watchlist; fit=Medium; score=53"
     },
     {
@@ -455,7 +458,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 80,
-      "rank": 14,
+      "rank": 15,
       "rank_rationale": "signal=live; fit=Medium; score=80"
     },
     {
@@ -477,7 +480,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 72,
-      "rank": 15,
+      "rank": 17,
       "rank_rationale": "signal=live; fit=Watchlist; score=72"
     },
     {
@@ -546,7 +549,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 55,
-      "rank": 20,
+      "rank": 21,
       "rank_rationale": "signal=careers; fit=Medium; score=55"
     },
     {
@@ -566,7 +569,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 41,
-      "rank": 26,
+      "rank": 29,
       "rank_rationale": "signal=careers; fit=Future; score=41"
     },
     {
@@ -613,7 +616,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 59,
-      "rank": 19,
+      "rank": 20,
       "rank_rationale": "signal=careers; fit=Medium; score=59"
     },
     {
@@ -637,7 +640,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 45,
-      "rank": 25,
+      "rank": 28,
       "rank_rationale": "signal=watchlist; fit=Medium; score=45"
     },
     {
@@ -657,7 +660,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 19,
-      "rank": 33,
+      "rank": 41,
       "rank_rationale": "signal=watchlist; fit=Low; score=19"
     },
     {
@@ -681,7 +684,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 18,
-      "rank": 36,
+      "rank": 44,
       "rank_rationale": "signal=inaccessible; fit=Watchlist; score=18"
     },
     {
@@ -760,7 +763,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 53,
-      "rank": 22,
+      "rank": 23,
       "rank_rationale": "signal=watchlist; fit=Medium; score=53"
     },
     {
@@ -785,7 +788,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 20,
-      "rank": 32,
+      "rank": 39,
       "rank_rationale": "signal=inaccessible; fit=Future; score=20"
     },
     {
@@ -836,7 +839,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 53,
-      "rank": 23,
+      "rank": 24,
       "rank_rationale": "signal=watchlist; fit=Medium; score=53"
     },
     {
@@ -860,7 +863,7 @@
       ],
       "last_seen": "2026-06-30",
       "rank_score": 16,
-      "rank": 37,
+      "rank": 45,
       "rank_rationale": "signal=inaccessible; fit=Future; score=16"
     },
     {
@@ -869,50 +872,252 @@
       "primary_url": "https://www.kiwiexperience.com/",
       "careers_url": "https://www.kiwiexperience.com/work-for-us",
       "role_titles": [
+        "Driver-Guide",
         "Driver-guide",
+        "Field Instructor",
+        "Program Leader",
+        "Tour Guide",
+        "small group tour leader",
         "tour leader",
-        "trip leader",
-        "small group tour leader"
+        "trip leader"
       ],
-      "trip_type": "multiday",
-      "hiring_signal": "watchlist",
+      "trip_type": "Multiday Adventure",
+      "hiring_signal": "work-with-us",
       "signal_strength": "careers",
-      "fit": "Medium",
+      "fit": "High",
       "evidence": "Homepage explicitly lists 'Work For Us' and 'Career' links. Company offers 'Classic Tours' and 'Small Group Tours' ranging from 8 to 24 days with 'crews', indicating a need for experienced leaders. Specific careers pages returned 404 errors.",
-      "notes": "Homepage signal is strong regarding multiday operations (8-24 days), but specific recruitment pages are inaccessible.",
+      "notes": "Careers page URL found and accessible. No live job postings visible in snippet, but strong structural signal for recruitment.",
       "source_runs": [
+        "A1-20260701-123033",
         "J2-20260630-201019"
       ],
-      "last_seen": "2026-06-30",
-      "rank_score": 67,
-      "rank": 17,
-      "rank_rationale": "signal=careers; fit=Medium; score=67"
+      "last_seen": "2026-07-01",
+      "rank_score": 84,
+      "rank": 13,
+      "rank_rationale": "signal=careers; fit=High; score=84"
     },
     {
       "company": "Haka Tours",
       "region": "New Zealand",
-      "primary_url": "https://hakatours.com/",
+      "primary_url": "https://www.hakatours.com/",
       "careers_url": "https://hakatours.com/careers",
       "role_titles": [
+        "Destination Host",
         "Expedition leader",
+        "Snow-tour-manager",
+        "Tour Leader",
+        "Trip Manager",
         "program leader",
         "tour director",
-        "trip manager",
-        "Snow-tour-manager"
+        "trip manager"
       ],
-      "trip_type": "multiday",
-      "hiring_signal": "watchlist",
-      "signal_strength": "careers",
-      "fit": "Low",
-      "evidence": "Homepage links to 'Careers' and 'Work With Us'. Specific pages like '/careers', '/work-with-us', and '/snow-tour-manager' returned 404 errors. Mentions 'Tailor-Made team' and 'Snow-tour-manager' page titles suggesting specialized expeditions.",
-      "notes": "Operational structure is less transparent than Kiwi Experience regarding group sizes, and all career-related pages are inaccessible.",
+      "trip_type": "Multiday Adventure",
+      "hiring_signal": "inaccessible",
+      "signal_strength": "inaccessible",
+      "fit": "Future",
+      "evidence": "Mentions 'Tailor-Made team' for custom trips. Footer links to 'Careers' and 'About us' but content not present in scrape. No live postings found.",
+      "notes": "Site structure suggests careers page exists but content was not accessible in the provided text.",
       "source_runs": [
+        "A1-20260701-123033",
         "J2-20260630-201019"
       ],
-      "last_seen": "2026-06-30",
-      "rank_score": 33,
-      "rank": 30,
-      "rank_rationale": "signal=careers; fit=Low; score=33"
+      "last_seen": "2026-07-01",
+      "rank_score": 20,
+      "rank": 40,
+      "rank_rationale": "signal=inaccessible; fit=Future; score=20"
+    },
+    {
+      "company": "Wild Kiwi",
+      "region": "New Zealand (Auckland, Christchurch, South Island, North Island)",
+      "primary_url": "https://www.wildkiwi.com/",
+      "careers_url": "",
+      "role_titles": [
+        "Trip Leader",
+        "Driver-Guide",
+        "Program Leader",
+        "Field Instructor",
+        "Tour Guide"
+      ],
+      "trip_type": "Multiday Adventure",
+      "hiring_signal": "watchlist",
+      "signal_strength": "watchlist",
+      "fit": "Medium",
+      "evidence": "Operates 28 distinct tours ranging from 4 to 25 days. Explicit requirements for 'expert local guides', 'experienced tour guides', and 'excellent drivers' to manage small groups (max 18).",
+      "notes": "No careers page link found in snippet. Strong implicit evidence of hiring needs based on operational requirements and physical office presence.",
+      "source_runs": [
+        "A1-20260701-123033"
+      ],
+      "last_seen": "2026-07-01",
+      "rank_score": 53,
+      "rank": 25,
+      "rank_rationale": "signal=watchlist; fit=Medium; score=53"
+    },
+    {
+      "company": "Flying Kiwi",
+      "region": "New Zealand",
+      "primary_url": "https://www.flyingkiwi.com/",
+      "careers_url": "",
+      "role_titles": [
+        "Tour Leader",
+        "Trip Leader",
+        "Destination Host"
+      ],
+      "trip_type": "Multiday Adventure",
+      "hiring_signal": "watchlist",
+      "signal_strength": "watchlist",
+      "fit": "Low",
+      "evidence": "Runs tours ranging from 6 to 23 days (e.g., 'Total Aotearoa', 'Grand Traverse'). Business model implies leadership roles for small groups.",
+      "notes": "No careers page or live posting signal found. Contact info available via email/phone.",
+      "source_runs": [
+        "A1-20260701-123033"
+      ],
+      "last_seen": "2026-07-01",
+      "rank_score": 27,
+      "rank": 32,
+      "rank_rationale": "signal=watchlist; fit=Low; score=27"
+    },
+    {
+      "company": "Stray Travel",
+      "region": "New Zealand / Asia",
+      "primary_url": "https://www.straytravel.com/",
+      "careers_url": "",
+      "role_titles": [
+        "Tour Leader",
+        "Trip Manager",
+        "Expedition Leader"
+      ],
+      "trip_type": "Multiday Adventure",
+      "hiring_signal": "watchlist",
+      "signal_strength": "watchlist",
+      "fit": "Low",
+      "evidence": "Offers 'Small Group Tours' and 'Adventure Tours' including a '38-Day Grand South East Asia Loop'. Footer links to 'About Stray', 'Content Creators', and 'Agents' but no explicit careers page.",
+      "notes": "No direct evidence of hiring or career postings found. Operational model clearly requires leaders.",
+      "source_runs": [
+        "A1-20260701-123033"
+      ],
+      "last_seen": "2026-07-01",
+      "rank_score": 23,
+      "rank": 37,
+      "rank_rationale": "signal=watchlist; fit=Low; score=23"
+    },
+    {
+      "company": "Active Adventures",
+      "region": "Global (HQ: Queenstown, New Zealand; Operations: 19 countries including Patagonia, Peru, Galapagos, Europe, Himalayas, Africa)",
+      "primary_url": "https://activeadventures.com",
+      "careers_url": "https://activeadventures.com/work-with-us",
+      "role_titles": [
+        "Guide",
+        "Tour Leader",
+        "Trip Leader",
+        "Expedition Leader",
+        "Driver-Guide"
+      ],
+      "trip_type": "Multiday Adventure Tours",
+      "hiring_signal": "watchlist",
+      "signal_strength": "careers",
+      "fit": "High",
+      "evidence": "The homepage explicitly markets 'fully guided, small group adventure tours' across 19 countries where staff handle 'driving, logistics, and details.' The text confirms the existence of roles such as 'Meet Our Guides' and describes requirements for 'expert local guides' with local knowledge. However, direct links to `/careers`, `/jobs`, and `/work-with-us` returned 404 errors, and the specific careers pages could not be accessed during this session.",
+      "notes": "Company clearly runs multiday tours requiring leaders, but no live posting or accessible careers page was found during the search session.",
+      "source_runs": [
+        "J2-20260701-123943"
+      ],
+      "last_seen": "2026-07-01",
+      "rank_score": 80,
+      "rank": 16,
+      "rank_rationale": "signal=careers; fit=High; score=80"
+    },
+    {
+      "company": "Adventure Junkies",
+      "region": "New Zealand",
+      "primary_url": "https://www.adventurejunkies.co.nz",
+      "careers_url": "https://www.adventurejunkies.co.nz/careers",
+      "role_titles": [
+        "Guide",
+        "Trip Leader",
+        "Expedition Leader"
+      ],
+      "trip_type": "Multiday Adventure Tours",
+      "hiring_signal": "watchlist",
+      "signal_strength": "unknown",
+      "fit": "Watchlist",
+      "evidence": "The company website could not be accessed (DNS resolution failure). No evidence of operations or hiring could be verified.",
+      "notes": "Unable to verify current operations or hiring status due to technical access failure.",
+      "source_runs": [
+        "J2-20260701-123943"
+      ],
+      "last_seen": "2026-07-01",
+      "rank_score": 27,
+      "rank": 33,
+      "rank_rationale": "signal=unknown; fit=Watchlist; score=27"
+    },
+    {
+      "company": "Ahika",
+      "region": "New Zealand",
+      "primary_url": "https://www.ahika.co.nz",
+      "careers_url": "https://www.ahika.co.nz",
+      "role_titles": [
+        "Guide",
+        "Trip Leader"
+      ],
+      "trip_type": "Multiday Adventure Tours",
+      "hiring_signal": "watchlist",
+      "signal_strength": "unknown",
+      "fit": "Watchlist",
+      "evidence": "The company website could not be accessed.",
+      "notes": "Unable to verify current operations or hiring status.",
+      "source_runs": [
+        "J2-20260701-123943"
+      ],
+      "last_seen": "2026-07-01",
+      "rank_score": 27,
+      "rank": 34,
+      "rank_rationale": "signal=unknown; fit=Watchlist; score=27"
+    },
+    {
+      "company": "Cheeky Kiwi",
+      "region": "New Zealand",
+      "primary_url": "https://www.cheekykiwi.travel",
+      "careers_url": "https://www.cheekykiwi.travel",
+      "role_titles": [
+        "Guide",
+        "Trip Leader"
+      ],
+      "trip_type": "Multiday Adventure Tours",
+      "hiring_signal": "watchlist",
+      "signal_strength": "unknown",
+      "fit": "Watchlist",
+      "evidence": "The company website could not be accessed.",
+      "notes": "Unable to verify current operations or hiring status.",
+      "source_runs": [
+        "J2-20260701-123943"
+      ],
+      "last_seen": "2026-07-01",
+      "rank_score": 27,
+      "rank": 35,
+      "rank_rationale": "signal=unknown; fit=Watchlist; score=27"
+    },
+    {
+      "company": "Grand Pacific Tours",
+      "region": "New Zealand",
+      "primary_url": "https://www.grandpacifictou",
+      "careers_url": "https://www.grandpacifictou",
+      "role_titles": [
+        "Guide",
+        "Trip Leader"
+      ],
+      "trip_type": "Multiday Adventure Tours",
+      "hiring_signal": "watchlist",
+      "signal_strength": "unknown",
+      "fit": "Watchlist",
+      "evidence": "The company website could not be accessed.",
+      "notes": "Unable to verify current operations or hiring status.",
+      "source_runs": [
+        "J2-20260701-123943"
+      ],
+      "last_seen": "2026-07-01",
+      "rank_score": 27,
+      "rank": 36,
+      "rank_rationale": "signal=unknown; fit=Watchlist; score=27"
     }
   ]
 }

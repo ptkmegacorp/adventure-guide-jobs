@@ -4,6 +4,8 @@ Minimal edits only. Link each change to a run review.
 
 | Date | Prompt | Run ID | Change | Reason |
 |------|--------|--------|--------|--------|
+| 2026-07-01 | J2 | — | `--unseen` seed mode: pick lowest-coverage catalog seeds + auto `## Already researched — DO NOT VISIT` skip list from candidates.json | A1 revisited anchors; J2 batch rotation already avoids homepage anchors |
+| 2026-07-01 | A1 | — | Added `prompts/A1-nz-similar-to-haka.txt`; extended `run-next.sh` for A1–A4 (seed batch J-only) | start Batch A discovery queue |
 | 2026-06-30 | seeds | batch-3 | Seed catalog + batch rotation; apply batch 3 slices for full J1–J4 run | shift candidate sets while preserving full catalog |
 | 2026-06-30 | pipeline | local | Salvage-first default: `finalize-run.sh` auto after every run; marks saved on salvage ok | LR final answer never substantive; salvage is primary signal |
 | 2026-06-30 | J2-J4 | local setup | Added `seeds/` candidate lists; changed J3/J4 from broad discovery to specific candidate-set investigation | LiteResearcher is intended for ReAct deep investigation, not first-pass lead generation |

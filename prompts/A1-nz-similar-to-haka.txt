@@ -1,0 +1,32 @@
+Discover NEW Zealand adventure tour operators similar to Haka Tours that hire driver-guides or trip leaders for multiday tours (3+ days). This is a discovery pass — find companies we may not already have, not a deep audit of every known operator.
+
+## Anchor references (calibrate similarity — visit homepage only)
+- Haka Tours — https://www.hakatours.com/
+- Flying Kiwi — https://www.flyingkiwi.com/
+- Stray Travel — https://www.straytravel.com/
+
+## Must match
+- NZ-based or NZ-departure multiday adventure tours
+- Small-group adventure (roughly 6–20 guests; not mass coach tourism)
+- Driver-guide, trip leader, or tour leader hiring path (careers/work-with-us/join-us page OR clear operator model)
+
+## Discovery method
+- After anchor homepages, use **at most 2 search queries** to find similar operators (e.g. "New Zealand adventure bus tour driver guide hiring", "NZ overland tour companies like Haka Tours careers").
+- From search results, pick promising **new** operators and visit one careers/jobs/work-with-us page each.
+- Skip Indeed, LinkedIn jobs, Workabout, and generic aggregators.
+
+## DO NOT USE
+indeed.com, linkedin.com/jobs, ziprecruiter.com, glassdoor.com, workabout.co.nz, coolworks.com
+
+## Strict visit budget
+- **ONE URL per visit tool call.** Never batch multiple companies in a single visit.
+- Visit at most 10 pages total (including 3 anchor homepages).
+- At most 2 search tool calls.
+- One careers/work-with-us page per discovered company when possible.
+- If blocked or vague, record watchlist and move on.
+- After 6 useful companies with any signal OR 10 total visits, STOP and write the final answer.
+
+## Output
+Use whatever format is natural and compact. For each useful employer, include company, region, role title(s), careers URL, trip types/duration signal, hiring signal, and fit (High/Medium/Watchlist).
+
+Aim for 4–6 **new or under-documented** NZ operators with multiday driver-guide/trip leader potential. Partial answers are acceptable.

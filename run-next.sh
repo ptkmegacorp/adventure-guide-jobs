@@ -14,7 +14,7 @@ usage() {
   cat <<EOF
 usage: $(basename "$0") [OPTIONS] [PROMPT_ID]
 
-PROMPT_ID: J1 J2 J3 J4  (default: next pending from runs/registry.json)
+PROMPT_ID: J1 J2 J3 J4 A1 A2 A3 A4  (default: next pending from runs/registry.json)
 
 Options:
   --dry-run           Print prompt only
@@ -45,7 +45,7 @@ while [[ $# -gt 0 ]]; do
       MARK_FINDINGS="$2"
       shift 2
       ;;
-    J1|J2|J3|J4) PROMPT_ID="$1"; shift ;;
+    J1|J2|J3|J4|A1|A2|A3|A4) PROMPT_ID="$1"; shift ;;
     *) echo "unknown arg: $1" >&2; usage; exit 1 ;;
   esac
 done
@@ -93,13 +93,17 @@ if registry_any_running; then
   exit 2
 fi
 
-# Apply active seed batch slice to prompt candidate sections before LR run.
-if [[ -x "${ROOT}/apply-seed-batch.sh" ]]; then
-  SEED_BATCH="$(python3 -c "import json; print(json.load(open('${ROOT}/seeds/batches.json'))['active_batch'])" 2>/dev/null || echo "?")"
-  echo "Applying seed batch ${SEED_BATCH} for ${PROMPT_ID}..."
-  "${ROOT}/apply-seed-batch.sh" --prompt "${PROMPT_ID}" >/dev/null
-  echo "SEED_BATCH {\"prompt\":\"${PROMPT_ID}\",\"batch\":${SEED_BATCH}}"
-fi
+# Apply active seed batch slice to J-prompt candidate sections before LR run.
+case "$PROMPT_ID" in
+  J1|J2|J3|J4)
+    if [[ -x "${ROOT}/apply-seed-batch.sh" ]]; then
+      SEED_BATCH="$(python3 -c "import json; print(json.load(open('${ROOT}/seeds/batches.json'))['active_batch'])" 2>/dev/null || echo "?")"
+      echo "Applying seed batch ${SEED_BATCH} for ${PROMPT_ID}..."
+      "${ROOT}/apply-seed-batch.sh" --prompt "${PROMPT_ID}" >/dev/null
+      echo "SEED_BATCH {\"prompt\":\"${PROMPT_ID}\",\"batch\":${SEED_BATCH}}"
+    fi
+    ;;
+esac
 
 QUESTION="$(tr '\n' ' ' < "$PROMPT_FILE" | sed 's/  */ /g')"
 
