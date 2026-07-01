@@ -4,7 +4,7 @@ Minimal edits only. Link each change to a run review.
 
 | Date | Prompt | Run ID | Change | Reason |
 |------|--------|--------|--------|--------|
-| 2026-06-30 | J1-J4 | batch-2 follow-up | Enforce ONE URL per visit tool call in all prompts | J3/J4 mega-batch visits blew context; salvage could not run |
+| 2026-06-30 | seeds | batch-3 | Seed catalog + batch rotation; apply batch 3 slices for full J1–J4 run | shift candidate sets while preserving full catalog |
 | 2026-06-30 | pipeline | local | Salvage-first default: `finalize-run.sh` auto after every run; marks saved on salvage ok | LR final answer never substantive; salvage is primary signal |
 | 2026-06-30 | J2-J4 | local setup | Added `seeds/` candidate lists; changed J3/J4 from broad discovery to specific candidate-set investigation | LiteResearcher is intended for ReAct deep investigation, not first-pass lead generation |
 | 2026-06-30 | LR stack | local setup | Raised LiteResearcher context 16k→32k and reduced visit content 10k→6k (49k segfaulted on this GPU) | align local setup closer to LiteResearcher long-trajectory intended use |

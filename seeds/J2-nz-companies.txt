@@ -1,11 +1,12 @@
-# Company | URL | why candidate — batch 2 (rotated picks)
-MoaTrek | https://www.moatrek.com/ | NZ small-group walking/hiking tours; guide-led multiday
-New Zealand Trails | https://www.newzealandtrails.com/ | NZ guided walking tours; trip leader/guide roles
-Bottom Bus | https://www.bottombus.co.nz/ | NZ adventure bus tours; driver-guide style
-Adventure Junkies | https://www.adventurejunkies.co.nz/ | NZ adventure tours; guide roles
-Wonderland Adventures | https://www.wonderlandadventures.co.nz/ | NZ small-group adventure operator
-Grand Pacific Tours | https://www.grandpacifictours.co.nz/ | NZ coach/adventure touring; guide/driver paths
-Ridgeline Adventures | https://www.ridgelineadventures.co.nz/ | NZ outdoor adventure trips
-Ahi Ka Tours | https://www.ahika.co.nz/ | NZ cultural/adventure tours; guide-led experiences
-Flying Kiwi | https://www.flyingkiwi.com/ | retained anchor — NZ camping bus tours
-Stray Travel | https://www.straytravel.com/ | retained anchor — NZ adventure bus network
+# Company | URL | active batch 3 slice
+
+Haka Tours | https://www.hakatours.com/ | catalog slice batch 3
+Kiwi Experience | https://www.kiwiexperience.com/ | catalog slice batch 3
+Active Adventures | https://activeadventures.com/ | catalog slice batch 3
+Wild Kiwi | https://www.wildkiwi.com/ | catalog slice batch 3
+Infinite Adventures | https://www.infiniteadventures.co.nz/ | catalog slice batch 3
+Cheeky Kiwi Travel | https://www.cheekykiwi.travel/ | catalog slice batch 3
+Great Kiwi | https://www.greatkiwi.com/ | catalog slice batch 3
+Small Group Tours NZ | https://www.smallgrouptours.co.nz/ | catalog slice batch 3
+EPIC NZ Tours | https://www.epicnz.co.nz/ | catalog slice batch 3
+Magic Bus NZ | https://www.magicbus.co.nz/ | catalog slice batch 3

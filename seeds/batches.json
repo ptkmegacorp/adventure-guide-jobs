@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "active_batch": 3,
+  "per_run_limit": 10,
+  "batches": {
+    "1": {
+      "J1": [
+        "haka-tours",
+        "pacific-discovery",
+        "g-adventures",
+        "intrepid-travel",
+        "wheretherebedragons",
+        "arcc-programs",
+        "rustic-pathways",
+        "stray-travel",
+        "dragoman",
+        "broadreach"
+      ],
+      "J2": [
+        "haka-tours",
+        "flying-kiwi",
+        "stray-travel",
+        "kiwi-experience",
+        "active-adventures",
+        "wild-kiwi",
+        "adventure-junkies-com",
+        "norrona-hvitserk",
+        "flying-kiwi-careers",
+        "haka-tours-careers"
+      ],
+      "J3": [
+        "pacific-discovery",
+        "wheretherebedragons",
+        "arcc-programs",
+        "rustic-pathways",
+        "broadreach",
+        "nols",
+        "outward-bound",
+        "overland-summers",
+        "apogee-adventures",
+        "deer-hill-expeditions"
+      ],
+      "J4": [
+        "norrona-hvitserk",
+        "hvitserk-norway",
+        "up-norway",
+        "fifty-degrees-north",
+        "nordic-visitor",
+        "icelandic-mountain-guides",
+        "borea-adventures",
+        "discover-norway",
+        "outdoor-norway",
+        "trolltunga-active"
+      ]
+    },
+    "2": {
+      "J1": [
+        "g-adventures",
+        "intrepid-travel",
+        "dragoman",
+        "backroads",
+        "exodus-adventures",
+        "world-expeditions",
+        "explore-worldwide",
+        "oars",
+        "global-leadership-adventures",
+        "rei-adventures"
+      ],
+      "J2": [
+        "moatrek",
+        "new-zealand-trails",
+        "bottom-bus",
+        "adventure-junkies-nz",
+        "wonderland-adventures",
+        "grand-pacific-tours",
+        "ridgeline-adventures",
+        "ahi-ka-tours",
+        "flying-kiwi",
+        "stray-travel"
+      ],
+      "J3": [
+        "global-leadership-adventures",
+        "moondance-adventures",
+        "bold-earth",
+        "avid4-adventure",
+        "putney-student-travel",
+        "experiment-international-living",
+        "wilderness-adventures",
+        "action-quest",
+        "lifeworks-international",
+        "ef-go-ahead-tours"
+      ],
+      "J4": [
+        "fifty-degrees-north",
+        "icelandic-mountain-guides",
+        "arctic-adventures",
+        "secret-atlas",
+        "basecamp-explorer",
+        "active-adventures",
+        "nordic-visitor",
+        "discover-norway",
+        "outdoor-norway",
+        "albatros-travel"
+      ]
+    },
+    "3": {
+      "J1": [
+        "black-tomato",
+        "classic-journeys",
+        "hurtigruten",
+        "expat-explore",
+        "overseas-adventure-travel",
+        "road-scholar",
+        "natgeo-expeditions",
+        "butterfield-robinson",
+        "trafalgar",
+        "contiki-tour-manager"
+      ],
+      "J2": [
+        "haka-tours",
+        "kiwi-experience",
+        "active-adventures",
+        "wild-kiwi",
+        "infinite-adventures",
+        "cheeky-kiwi-travel",
+        "great-kiwi",
+        "small-group-tours-nz",
+        "epic-nz",
+        "magic-bus-nz"
+      ],
+      "J3": [
+        "rustic-pathways",
+        "broadreach",
+        "nols",
+        "outward-bound",
+        "overland-summers",
+        "apogee-adventures",
+        "deer-hill-expeditions",
+        "pacific-discovery",
+        "wheretherebedragons",
+        "camp-leaders"
+      ],
+      "J4": [
+        "norrona-adventure",
+        "hvitserk-norway",
+        "much-better-adventures",
+        "ke-adventure-travel",
+        "exodus-travels",
+        "spitsbergen-travel",
+        "norwegian-travel-company",
+        "fjord-norway",
+        "up-norway",
+        "visit-norway-tours"
+      ]
+    }
+  },
+  "history": [
+    {
+      "batch": 1,
+      "applied_at": "2026-06-30T17:00:00-05:00",
+      "note": "initial anchors + broad discovery era"
+    },
+    {
+      "batch": 2,
+      "applied_at": "2026-06-30T19:00:00-05:00",
+      "note": "batch-2 rotation — regional candidate sets"
+    },
+    {
+      "batch": 3,
+      "applied_at": "2026-06-30T20:10:10-05:00",
+      "note": "batch-3 rotation — shift slices; catalog preserved"
+    }
+  ]
+}

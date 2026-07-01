@@ -1,15 +1,12 @@
-# Company | URL | why candidate
-G Adventures | https://www.gadventures.com/ | global small-group adventure; CEO/tour leader hiring
-Intrepid Travel | https://www.intrepidtravel.com/ | global adventure tour leader model
-Dragoman | https://www.dragoman.com/ | overland driver-guide / expedition leader reference
-Backroads | https://www.backroads.com/ | US multiday active travel trip leaders
-Exodus Adventure Travels | https://www.exodus.co.uk/ | global multiday hiking/cycling trip leaders
-World Expeditions | https://www.worldexpeditions.com/ | multiday trekking/expedition leaders
-Explore Worldwide | https://www.exploreworldwide.com/ | small-group adventure tour leaders
-OARS | https://www.oars.com/ | multiday river expedition guides/leaders
-Global Leadership Adventures | https://www.experiencegla.com/ | gap-year / experiential program leaders
-REI Adventures | https://www.rei.com/adventures | multiday domestic/international trip leaders
-Black Tomato | https://www.blacktomato.com/us/careers/ | luxury multiday travel; possible destination host/trip manager path
-Classic Journeys | https://www.classicjourneys.com/careers/ | luxury walking/cultural multiday trips; guide/trip leader watchlist
-Hurtigruten | https://www.hurtigruten.com/en/about-us/careers | Norway/global expedition and coastal travel employer
-Expat Explore | https://expatexplore.com/ | global guided multiday tours; tour leaders/drivers mentioned
+# Company | URL | active batch 3 slice
+
+Black Tomato | https://www.blacktomato.com/us/careers/ | catalog slice batch 3
+Classic Journeys | https://www.classicjourneys.com/careers/ | catalog slice batch 3
+Hurtigruten | https://www.hurtigruten.com/en/about-us/careers | catalog slice batch 3
+Expat Explore | https://expatexplore.com/ | catalog slice batch 3
+Overseas Adventure Travel (OAT) | https://www.oattravel.com/about/careers | catalog slice batch 3
+Road Scholar | https://www.roadscholar.org/about/careers/ | catalog slice batch 3
+National Geographic Expeditions | https://www.nationalgeographic.com/expeditions/ | catalog slice batch 3
+Butterfield & Robinson | https://www.butterfield.com/careers | catalog slice batch 3
+Trafalgar | https://www.trafalgar.com/en-us/about/careers | catalog slice batch 3
+Contiki | https://www.contiki.com/about/careers | catalog slice batch 3

@@ -11,17 +11,17 @@ United States and Canada only.
 ## DO NOT USE
 indeed.com, linkedin.com/jobs, ziprecruiter.com, glassdoor.com, monster.com. Skip all generic aggregators.
 
-## Candidate set — inspect these first
-- Global Leadership Adventures — https://www.experiencegla.com/
-- Moondance Adventures — https://www.moondanceadventures.com/
-- Bold Earth — https://www.boldearth.com/
-- Avid4 Adventure — https://www.avid4.com/
-- Putney Student Travel — https://www.goputney.com/
-- The Experiment in International Living — https://www.experiment.org/
-- Wilderness Adventures — https://www.wildernessadventures.com/
-- Action Quest — https://www.actionquest.com/
-- Lifeworks International — https://www.lifeworks.com/
-- EF Go Ahead Tours — https://www.goaheadtours.com/
+## Candidate set — batch 3 (inspect these first)
+- Rustic Pathways — https://rusticpathways.com/
+- Broadreach — https://www.gobroadreach.com/
+- NOLS — https://www.nols.edu/
+- Outward Bound — https://www.outwardbound.org/
+- Overland Summers — https://overlandsummers.com/
+- Apogee Adventures — https://www.apogeeadventures.com/
+- Deer Hill Expeditions — https://deerhillexpeditions.com/
+- Pacific Discovery — https://www.pacificdiscovery.org/
+- Where There Be Dragons — https://www.wheretherebedragons.com/
+- Camp Leaders — https://www.campleaders.com/
 
 ## Strict visit budget
 - **ONE URL per visit tool call.** Never batch multiple companies in a single visit.

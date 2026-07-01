@@ -93,6 +93,14 @@ if registry_any_running; then
   exit 2
 fi
 
+# Apply active seed batch slice to prompt candidate sections before LR run.
+if [[ -x "${ROOT}/apply-seed-batch.sh" ]]; then
+  SEED_BATCH="$(python3 -c "import json; print(json.load(open('${ROOT}/seeds/batches.json'))['active_batch'])" 2>/dev/null || echo "?")"
+  echo "Applying seed batch ${SEED_BATCH} for ${PROMPT_ID}..."
+  "${ROOT}/apply-seed-batch.sh" --prompt "${PROMPT_ID}" >/dev/null
+  echo "SEED_BATCH {\"prompt\":\"${PROMPT_ID}\",\"batch\":${SEED_BATCH}}"
+fi
+
 QUESTION="$(tr '\n' ' ' < "$PROMPT_FILE" | sed 's/  */ /g')"
 
 if [[ "$DRY_RUN" -eq 1 ]]; then

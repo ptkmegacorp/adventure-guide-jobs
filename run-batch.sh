@@ -53,6 +53,11 @@ for id in "${PROMPTS[@]}"; do
   esac
 done
 
+if [[ -x "${ROOT}/apply-seed-batch.sh" ]]; then
+  echo "Applying active seed batch before batch run..."
+  "${ROOT}/apply-seed-batch.sh"
+fi
+
 for i in "${!PROMPTS[@]}"; do
   id="${PROMPTS[$i]}"
   echo "========== [$((i + 1))/${#PROMPTS[@]}] ${id} =========="

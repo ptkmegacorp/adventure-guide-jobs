@@ -11,17 +11,17 @@ New Zealand, United States, Canada, Norway, and global operators that hire for t
 ## DO NOT USE
 indeed.com, linkedin.com/jobs, ziprecruiter.com, glassdoor.com, monster.com, coolworks.com, workabout.co.nz. Skip generic aggregators and sites that error.
 
-## Candidate set — inspect these first
-- G Adventures — https://www.gadventures.com/
-- Intrepid Travel — https://www.intrepidtravel.com/
-- Dragoman — https://www.dragoman.com/
-- Backroads — https://www.backroads.com/
-- Exodus Adventure Travels — https://www.exodus.co.uk/
-- World Expeditions — https://www.worldexpeditions.com/
-- Explore Worldwide — https://www.explore.co.uk/
-- OARS — https://www.oars.com/
-- Global Leadership Adventures — https://www.experiencegla.com/
-- REI Adventures — https://www.rei.com/adventures
+## Candidate set — batch 3 (inspect these first)
+- Black Tomato — https://www.blacktomato.com/us/careers/
+- Classic Journeys — https://www.classicjourneys.com/careers/
+- Hurtigruten — https://www.hurtigruten.com/en/about-us/careers
+- Expat Explore — https://expatexplore.com/
+- Overseas Adventure Travel (OAT) — https://www.oattravel.com/about/careers
+- Road Scholar — https://www.roadscholar.org/about/careers/
+- National Geographic Expeditions — https://www.nationalgeographic.com/expeditions/
+- Butterfield & Robinson — https://www.butterfield.com/careers
+- Trafalgar — https://www.trafalgar.com/en-us/about/careers
+- Contiki — https://www.contiki.com/about/careers
 
 ## Strict visit budget
 - **ONE URL per visit tool call.** Never batch multiple companies in a single visit.

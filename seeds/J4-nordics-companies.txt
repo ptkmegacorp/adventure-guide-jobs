@@ -1,15 +1,12 @@
-# Company | URL | why candidate — batch 2 (rotated picks)
-50 Degrees North | https://www.fiftydegreesnorth.com/ | Nordic bespoke adventure travel; guide/host roles
-Icelandic Mountain Guides | https://www.mountainguides.is/ | Iceland multiday trekking/mountaineering guides
-Arctic Adventures | https://adventures.is/ | Iceland adventure day/multiday guide operator
-Secret Atlas | https://www.secretatlas.com/ | small-group Arctic expedition voyages
-Basecamp Explorer | https://www.basecampexplorer.com/ | Svalbard/Norway Arctic adventure operator
-Active Adventures | https://www.activeadventures.com/ | Norway/NZ multiday hiking operator
-Nordic Visitor | https://www.nordicvisitor.com/ | Iceland/Nordics tours; travel specialist/guide paths
-Discover Norway | https://www.discover-norway.no/ | Norway active cycling/hiking/ski trips
-Outdoor Norway | https://www.outdoornorway.com/ | Norway adventure operator
-Albatros Travel | https://www.albatros-travel.com/ | Arctic/Nordic expedition travel
-Up Norway | https://upnorway.com/ | retained anchor — Norway active/cultural travel
-Hurtigruten | https://www.hurtigruten.com/en/about-us/careers | Norway coastal/expedition travel employer; multiday expedition/coastal roles watchlist
-Explore Worldwide | https://www.exploreworldwide.com/ | global small-group multiday tours including Scandinavia; tour leader model
-Expat Explore | https://expatexplore.com/ | multiday guided tours including Scandinavia; tour leaders and drivers mentioned
+# Company | URL | active batch 3 slice
+
+Norrøna Adventure | https://www.norrona.com/en-GB/about-norrona-adventure/careers/ | catalog slice batch 3
+Hvitserk of Norway | https://www.hvitserk.com/ | catalog slice batch 3
+Much Better Adventures | https://www.muchbetteradventures.com/ | catalog slice batch 3
+KE Adventure Travel | https://www.keadventure.com/ | catalog slice batch 3
+Exodus Travels | https://www.exodus.co.uk/ | catalog slice batch 3
+Spitsbergen Travel | https://www.spitsbergentravel.com/ | catalog slice batch 3
+Norwegian Travel Company | https://www.norwegiantravelcompany.com/ | catalog slice batch 3
+Fjord Norway Tours | https://www.fjordnorway.com/en/ | catalog slice batch 3
+Up Norway | https://upnorway.com/ | catalog slice batch 3
+Visit Norway (tour operators index) | https://www.visitnorway.com/places-to-go/ | catalog slice batch 3
