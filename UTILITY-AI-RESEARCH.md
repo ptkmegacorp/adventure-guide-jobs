@@ -135,20 +135,20 @@ Literature and local stack suggest composing utilities **around** LiteResearcher
 
 ### Phase 1 — highest ROI
 
-| # | Idea | Primary sources |
-|---|------|-----------------|
-| **1** | **Rerank SearXNG results** before seeds / LR visits | [arXiv 2601.14224](https://arxiv.org/pdf/2601.14224); [bge-reranker-v2-m3](https://huggingface.co/BAAI/bge-reranker-v2-m3) |
-| **2** | **DivInit-style query expansion** — diverse query pool + MMR selection | [arXiv 2606.17209](https://arxiv.org/html/2606.17209); [arXiv 2605.13534](https://arxiv.org/html/2605.13534) |
-| **3** | **Schema-validated extraction** — fixed employer JSON + validation/retry | [WebDART](https://doi.org/10.48550/arxiv.2510.06587); [TASER](https://arxiv.org/html/2508.13404v1); [NuExtract](https://huggingface.co/numind/NuExtract-1.5-smol) |
-| **4** | **Semantic entity merge** — embedding block + judge on ambiguous pairs | [LinkTransformer](https://arxiv.org/pdf/2309.00789); [bge-m3](https://huggingface.co/BAAI/bge-m3) |
+| # | Idea | Primary sources | Local status |
+|---|------|-----------------|--------------|
+| **1** | **Rerank SearXNG results** before seeds / LR visits | [arXiv 2601.14224](https://arxiv.org/pdf/2601.14224); [bge-reranker-v2-m3](https://huggingface.co/BAAI/bge-reranker-v2-m3) | ✅ CPU lexical rubric in `discover-candidates.py` |
+| **2** | **DivInit-style query expansion** — diverse query pool + MMR selection | [arXiv 2606.17209](https://arxiv.org/html/2606.17209); [arXiv 2605.13534](https://arxiv.org/html/2605.13534) | ✅ CPU lexical query pool + MMR in `discover-candidates.py` |
+| **3** | **Schema-validated extraction** — fixed employer JSON + validation/retry | [WebDART](https://doi.org/10.48550/arxiv.2510.06587); [TASER](https://arxiv.org/html/2508.13404v1); [NuExtract](https://huggingface.co/numind/NuExtract-1.5-smol) | ✅ enum validation + retry in `update-candidates.py` |
+| **4** | **Semantic entity merge** — embedding block + judge on ambiguous pairs | [LinkTransformer](https://arxiv.org/pdf/2309.00789); [bge-m3](https://huggingface.co/BAAI/bge-m3) | ⏳ not yet; current merge is hostname/name |
 
 ### Phase 2
 
-| # | Idea | Primary sources |
-|---|------|-----------------|
-| **5** | **Re-TRAC-lite trajectory state** between runs | [arXiv 2602.02486](https://arxiv.org/pdf/2602.02486) |
-| **6** | **Listwise fit judge** on `candidates.json` | [Synapse](https://arxiv.org/pdf/2604.02539); [ConFit v3](https://arxiv.org/html/2605.09760v1); [arXiv 2603.26710](https://arxiv.org/pdf/2603.26710) |
-| — | Separate **planner** (sub-questions only); execution stays LR | [GPT Researcher](https://github.com/assafelovic/gpt-researcher); [STORM](https://arxiv.org/abs/2402.14207); [ManuSearch](https://arxiv.org/pdf/2505.18105) |
+| # | Idea | Primary sources | Local status |
+|---|------|-----------------|--------------|
+| **5** | **Re-TRAC-lite trajectory state** between runs | [arXiv 2602.02486](https://arxiv.org/pdf/2602.02486) | ⏳ next; registry has salvage state but not next-run planning state |
+| **6** | **Listwise fit judge** on `candidates.json` | [Synapse](https://arxiv.org/pdf/2604.02539); [ConFit v3](https://arxiv.org/html/2605.09760v1); [arXiv 2603.26710](https://arxiv.org/pdf/2603.26710) | ✅ first pass: deterministic rubric ranking in `update-candidates.py` |
+| — | Separate **planner** (sub-questions only); execution stays LR | [GPT Researcher](https://github.com/assafelovic/gpt-researcher); [STORM](https://arxiv.org/abs/2402.14207); [ManuSearch](https://arxiv.org/pdf/2505.18105) | ⏳ optional |
 
 ### Phase 3 — if volume grows
 

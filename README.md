@@ -41,6 +41,7 @@ Registry: [`runs/registry.json`](./runs/registry.json) · **[`AGENTS.md`](./AGEN
 | [`save-findings.sh`](./save-findings.sh) | Alias for `finalize-run.sh` |
 | [`driver-status.sh`](./driver-status.sh) | Concise deterministic status/recommended next step |
 | [`run-and-save-notify.sh`](./run-and-save-notify.sh) | Self-contained run → findings → Pi agent notification wrapper |
+| [`discover-candidates.sh`](./discover-candidates.sh) | SearXNG discovery → CPU rerank → candidate markdown → auto-update `findings/candidates.json` |
 | [`reviews/`](./reviews/) | Short review per run (read these, not raw logs) |
 | [`prompts/CHANGELOG.md`](./prompts/CHANGELOG.md) | Prompt edit paper trail |
 | [Job definition](#what-im-looking-for-working-definition) | What counts as a fit |

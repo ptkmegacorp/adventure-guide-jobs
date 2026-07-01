@@ -9,6 +9,16 @@ cd /home/bot/adventure-guide-jobs
 ./driver-status.sh
 ```
 
+## Candidate discovery loop
+
+Use this before or between LiteResearcher scout runs so useful SearXNG hits are not lost:
+
+```bash
+./discover-candidates.sh J4
+```
+
+This writes `candidates/J4-*.md` and, by default, immediately runs `update-candidates.py` to merge useful leads into `findings/candidates.json` and regenerate `findings/master.md`. Use `--no-update` only for inspection-only searches.
+
 If no run is active, start the next prompt in the background (see `AGENTS.md`):
 
 ```bash

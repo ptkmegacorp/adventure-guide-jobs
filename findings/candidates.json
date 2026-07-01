@@ -24,7 +24,10 @@
         "J4-20260630-183348",
         "J4-20260630-184454"
       ],
-      "last_seen": "2026-06-30"
+      "last_seen": "2026-06-30",
+      "rank_score": 63,
+      "rank": 11,
+      "rank_rationale": "signal=careers; fit=Medium; score=63"
     },
     {
       "company": "Up Norway",
@@ -41,7 +44,10 @@
       "source_runs": [
         "J4-20260630-183348"
       ],
-      "last_seen": "2026-06-30"
+      "last_seen": "2026-06-30",
+      "rank_score": 60,
+      "rank": 13,
+      "rank_rationale": "signal=work-with-us; fit=Medium; score=60"
     },
     {
       "company": "Hvitserk",
@@ -63,7 +69,10 @@
         "J4-20260630-183348",
         "J4-20260630-184454"
       ],
-      "last_seen": "2026-06-30"
+      "last_seen": "2026-06-30",
+      "rank_score": 18,
+      "rank": 26,
+      "rank_rationale": "signal=inaccessible; fit=Watchlist; score=18"
     },
     {
       "company": "Pacific Discovery",
@@ -80,12 +89,16 @@
       "hiring_signal": "live",
       "signal_strength": "live",
       "fit": "High",
-      "evidence": "Pacific Discovery is actively hiring for Program Instructor roles. The page explicitly states 'Current Job Openings' and 'Now Open' for US-based instructors, New Zealand/Australian nationals, and fluent Spanish speakers. The role involves 24/7 leadership for groups of up to 14 students during 4-week summer and 10-week semester programs.",
+      "evidence": "Pacific Discovery is actively hiring for Program Instructor roles with current openings. The role involves 24/7 leadership for groups of up to 14 students during 4-week summer and 10-week semester programs. Application forms are available for current openings on a rolling basis.",
       "notes": "Explicit live hiring signal with application form available. High fit for multiday group travel leadership.",
       "source_runs": [
-        "J3-20260630-185409"
+        "J3-20260630-185409",
+        "J3-20260630-185409-retag"
       ],
-      "last_seen": "2026-06-30"
+      "last_seen": "2026-06-30",
+      "rank_score": 121,
+      "rank": 1,
+      "rank_rationale": "signal=live; fit=High; score=121"
     },
     {
       "company": "Where There Be Dragons",
@@ -101,12 +114,16 @@
       "hiring_signal": "live",
       "signal_strength": "live",
       "fit": "Medium",
-      "evidence": "Active recruitment for Instructors, Road Warriors, and Outreach Coordinators. Specific deadlines listed (July 1, 2026 for Outreach Coordinator; Jan-Mar 2027 for Road Warrior). Instructors work on small groups (12 students, 3 instructors) with flexibility in program design. Applications accepted on a rolling basis for Instructors.",
-      "notes": "Live hiring signal confirmed. Roles involve significant travel and group leadership, though focus is also on recruitment/outreach.",
+      "evidence": "Active recruitment for Instructors, Road Warriors (4-6 weeks travel), and Outreach Coordinators. Applications accepted on a rolling basis for Instructors; specific deadlines listed for other roles. Roles involve significant group travel and educational facilitation.",
+      "notes": "Live hiring signal confirmed. Fit is Medium due to emphasis on recruitment/outreach alongside traditional guiding.",
       "source_runs": [
-        "J3-20260630-185409"
+        "J3-20260630-185409",
+        "J3-20260630-185409-retag"
       ],
-      "last_seen": "2026-06-30"
+      "last_seen": "2026-06-30",
+      "rank_score": 84,
+      "rank": 7,
+      "rank_rationale": "signal=live; fit=Medium; score=84"
     },
     {
       "company": "Adventures Across Country",
@@ -122,12 +139,16 @@
       "hiring_signal": "inaccessible",
       "signal_strength": "inaccessible",
       "fit": "Watchlist",
-      "evidence": "Company is a known provider of multiday adventure tours. However, all provided URLs (https://adventurescrosscountry.com/, https://arccprograms.com/) returned connection errors (Name Resolution Error, Server Error 526, or Forbidden 403). No evidence could be extracted.",
-      "notes": "Company operates in the target sector but URLs were inaccessible. Included as Watchlist candidate due to sector relevance.",
+      "evidence": "Company is a known provider of multiday adventure tours. However, provided URLs returned connection errors (Name Resolution Error, Server Error 526, or Forbidden 403).",
+      "notes": "Watchlist candidate as the company operates in the target sector but no live evidence could be extracted due to technical access failures.",
       "source_runs": [
-        "J3-20260630-185409"
+        "J3-20260630-185409",
+        "J3-20260630-185409-retag"
       ],
-      "last_seen": "2026-06-30"
+      "last_seen": "2026-06-30",
+      "rank_score": 18,
+      "rank": 27,
+      "rank_rationale": "signal=inaccessible; fit=Watchlist; score=18"
     },
     {
       "company": "ARCC Programs",
@@ -143,12 +164,16 @@
       "hiring_signal": "inaccessible",
       "signal_strength": "inaccessible",
       "fit": "Watchlist",
-      "evidence": "Company runs summer and semester programs with trip leaders. However, provided URLs returned connection errors (Forbidden 403). No live evidence could be extracted.",
-      "notes": "Company operates in the target sector but URLs were inaccessible. Included as Watchlist candidate due to sector relevance.",
+      "evidence": "Company runs summer and semester programs with trip leaders. However, provided URLs returned connection errors (Forbidden 403).",
+      "notes": "Watchlist candidate as the company operates in the target sector but no live evidence could be extracted due to technical access failures.",
       "source_runs": [
-        "J3-20260630-185409"
+        "J3-20260630-185409",
+        "J3-20260630-185409-retag"
       ],
-      "last_seen": "2026-06-30"
+      "last_seen": "2026-06-30",
+      "rank_score": 22,
+      "rank": 24,
+      "rank_rationale": "signal=inaccessible; fit=Watchlist; score=22"
     },
     {
       "company": "Haka Tours (Haka Private Tours)",
@@ -171,49 +196,62 @@
       "source_runs": [
         "J2-20260630-174820"
       ],
-      "last_seen": "2026-06-30"
+      "last_seen": "2026-06-30",
+      "rank_score": 67,
+      "rank": 10,
+      "rank_rationale": "signal=careers; fit=Medium; score=67"
     },
     {
       "company": "Intrepid Travel",
-      "region": "Global (New Zealand focus)",
+      "region": "Global, including Scandinavia/NZ/Canada/USA",
       "primary_url": "https://www.intrepidtravel.com/",
-      "careers_url": "https://www.intrepidtravel.com/careers",
+      "careers_url": "https://careers.intrepidtravel.com/content/Tour-Leaders/?locale=en",
       "role_titles": [
-        "Tour Leader",
-        "Trip Director",
         "Destination Host",
-        "Program Leader"
+        "Local Leader",
+        "Program Leader",
+        "Tour Leader",
+        "Trip Director"
       ],
-      "trip_type": "Multiday Group Tours",
-      "hiring_signal": "Watchlist",
-      "signal_strength": "careers",
-      "fit": "Medium",
-      "evidence": "Evidence references 'Intrepid Travel' tour packages and 'local on-ground leadership'. Footer link to careers page found on hakatours.com. No specific job posting or detailed requirements extracted.",
-      "notes": "Generic footer link to careers page found; no specific job posting or detailed requirements extracted from the provided text.",
+      "trip_type": "Multiday group travel",
+      "hiring_signal": "careers",
+      "signal_strength": "live",
+      "fit": "High",
+      "evidence": "SearXNG result: 'Become an Intrepid Travel Tour Leader | Intrepid Travel Careers'; snippet says local leaders guide travellers through experience-rich travel.",
+      "notes": "Strong multiday group travel leadership fit confirmed via dedicated Tour Leader careers page.",
       "source_runs": [
-        "J2-20260630-174820"
+        "J2-20260630-174820",
+        "manual-broader-leads-20260630"
       ],
-      "last_seen": "2026-06-30"
+      "last_seen": "2026-06-30",
+      "rank_score": 101,
+      "rank": 2,
+      "rank_rationale": "signal=live; fit=High; score=101"
     },
     {
       "company": "MoaTrek",
-      "region": "New Zealand (Aotearoa)",
-      "primary_url": "https://www.moatrek.com/about/a-career-with-moatrek",
+      "region": "New Zealand",
+      "primary_url": "https://www.moatrek.com/",
       "careers_url": "https://www.moatrek.com/about/a-career-with-moatrek",
       "role_titles": [
         "Kiwi Guide",
+        "Tour Driver-Guide",
         "Tour Driver/Guide"
       ],
-      "trip_type": "Small group scenic, cultural, and special interest tours",
+      "trip_type": "Multiday group travel",
       "hiring_signal": "work-with-us",
       "signal_strength": "live",
       "fit": "High",
-      "evidence": "The company explicitly states 'Currently, we are actively recruiting for Kiwi Guides' on their dedicated career page. The role description defines a Kiwi Guide as a tour driver/guide. The company operates small group tours across Aotearoa.",
-      "notes": "Active recruitment confirmed via 'Work-with-us' page. Direct contact with hiring manager Andre Booth mentioned.",
+      "evidence": "Salvage: 'Currently, we are actively recruiting for Kiwi Guides... A Kiwi Guide is a tour driver/guide.'",
+      "notes": "Active recruiting confirmed for tour driver/guide roles.",
       "source_runs": [
-        "J2-20260630-191258"
+        "J2-20260630-191258",
+        "manual-broader-leads-20260630"
       ],
-      "last_seen": "2026-06-30"
+      "last_seen": "2026-06-30",
+      "rank_score": 101,
+      "rank": 3,
+      "rank_rationale": "signal=live; fit=High; score=101"
     },
     {
       "company": "Bottom Bus",
@@ -233,28 +271,381 @@
       "source_runs": [
         "J2-20260630-191258"
       ],
-      "last_seen": "2026-06-30"
+      "last_seen": "2026-06-30",
+      "rank_score": 45,
+      "rank": 18,
+      "rank_rationale": "signal=watchlist; fit=Medium; score=45"
     },
     {
       "company": "New Zealand Trails",
       "region": "New Zealand",
-      "primary_url": "https://newzealandtrails.com/guide-jobs/",
+      "primary_url": "https://newzealandtrails.com/",
       "careers_url": "https://newzealandtrails.com/guide-jobs/",
       "role_titles": [
-        "Guide",
         "Driver-Guide",
-        "Expedition Leader"
+        "Expedition Leader",
+        "Guide"
       ],
-      "trip_type": "Multiday guiding tours",
+      "trip_type": "Multiday group travel",
       "hiring_signal": "inaccessible",
       "signal_strength": "inaccessible",
       "fit": "Medium",
-      "evidence": "The company has specific 'Guide Jobs' pages and job description PDFs indicating active operations in multiday guiding. However, all accessed URLs returned 403 Forbidden errors.",
-      "notes": "Signal strength is 'inaccessible' due to 403 Forbidden errors preventing access to job listings and PDFs, despite evidence of job existence.",
+      "evidence": "SearXNG found guide-jobs page; salvage notes 403 access but clear guide job path.",
+      "notes": "URL accessible but blocked by 403; included due to clear guide job path.",
       "source_runs": [
-        "J2-20260630-191258"
+        "J2-20260630-191258",
+        "manual-broader-leads-20260630"
       ],
-      "last_seen": "2026-06-30"
+      "last_seen": "2026-06-30",
+      "rank_score": 38,
+      "rank": 21,
+      "rank_rationale": "signal=inaccessible; fit=Medium; score=38"
+    },
+    {
+      "company": "Hurtigruten",
+      "region": "Norway / global expedition and coastal travel",
+      "primary_url": "https://www.hurtigruten.com/en/about-us/careers",
+      "careers_url": "https://www.hurtigruten.com/en/about-us/careers",
+      "role_titles": [
+        "Expedition Leader",
+        "Onboard Guide"
+      ],
+      "trip_type": "Expedition / Coastal travel",
+      "hiring_signal": "careers",
+      "signal_strength": "careers",
+      "fit": "Medium",
+      "evidence": "Direct link to Hurtigruten Careers page. Snippet mentions 'always looking for dedicated people'.",
+      "notes": "General careers page; specific role titles not listed in snippet but context implies maritime and land roles.",
+      "source_runs": [
+        "discovery-J4-20260630-192737-backfill",
+        "manual-broader-leads-20260630"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 51,
+      "rank": 16,
+      "rank_rationale": "signal=careers; fit=Medium; score=51"
+    },
+    {
+      "company": "G Adventures",
+      "region": "Global (including Scandinavia)",
+      "primary_url": "https://www.gadventures.com/careers/",
+      "careers_url": "https://www.gadventures.com/careers/tour-leaders/",
+      "role_titles": [
+        "Tour Leader"
+      ],
+      "trip_type": "Multiday group travel",
+      "hiring_signal": "careers",
+      "signal_strength": "live",
+      "fit": "High",
+      "evidence": "Direct link to G Adventures Careers page. Snippet mentions 'Work with us' and lists Norway among destinations. Snippet also mentions 'Adventure Tour Leader Jobs' in search results.",
+      "notes": "Explicitly lists Norway as a destination and has a dedicated Tour Leader career path.",
+      "source_runs": [
+        "discovery-J4-20260630-192737-backfill",
+        "manual-broader-leads-20260630"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 101,
+      "rank": 4,
+      "rank_rationale": "signal=live; fit=High; score=101"
+    },
+    {
+      "company": "Classic Journeys",
+      "region": "Global, luxury walking/cultural multiday trips",
+      "primary_url": "https://www.classicjourneys.com/careers/",
+      "careers_url": "https://www.classicjourneys.com/careers/",
+      "role_titles": [
+        "Guide",
+        "Tour Guide",
+        "Tour Leader",
+        "Trip Director"
+      ],
+      "trip_type": "Luxury walking / Cultural multiday",
+      "hiring_signal": "careers",
+      "signal_strength": "careers",
+      "fit": "Medium",
+      "evidence": "Direct link to Classic Journeys Careers page. Snippet mentions 'Work With Us' and 'Tour Guide/Tour Leader'.",
+      "notes": "Likely guide/trip leader/director pathway; fit is Medium based on luxury focus.",
+      "source_runs": [
+        "discovery-J4-20260630-192737-backfill",
+        "manual-broader-leads-20260630"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 63,
+      "rank": 12,
+      "rank_rationale": "signal=careers; fit=Medium; score=63"
+    },
+    {
+      "company": "Explore Worldwide",
+      "region": "Global, includes Scandinavia multiday tours",
+      "primary_url": "https://www.exploreworldwide.com/holidays/discover-scandinavia",
+      "careers_url": "",
+      "role_titles": [
+        "Tour Leader"
+      ],
+      "trip_type": "Multiday small-group tours",
+      "hiring_signal": "watchlist",
+      "signal_strength": "watchlist",
+      "fit": "Watchlist",
+      "evidence": "SearXNG result for Scandinavia tour says itinerary was presented by a tour leader/guide.",
+      "notes": "This appears to be a tour operator listing tours rather than a direct careers page, but indicates active tour leadership in Scandinavia.",
+      "source_runs": [
+        "discovery-J4-20260630-192737-backfill",
+        "manual-broader-leads-20260630"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 37,
+      "rank": 22,
+      "rank_rationale": "signal=watchlist; fit=Watchlist; score=37"
+    },
+    {
+      "company": "Expat Explore",
+      "region": "Global, includes Scandinavia multiday coach/group tours",
+      "primary_url": "https://expatexplore.com/discover/scandinavia-multi-country",
+      "careers_url": "",
+      "role_titles": [
+        "Driver-Guide",
+        "Tour Leader"
+      ],
+      "trip_type": "Multiday guided tours",
+      "hiring_signal": "watchlist",
+      "signal_strength": "watchlist",
+      "fit": "Watchlist",
+      "evidence": "SearXNG result: 'Book Guided Tours of Norway, Sweden & Denmark'; snippet mentions experienced tour leader and tour leaders & drivers.",
+      "notes": "This appears to be a tour operator listing tours rather than a direct careers page, but indicates active tour leadership in Scandinavia.",
+      "source_runs": [
+        "discovery-J4-20260630-192737-backfill",
+        "manual-broader-leads-20260630"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 37,
+      "rank": 23,
+      "rank_rationale": "signal=watchlist; fit=Watchlist; score=37"
+    },
+    {
+      "company": "Black Tomato",
+      "region": "Global luxury travel",
+      "primary_url": "https://www.blacktomato.com/us/careers/",
+      "careers_url": "https://www.blacktomato.com/us/careers/",
+      "role_titles": [
+        "On-trip Support",
+        "Trip Designer"
+      ],
+      "trip_type": "Luxury travel",
+      "hiring_signal": "careers",
+      "signal_strength": "careers",
+      "fit": "Medium",
+      "evidence": "Direct link to Black Tomato Careers page. Snippet mentions 'Vacancies' and 'come work with us'.",
+      "notes": "General careers page; specific role titles not listed in snippet but context implies travel industry vacancies.",
+      "source_runs": [
+        "discovery-J4-20260630-192737-backfill",
+        "manual-broader-leads-20260630"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 51,
+      "rank": 17,
+      "rank_rationale": "signal=careers; fit=Medium; score=51"
+    },
+    {
+      "company": "Adventure Junkies",
+      "region": "New Zealand / adventure travel",
+      "primary_url": "https://www.theadventurejunkies.com/",
+      "careers_url": "https://www.theadventurejunkies.com/jobs/",
+      "role_titles": [
+        "Adventure Guide"
+      ],
+      "trip_type": "Adventure travel",
+      "hiring_signal": "jobs",
+      "signal_strength": "live",
+      "fit": "Watchlist",
+      "evidence": "J2 raw SearXNG found 'Jobs - The Adventure Junkies'.",
+      "notes": "Jobs page exists; fit is Watchlist pending verification for multiday guide/trip leader fit.",
+      "source_runs": [
+        "manual-broader-leads-20260630"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 72,
+      "rank": 9,
+      "rank_rationale": "signal=live; fit=Watchlist; score=72"
+    },
+    {
+      "company": "Intrepid Travel",
+      "region": "Scandinavia",
+      "primary_url": "https://careers.intrepidtravel.com/content/Tour-Leaders/?locale=en",
+      "careers_url": "https://careers.intrepidtravel.com/content/Tour-Leaders/?locale=en",
+      "role_titles": [
+        "Tour Leader"
+      ],
+      "trip_type": "multiday",
+      "hiring_signal": "live",
+      "signal_strength": "live",
+      "fit": "High",
+      "evidence": "Direct link to Intrepid Travel Careers for Tour Leaders in Scandinavia. Snippet confirms guiding travelers through authentic, experience-rich travel.",
+      "notes": "Explicitly targets Scandinavian regions for tour leader roles.",
+      "source_runs": [
+        "discovery-J4-20260630-192737-backfill"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 97,
+      "rank": 5,
+      "rank_rationale": "signal=live; fit=High; score=97"
+    },
+    {
+      "company": "Acadia Mountain Guides Climbing School",
+      "region": "Iceland",
+      "primary_url": "https://acadiamountainguides.com/about/employment/",
+      "careers_url": "https://acadiamountainguides.com/about/employment/",
+      "role_titles": [
+        "Guide",
+        "Instructor",
+        "Intern"
+      ],
+      "trip_type": "multiday",
+      "hiring_signal": "live",
+      "signal_strength": "live",
+      "fit": "High",
+      "evidence": "Direct link to employment page. Snippet explicitly states seeking 'experienced guides or instructors' and 'interns'.",
+      "notes": "Clear hiring signal for mountain guides in Iceland.",
+      "source_runs": [
+        "discovery-J4-20260630-192737-backfill"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 93,
+      "rank": 6,
+      "rank_rationale": "signal=live; fit=High; score=93"
+    },
+    {
+      "company": "Whittaker Mountaineering",
+      "region": "Global (including Iceland)",
+      "primary_url": "https://www.whittakermountaineering.com/pages/employment",
+      "careers_url": "https://www.whittakermountaineering.com/pages/employment",
+      "role_titles": [
+        "Outdoor Equipment Associate",
+        "Outdoor Guide"
+      ],
+      "trip_type": "multiday",
+      "hiring_signal": "careers",
+      "signal_strength": "careers",
+      "fit": "Medium",
+      "evidence": "Direct link to employment page. Snippet mentions 'Join Our Team' and lists Iceland as a region.",
+      "notes": "General employment page; specific role titles not listed in snippet but context implies outdoor roles.",
+      "source_runs": [
+        "discovery-J4-20260630-192737-backfill"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 55,
+      "rank": 15,
+      "rank_rationale": "signal=careers; fit=Medium; score=55"
+    },
+    {
+      "company": "Norwegian Refugee Council (NRC)",
+      "region": "Global",
+      "primary_url": "https://www.nrc.no/careers",
+      "careers_url": "https://www.nrc.no/careers",
+      "role_titles": [],
+      "trip_type": "multiday",
+      "hiring_signal": "careers",
+      "signal_strength": "careers",
+      "fit": "Future",
+      "evidence": "Direct link to NRC Careers page. Snippet mentions 'Work with us'.",
+      "notes": "General careers page; specific role titles not listed in snippet but context implies humanitarian work.",
+      "source_runs": [
+        "discovery-J4-20260630-192737-backfill"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 41,
+      "rank": 20,
+      "rank_rationale": "signal=careers; fit=Future; score=41"
+    },
+    {
+      "company": "Fifty Degrees North",
+      "region": "North Vancouver, Canada",
+      "primary_url": "https://www.fiftydegreesnorth.com/us/employment",
+      "careers_url": "https://www.fiftydegreesnorth.com/us/employment",
+      "role_titles": [
+        "Head of Sales",
+        "Destination Specialist"
+      ],
+      "trip_type": "Multiday Nordic Adventure",
+      "hiring_signal": "live",
+      "signal_strength": "live",
+      "fit": "Medium",
+      "evidence": "Live postings for Head of Sales and Destination Specialist. Head of Sales role explicitly requires a 'hands-on leadership role' where the individual 'leads and develops the team while remaining actively involved in sales activity' and 'stays close to the work'. Culture implies field involvement.",
+      "notes": "While specific 'Tour Leader' titles are not advertised, the leadership role description and company culture strongly imply field leadership responsibilities. Sales/Operations track is the primary entry point.",
+      "source_runs": [
+        "J4-20260630-193256"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 84,
+      "rank": 8,
+      "rank_rationale": "signal=live; fit=Medium; score=84"
+    },
+    {
+      "company": "Nordic Visitor",
+      "region": "Iceland, Europe",
+      "primary_url": "https://www.nordicvisitor.com/",
+      "careers_url": "https://www.nordicvisitor.com/career/",
+      "role_titles": [
+        "Travel Expert",
+        "Local Expert",
+        "Regional Sales Manager"
+      ],
+      "trip_type": "Multiday European Package Tour",
+      "hiring_signal": "careers",
+      "signal_strength": "careers",
+      "fit": "Medium",
+      "evidence": "Careers page exists and lists 'Regional Sales Manager - France'. Company employs 'local experts' who live in destination cities and plan trips. Explicit operational model for immersive European package tours.",
+      "notes": "No specific 'Tour Leader' vacancies visible in the snippet, but the operational model and careers page indicate active recruitment for similar roles.",
+      "source_runs": [
+        "J4-20260630-193256"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 59,
+      "rank": 14,
+      "rank_rationale": "signal=careers; fit=Medium; score=59"
+    },
+    {
+      "company": "Discover Norway",
+      "region": "Norway (Lillehammer)",
+      "primary_url": "https://www.discover-norway.no/",
+      "careers_url": "",
+      "role_titles": [
+        "Tur- og opplevelseskoordinator",
+        "Guide",
+        "Travel Designer"
+      ],
+      "trip_type": "Multiday Hiking, Biking, Skiing",
+      "hiring_signal": "watchlist",
+      "signal_strength": "watchlist",
+      "fit": "Medium",
+      "evidence": "Company operates self-guided and guided multi-day tours for groups of 6+. Explicitly employs 'Tur- og opplevelseskoordinator' and 'Guide' personnel. Careers pages returned 404 errors.",
+      "notes": "Careers pages are inaccessible (404). However, the company clearly runs multiday tours requiring leadership, fitting the watchlist criteria for companies that run tours even without live postings.",
+      "source_runs": [
+        "J4-20260630-193256"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 45,
+      "rank": 19,
+      "rank_rationale": "signal=watchlist; fit=Medium; score=45"
+    },
+    {
+      "company": "Outdoor Norway",
+      "region": "Norway (Voss)",
+      "primary_url": "https://www.outdoornorway.com/",
+      "careers_url": "",
+      "role_titles": [],
+      "trip_type": "Multiday Yoga, Fjord Adventure",
+      "hiring_signal": "watchlist",
+      "signal_strength": "watchlist",
+      "fit": "Low",
+      "evidence": "Company runs specific multiday programs (e.g., '6 DAY YOGA ADVENTURE RETREAT', '5 Day Fjord Adventure'). Organized experiences for 7,024 guests in 2025. Careers page returned 404 error.",
+      "notes": "No hiring evidence or accessible careers page found. Included as watchlist candidate because they clearly run multiday tours/programs.",
+      "source_runs": [
+        "J4-20260630-193256"
+      ],
+      "last_seen": "2026-06-30",
+      "rank_score": 19,
+      "rank": 25,
+      "rank_rationale": "signal=watchlist; fit=Low; score=19"
     }
   ]
 }
