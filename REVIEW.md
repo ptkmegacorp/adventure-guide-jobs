@@ -1,86 +1,84 @@
-# Review loop — adjust prompts from run results
+# Review loop — salvage-first pipeline
 
-After every literesearcher run, use deterministic extraction plus the **sidecar** (Qwen3.5-4B `:8093`) for compression. Don't feed raw logs to the main agent.
-
----
-
-## Flow (pseudo-code)
-
-```
-ON AGENT_RUN_DONE:
-  RUN ./review-run.sh --prompt {id}
-  READ reviews/{run_id}.md          # ~1 page, not the full log
-
-  SWITCH review.next_action:
-    mark_findings:
-      RUN ./save-findings.sh --run-id {run_id}
-    edit_prompt_retry:
-      READ ## Prompt feedback from review
-      EDIT prompts/{id}-*.txt (minimal change)
-      LOG change in prompts/CHANGELOG.md
-      RUN ./run-next.sh --force {id}   # bg subagent
-    skip_to_next_prompt:
-      LOG note in findings.md + CHANGELOG
-      RUN next prompt (J2, J3, ...)
-    consolidate:
-      merge master list (AGENTS.md)
-```
+After every literesearcher run, **`finalize-run.sh` runs automatically** (via `run-next.sh`). Salvage is the primary output path — not an exception.
 
 ---
 
-## Commands
+## Default flow (automatic)
+
+```
+ON AGENT_RUN_DONE (exit 0):
+  RUN ./review-run.sh --run-id {id}        # log review (audit)
+  RUN ./extract-findings.sh --run-id {id}  # LR final answer (usually empty)
+  RUN ./finalize-run.sh --run-id {id}      # DEFAULT — do not skip
+    → salvage-run (re-browse visited URLs + Qwen summarize)
+    → update-candidates (findings/master.md + candidates.json)
+    → make-run-findings (findings/{run_id}.md)
+    → mark findings_saved if salvage substantive
+```
+
+Read **`findings/{run_id}-salvage.md`** and **`findings/master.md`** — not the raw log.
+
+---
+
+## Manual commands
 
 ```bash
-./review-run.sh --prompt J1       # review latest J1 run
-./review-run.sh --run-id J1-...   # specific run
-./review-run.sh --no-sidecar      # extractive only (8093 down)
+./finalize-run.sh --run-id J3-...           # full pipeline (default after run)
+./finalize-run.sh --run-id J3-... --skip-salvage   # re-merge existing salvage only
+./salvage-run.sh --run-id J3-...            # salvage only
+./update-candidates.sh --from-file findings/J3-...-salvage.md --source-run J3-...
+./save-findings.sh --run-id J3-...          # alias for finalize-run.sh
+./review-run.sh --run-id J3-...             # log review only
 ```
-
-Output: `reviews/{run_id}.md` + registry fields `review_outcome`, `review_next_action`. Successful runs are also extracted to `runs/extracted/{run_id}.md`.
 
 ---
 
-## What to change in prompts (keep focused)
+## What LR vs salvage do
 
-Only adjust these levers — don't rewrite whole prompts each time:
+| Stage | Role |
+|-------|------|
+| **LiteResearcher (8092)** | URL scout — visit seed/candidate careers pages within visit budget |
+| **Salvage (8002 + 8093)** | **Primary findings** — re-browse visited URLs, Qwen extracts hiring evidence |
+| **review-run (8093 on log)** | Audit only — termination, blocked URLs; do not treat `fail` as no signal if salvage ok |
+| **extract-findings** | Audit only — LR final answer; rarely substantive on this stack |
+
+---
+
+## Prompt feedback (when to edit)
+
+Only adjust prompts when **salvage** also returns weak signal:
 
 | Lever | When |
 |-------|------|
-| **Scope** | `exceed_max_turns` → fewer regions or "find 10 not 20" |
-| **Sources** | URL blocked in review → remove from whitelist, add working alternative |
-| **Output** | No useful final answer → ask for shorter natural notes, fewer visit rounds |
-| **Depth** | Broad J1 fails → skip to regional J2/J3 instead of retrying J1 |
+| **Scope** | LR exceeds visit budget → fewer anchors |
+| **Sources** | Salvage shows blocked URLs → swap seed URLs |
+| **Seeds** | Wrong candidate set → edit `seeds/` + prompt list |
+| **Depth** | Broad J1 fails → skip to regional J2/J3 |
 
-Log every edit in [`prompts/CHANGELOG.md`](./CHANGELOG.md) with run_id + one-line reason.
-
----
-
-## Sidecar role
-
-| Model | Port | Job |
-|-------|------|-----|
-| LiteResearcher-4B | 8092 | Research (search/visit loop) |
-| Qwen3.5-4B | 8093 | Page extraction **+ run log review** |
-
-Review sends a **compressed excerpt** (~visit URLs, termination, prediction snippet) — not the full log — to `:8093` for structured markdown review.
+Log edits in [`prompts/CHANGELOG.md`](./CHANGELOG.md).
 
 ---
 
-## Outcomes
+## Outcomes (salvage-based)
 
-| Outcome | Meaning |
-|---------|---------|
-| `success` | Useful final employer notes present → mark_findings |
-| `partial` | Some URLs worked, but no useful final notes → salvage + edit prompt or skip |
-| `fail` | Max turns / no data → edit prompt or skip to next prompt |
+| salvage_status | Meaning | Action |
+|----------------|---------|--------|
+| `ok` | ≥1 employer, summary ≥200 chars | Auto `findings_saved`; master updated |
+| `partial` | Some text, thin evidence | Master updated; may retry with `--force` |
+| `empty` | No summary | Edit prompt or check browser_server / visited URLs |
+
+LR `review_outcome: fail` with `salvage_status: ok` is **normal** — trust salvage.
 
 ---
 
 ## Files
 
 ```
-reviews/{run_id}.md       ← sidecar-compressed review
-runs/extracted/{run_id}.md ← deterministic final-answer extraction
-prompts/CHANGELOG.md      ← prompt edits paper trail
-runs/registry.json        ← review/extraction/save state
+findings/{run_id}-salvage.md   ← primary employer signal
+findings/{run_id}.md           ← per-run rollup (salvage + review + audit)
+findings/master.md             ← merged candidate list (from candidates.json)
+reviews/{run_id}.md            ← log review (audit)
+runs/extracted/{run_id}.md     ← LR final answer (audit)
+runs/registry.json             ← salvage/findings/saved state
 ```

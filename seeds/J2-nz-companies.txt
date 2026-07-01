@@ -1,7 +1,11 @@
-# Company | URL | why candidate
-Haka Tours | https://www.hakatours.com/ | NZ multiday adventure tours; guide/driver-guide reference anchor
-Flying Kiwi | https://www.flyingkiwi.com/ | NZ camping/adventure bus tours; guide/driver-guide anchor
-Stray Travel | https://www.straytravel.com/ | NZ adventure bus / small-group tour operator
-Kiwi Experience | https://www.kiwiexperience.com/ | NZ bus adventure tours with driver-guide model
-Active Adventures | https://activeadventures.com/ | NZ-origin multiday hiking/adventure operator
-Wild Kiwi | https://www.wildkiwi.com/ | NZ small-group adventure tours
+# Company | URL | why candidate — batch 2 (rotated picks)
+MoaTrek | https://www.moatrek.com/ | NZ small-group walking/hiking tours; guide-led multiday
+New Zealand Trails | https://www.newzealandtrails.com/ | NZ guided walking tours; trip leader/guide roles
+Bottom Bus | https://www.bottombus.co.nz/ | NZ adventure bus tours; driver-guide style
+Adventure Junkies | https://www.adventurejunkies.co.nz/ | NZ adventure tours; guide roles
+Wonderland Adventures | https://www.wonderlandadventures.co.nz/ | NZ small-group adventure operator
+Grand Pacific Tours | https://www.grandpacifictours.co.nz/ | NZ coach/adventure touring; guide/driver paths
+Ridgeline Adventures | https://www.ridgelineadventures.co.nz/ | NZ outdoor adventure trips
+Ahi Ka Tours | https://www.ahika.co.nz/ | NZ cultural/adventure tours; guide-led experiences
+Flying Kiwi | https://www.flyingkiwi.com/ | retained anchor — NZ camping bus tours
+Stray Travel | https://www.straytravel.com/ | retained anchor — NZ adventure bus network

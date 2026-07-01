@@ -1,30 +1,32 @@
-Investigate this SPECIFIC candidate set of Norway/Scandinavia multiday tour operators for on-trip GROUP LEADER hiring signals. The core target is multiday group travel leadership, not only rugged outdoor/adventure guiding. Look for tour leader, trip leader, tour director, trip manager, destination host, driver-guide, field instructor, guide, or expedition leader roles. Do not do broad discovery first; use search only to find a missing careers/work-with-us page for a listed candidate.
+Investigate this SPECIFIC candidate set of Norway/Scandinavia multiday tour operators for on-trip GROUP LEADER hiring signals. The core target is multiday group travel leadership. Look for tour leader, trip leader, tour director, destination host, driver-guide, field instructor, guide, or expedition leader roles. Do not do broad discovery first.
 
 ## Regions
-Norway primary; also include Sweden, Iceland, or Finland if the operator hires English-speaking trip leaders for multiday adventure trips.
-
-## Candidate set — inspect these first
-- Norrøna Hvitserk — https://www.norrona.com/en-GB/hvitserk/
-- Hvitserk of Norway — https://www.hvitserk.com/
-- Up Norway — https://upnorway.com/
-- 50 Degrees North — https://www.fiftydegreesnorth.com/
-- Nordic Visitor — https://www.nordicvisitor.com/
-- Icelandic Mountain Guides — https://www.mountainguides.is/
-- Borea Adventures — https://www.boreaadventures.com/
-- Discover Norway — https://www.discover-norway.no/
-- Outdoor Norway — https://www.outdoornorway.com/
-- Trolltunga Active — https://trolltunga-active.com/
-
-## Similar to
-Nordic multiday tour operators: hiking/trekking, fjord adventure, Arctic expedition, small-group active travel, cultural/luxury itinerary hosts, cycling/walking tour companies, and educational/group travel operators in Scandinavia
+Norway primary; also Sweden, Iceland, or Finland if the operator hires English-speaking trip leaders for multiday adventure trips.
 
 ## DO NOT USE
-indeed.com, linkedin.com/jobs, finn.no generic listings only — prefer company careers pages and adventure-industry sources. Do not cite Indeed.
+indeed.com, linkedin.com/jobs, finn.no generic listings only — prefer company careers pages.
 
-## Sources — USE
-Company websites and English-language careers / work-with-us / join-our-team pages for the listed candidates. Use broader travel-industry or adventure-industry sources only if a company site is unavailable.
+## Candidate set — inspect these first
+- 50 Degrees North — https://www.fiftydegreesnorth.com/
+- Icelandic Mountain Guides — https://www.mountainguides.is/
+- Arctic Adventures — https://adventures.is/
+- Secret Atlas — https://www.secretatlas.com/
+- Basecamp Explorer — https://www.basecampexplorer.com/
+- Active Adventures — https://www.activeadventures.com/
+- Nordic Visitor — https://www.nordicvisitor.com/
+- Discover Norway — https://www.discover-norway.no/
+- Outdoor Norway — https://www.outdoornorway.com/
+- Albatros Travel — https://www.albatros-travel.com/
+- Up Norway — https://upnorway.com/
+
+## Strict visit budget
+- **ONE URL per visit tool call.** Never batch multiple companies in a single visit.
+- Visit at most 10 pages total.
+- Careers/work-with-us/join-our-team pages first.
+- If blocked, record watchlist and move on.
+- After 8 visits OR 6 companies with any signal, STOP and write the final answer.
 
 ## Output
-Use whatever format is natural and compact: bullets, short sections, or a table are all fine. For each useful employer or watchlist candidate, include company, country, possible role title(s), careers/work-with-us URL, multiday trip type, season if visible, hiring signal, and fit.
+Use whatever format is natural and compact. For each useful employer or watchlist candidate, include company, country, role title(s), careers URL, multiday trip type, season, hiring signal, and fit.
 
-Aim for 5–8 useful candidates from the list. If evidence is incomplete but the company clearly runs multiday tours, preserve it as a watchlist candidate rather than discarding it. Note English language requirement and typical contract length when visible.
+Aim for 5–8 useful candidates. Note English language requirement and contract length when visible.

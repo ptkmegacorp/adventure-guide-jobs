@@ -142,17 +142,26 @@ if [[ -x "${ROOT}/review-run.sh" ]]; then
 fi
 if [[ "$EXIT_CODE" -eq 0 && -x "${ROOT}/extract-findings.sh" ]]; then
   "${ROOT}/extract-findings.sh" --run-id "$RUN_ID" || \
-    echo "WARN: extract-findings failed"
+    echo "WARN: extract-findings failed (LR final answer; salvage is primary)"
+fi
+
+FINALIZE_JSON=""
+if [[ -x "${ROOT}/finalize-run.sh" ]]; then
+  FINALIZE_JSON="$(./finalize-run.sh --run-id "$RUN_ID" --json 2>/dev/null || true)"
+  if [[ -n "$FINALIZE_JSON" ]]; then
+    echo "AGENT_RUN_FINALIZED ${FINALIZE_JSON}"
+  elif [[ "$EXIT_CODE" -eq 0 ]]; then
+    echo "WARN: finalize-run failed (see finalize-run.sh --run-id ${RUN_ID})"
+  fi
 fi
 
 echo "AGENT_RUN_DONE {\"prompt\":\"${PROMPT_ID}\",\"run_id\":\"${RUN_ID}\",\"exit_code\":${EXIT_CODE},\"log\":\"${REL_LOG}\"}"
 echo
 if [[ "$EXIT_CODE" -eq 0 ]]; then
-  echo "Done (${RUN_ID}). Next steps:"
-  echo "  1. Review ${LOG}"
-  echo "  2. Copy table → ${ROOT}/findings.md"
-  echo "  3. ./run-next.sh --mark-findings ${PROMPT_ID}"
+  echo "Done (${RUN_ID}). Primary output: salvage → findings/master.md"
+  echo "  Per-run: findings/${RUN_ID}.md and findings/${RUN_ID}-salvage.md"
+  echo "  Status: ./driver-status.sh"
 else
-  echo "Run failed (exit ${EXIT_CODE}). Registry updated; retry with: ./run-next.sh ${PROMPT_ID}"
+  echo "Run failed (exit ${EXIT_CODE}). Registry updated; retry with: ./run-next.sh --force ${PROMPT_ID}"
 fi
 registry_status

@@ -41,11 +41,24 @@ def main():
     if r.get('review_path') and (ROOT/r['review_path']).exists():
         review=strip_heading((ROOT/r['review_path']).read_text(encoding='utf-8', errors='replace'))
     evidence=visit_evidence(log_text)
-    status='useful' if int(r.get('answer_chars') or 0)>=100 else ('partial' if evidence or review else 'failed')
+    salvage=''
+    if r.get('salvage_path') and (ROOT/r['salvage_path']).exists():
+        salvage=strip_heading((ROOT/r['salvage_path']).read_text(encoding='utf-8', errors='replace'))
+    salvage_status=r.get('salvage_status') or ''
+    if salvage_status == 'ok':
+        status='salvaged'
+    elif int(r.get('answer_chars') or 0)>=100:
+        status='useful'
+    elif salvage_status == 'partial' or evidence or review:
+        status='partial'
+    else:
+        status='failed'
     out=FINDINGS/f"{r['run_id']}.md"
-    lines=[f"# Run findings — {r['run_id']}", '', f"- **prompt:** {r.get('prompt_id')}", f"- **status:** {status}", f"- **log:** `{r.get('log','')}`", f"- **review:** `{r.get('review_path','')}`", f"- **extracted:** `{r.get('extracted_path','')}`", f"- **created_at:** {now()}", '']
+    lines=[f"# Run findings — {r['run_id']}", '', f"- **prompt:** {r.get('prompt_id')}", f"- **status:** {status}", f"- **log:** `{r.get('log','')}`", f"- **review:** `{r.get('review_path','')}`", f"- **extracted:** `{r.get('extracted_path','')}`", f"- **salvage:** `{r.get('salvage_path','')}`", f"- **salvage_status:** {salvage_status or '—'}", f"- **salvage_employers:** {r.get('salvage_employer_count','—')}", f"- **created_at:** {now()}", '']
+    if salvage:
+        lines += ['## Salvaged findings (primary)', '', salvage, '']
     if extracted:
-        lines += ['## Extracted final answer', '', extracted, '']
+        lines += ['## Extracted LR final answer (audit)', '', extracted, '']
     if review:
         lines += ['## Run review', '', review, '']
     if evidence:

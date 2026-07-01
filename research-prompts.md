@@ -18,9 +18,9 @@ Full prompt text in `prompts/J*.txt`. All prompts **exclude Indeed and generic a
 
 - [x] **J2.** NZ driver-guides and trip leaders (Workabout, operator careers) → `prompts/J2-nz-driver-guides.txt`
 
-- [ ] **J3.** USA/Canada field instructors & program leaders → `prompts/J3-us-ca-field-instructors.txt`
+- [x] **J3.** USA/Canada field instructors & program leaders → `prompts/J3-us-ca-field-instructors.txt`
 
-- [ ] **J4.** Norway / Scandinavia multiday trip leaders → `prompts/J4-norway-scandinavia.txt`
+- [x] **J4.** Norway / Scandinavia multiday trip leaders → `prompts/J4-norway-scandinavia.txt`
 
 ---
 

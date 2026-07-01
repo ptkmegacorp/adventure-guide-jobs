@@ -64,6 +64,197 @@
         "J4-20260630-184454"
       ],
       "last_seen": "2026-06-30"
+    },
+    {
+      "company": "Pacific Discovery",
+      "region": "Global (US-based hiring, Programs in Southeast Asia, New Zealand, Australia, Polynesia, South America, Hawaii)",
+      "primary_url": "https://www.pacificdiscovery.org/contact-us/employment",
+      "careers_url": "https://www.pacificdiscovery.org/contact-us/employment",
+      "role_titles": [
+        "Expedition Leader",
+        "Field Instructor",
+        "Program Instructor",
+        "Tour Leader"
+      ],
+      "trip_type": "Multiday Adventure (4-week summer, 10-week semester)",
+      "hiring_signal": "live",
+      "signal_strength": "live",
+      "fit": "High",
+      "evidence": "Pacific Discovery is actively hiring for Program Instructor roles. The page explicitly states 'Current Job Openings' and 'Now Open' for US-based instructors, New Zealand/Australian nationals, and fluent Spanish speakers. The role involves 24/7 leadership for groups of up to 14 students during 4-week summer and 10-week semester programs.",
+      "notes": "Explicit live hiring signal with application form available. High fit for multiday group travel leadership.",
+      "source_runs": [
+        "J3-20260630-185409"
+      ],
+      "last_seen": "2026-06-30"
+    },
+    {
+      "company": "Where There Be Dragons",
+      "region": "Global (Implied international travel)",
+      "primary_url": "https://www.wheretherebedragons.com/employment",
+      "careers_url": "https://www.wheretherebedragons.com/employment",
+      "role_titles": [
+        "Instructor",
+        "Outreach Coordinator",
+        "Road Warrior"
+      ],
+      "trip_type": "Multiday Adventure (4-6 weeks travel)",
+      "hiring_signal": "live",
+      "signal_strength": "live",
+      "fit": "Medium",
+      "evidence": "Active recruitment for Instructors, Road Warriors, and Outreach Coordinators. Specific deadlines listed (July 1, 2026 for Outreach Coordinator; Jan-Mar 2027 for Road Warrior). Instructors work on small groups (12 students, 3 instructors) with flexibility in program design. Applications accepted on a rolling basis for Instructors.",
+      "notes": "Live hiring signal confirmed. Roles involve significant travel and group leadership, though focus is also on recruitment/outreach.",
+      "source_runs": [
+        "J3-20260630-185409"
+      ],
+      "last_seen": "2026-06-30"
+    },
+    {
+      "company": "Adventures Across Country",
+      "region": "Global (US-based operations)",
+      "primary_url": "",
+      "careers_url": "",
+      "role_titles": [
+        "Expedition Leader",
+        "Program Leader",
+        "Trip Leader"
+      ],
+      "trip_type": "Multiday Adventure",
+      "hiring_signal": "inaccessible",
+      "signal_strength": "inaccessible",
+      "fit": "Watchlist",
+      "evidence": "Company is a known provider of multiday adventure tours. However, all provided URLs (https://adventurescrosscountry.com/, https://arccprograms.com/) returned connection errors (Name Resolution Error, Server Error 526, or Forbidden 403). No evidence could be extracted.",
+      "notes": "Company operates in the target sector but URLs were inaccessible. Included as Watchlist candidate due to sector relevance.",
+      "source_runs": [
+        "J3-20260630-185409"
+      ],
+      "last_seen": "2026-06-30"
+    },
+    {
+      "company": "ARCC Programs",
+      "region": "Global (Programs in various international destinations)",
+      "primary_url": "",
+      "careers_url": "",
+      "role_titles": [
+        "Destination Host",
+        "Program Leader",
+        "Trip Leader"
+      ],
+      "trip_type": "Multiday Adventure (Summer and semester programs)",
+      "hiring_signal": "inaccessible",
+      "signal_strength": "inaccessible",
+      "fit": "Watchlist",
+      "evidence": "Company runs summer and semester programs with trip leaders. However, provided URLs returned connection errors (Forbidden 403). No live evidence could be extracted.",
+      "notes": "Company operates in the target sector but URLs were inaccessible. Included as Watchlist candidate due to sector relevance.",
+      "source_runs": [
+        "J3-20260630-185409"
+      ],
+      "last_seen": "2026-06-30"
+    },
+    {
+      "company": "Haka Tours (Haka Private Tours)",
+      "region": "New Zealand (Auckland)",
+      "primary_url": "https://private.hakatours.com/",
+      "careers_url": "https://www.hakatours.com/careers",
+      "role_titles": [
+        "Expert Local Guide",
+        "Driver-Guide",
+        "Expedition Leader",
+        "Field Instructor",
+        "Trip Leader"
+      ],
+      "trip_type": "Multiday Private Guided Tours",
+      "hiring_signal": "Watchlist",
+      "signal_strength": "careers",
+      "fit": "Medium",
+      "evidence": "Company explicitly offers 'Private Guided Tours', 'NZ Family Tours', 'NZ Scenic Tours', and 'NZ Nature and Wildlife Tours' employing 'Expert Local Guides' who handle driving and logistics. Careers page link exists in footer but is inaccessible (404).",
+      "notes": "Careers page is inaccessible; no live postings found. Company clearly runs multiday tours with drivers/guides.",
+      "source_runs": [
+        "J2-20260630-174820"
+      ],
+      "last_seen": "2026-06-30"
+    },
+    {
+      "company": "Intrepid Travel",
+      "region": "Global (New Zealand focus)",
+      "primary_url": "https://www.intrepidtravel.com/",
+      "careers_url": "https://www.intrepidtravel.com/careers",
+      "role_titles": [
+        "Tour Leader",
+        "Trip Director",
+        "Destination Host",
+        "Program Leader"
+      ],
+      "trip_type": "Multiday Group Tours",
+      "hiring_signal": "Watchlist",
+      "signal_strength": "careers",
+      "fit": "Medium",
+      "evidence": "Evidence references 'Intrepid Travel' tour packages and 'local on-ground leadership'. Footer link to careers page found on hakatours.com. No specific job posting or detailed requirements extracted.",
+      "notes": "Generic footer link to careers page found; no specific job posting or detailed requirements extracted from the provided text.",
+      "source_runs": [
+        "J2-20260630-174820"
+      ],
+      "last_seen": "2026-06-30"
+    },
+    {
+      "company": "MoaTrek",
+      "region": "New Zealand (Aotearoa)",
+      "primary_url": "https://www.moatrek.com/about/a-career-with-moatrek",
+      "careers_url": "https://www.moatrek.com/about/a-career-with-moatrek",
+      "role_titles": [
+        "Kiwi Guide",
+        "Tour Driver/Guide"
+      ],
+      "trip_type": "Small group scenic, cultural, and special interest tours",
+      "hiring_signal": "work-with-us",
+      "signal_strength": "live",
+      "fit": "High",
+      "evidence": "The company explicitly states 'Currently, we are actively recruiting for Kiwi Guides' on their dedicated career page. The role description defines a Kiwi Guide as a tour driver/guide. The company operates small group tours across Aotearoa.",
+      "notes": "Active recruitment confirmed via 'Work-with-us' page. Direct contact with hiring manager Andre Booth mentioned.",
+      "source_runs": [
+        "J2-20260630-191258"
+      ],
+      "last_seen": "2026-06-30"
+    },
+    {
+      "company": "Bottom Bus",
+      "region": "New Zealand",
+      "primary_url": "https://www.bottombus.co.nz/",
+      "careers_url": "",
+      "role_titles": [
+        "Driver-Guide",
+        "Expedition Leader"
+      ],
+      "trip_type": "Wildlife and wilderness expeditions (Southern Scenic Route)",
+      "hiring_signal": "watchlist",
+      "signal_strength": "watchlist",
+      "fit": "Medium",
+      "evidence": "The company operates multiday tours featuring 'driver/guide' roles leading wildlife and wilderness areas. No live job postings or careers page evidence found in reviewed content.",
+      "notes": "Added to watchlist because the company clearly runs multiday tours/programs with driver-guide roles, even without live posting evidence.",
+      "source_runs": [
+        "J2-20260630-191258"
+      ],
+      "last_seen": "2026-06-30"
+    },
+    {
+      "company": "New Zealand Trails",
+      "region": "New Zealand",
+      "primary_url": "https://newzealandtrails.com/guide-jobs/",
+      "careers_url": "https://newzealandtrails.com/guide-jobs/",
+      "role_titles": [
+        "Guide",
+        "Driver-Guide",
+        "Expedition Leader"
+      ],
+      "trip_type": "Multiday guiding tours",
+      "hiring_signal": "inaccessible",
+      "signal_strength": "inaccessible",
+      "fit": "Medium",
+      "evidence": "The company has specific 'Guide Jobs' pages and job description PDFs indicating active operations in multiday guiding. However, all accessed URLs returned 403 Forbidden errors.",
+      "notes": "Signal strength is 'inaccessible' due to 403 Forbidden errors preventing access to job listings and PDFs, despite evidence of job existence.",
+      "source_runs": [
+        "J2-20260630-191258"
+      ],
+      "last_seen": "2026-06-30"
     }
   ]
 }

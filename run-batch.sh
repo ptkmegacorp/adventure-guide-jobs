@@ -11,15 +11,15 @@ usage() {
   cat <<EOF
 usage: $(basename "$0") [OPTIONS] [J1 [J2 ...]]
 
-Default: J1 J2 J3 (skips prompts already complete in runs/registry.json)
+Default: J1 J2 J3 J4 (skips prompts already complete unless --force)
 
 Options:
   --force    Re-run even if findings already saved
   --status   Show registry and exit
 
 Examples:
-  $(basename "$0")              # J1 → J2 → J3 (skip completed)
-  $(basename "$0") --force J2   # re-run J2 only
+  $(basename "$0")                    # J1 → J2 → J3 → J4 (skip completed)
+  $(basename "$0") --force J1 J2 J3 J4   # full batch with new seed picks
 EOF
 }
 
@@ -39,7 +39,7 @@ fi
 
 PROMPTS=("$@")
 if [[ ${#PROMPTS[@]} -eq 0 ]]; then
-  PROMPTS=(J1 J2 J3)
+  PROMPTS=(J1 J2 J3 J4)
 fi
 
 echo "Batch plan: ${PROMPTS[*]}"
@@ -67,4 +67,4 @@ done
 echo "Batch complete: ${PROMPTS[*]}"
 echo "AGENT_BATCH_DONE {\"prompts\":\"${PROMPTS[*]}\"}"
 registry_status
-echo "Next: copy tables to findings.md, then ./run-next.sh --mark-findings J1 (etc.)"
+echo "Primary output: findings/*-salvage.md and findings/master.md (auto via finalize-run)"

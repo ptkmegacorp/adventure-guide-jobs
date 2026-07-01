@@ -13,17 +13,18 @@ A living list of **multiday trip-leading roles** (driver-guide, field instructor
 # Parent agent — delegate, do not block:
 Task(subagent, run_in_background=true) → run ./run-next.sh J1 per AGENTS.md
 # OR: Shell(block_until_ms=0) ./run-next.sh J1
-# Wait for completion notification → AGENT_RUN_DONE → findings.md
+# Wait for AGENT_RUN_FINALIZED → findings/{run_id}-salvage.md + findings/master.md
 
 # Human — direct:
 cd /home/bot/adventure-guide-jobs
-./run-batch.sh              # J1 → J2 → J3
-./run-status.sh             # registry view
-./driver-status.sh          # concise driver view + recommended next command
-./run-and-save-notify.sh J3 # run, save per-run findings, notify active Pi agent
+./run-next.sh J3              # LR scout + auto salvage finalize
+./run-batch.sh                # J1 → J2 → J3
+./run-status.sh               # registry view
+./driver-status.sh            # concise status + recommended next
+./run-and-save-notify.sh --force J3
 ```
 
-After each `AGENT_RUN_DONE`: `extract-findings.sh` writes `runs/extracted/…`; then run `./save-findings.sh --run-id RUN_ID` to write `findings/RUN_ID.md` and mark saved only when there is a substantive final answer.
+Every successful run auto-runs **`finalize-run.sh`**: salvage visited URLs → update `findings/master.md` → mark saved when salvage is substantive. LR final answer is audit-only.
 
 Registry: [`runs/registry.json`](./runs/registry.json) · **[`AGENTS.md`](./AGENTS.md)** (full loop)
 
@@ -32,10 +33,12 @@ Registry: [`runs/registry.json`](./runs/registry.json) · **[`AGENTS.md`](./AGEN
 | [`AGENTS.md`](./AGENTS.md) | **Main loop** + `runs/registry.json` state machine |
 | [`run-status.sh`](./run-status.sh) | What's run, what's next |
 | [`PLAN-J1-J3.md`](./PLAN-J1-J3.md) | Checklist + success criteria |
-| [`REVIEW.md`](./REVIEW.md) | Post-run review loop + prompt adjustments |
-| [`review-run.sh`](./review-run.sh) | Sidecar-compressed run review |
-| [`extract-findings.sh`](./extract-findings.sh) | Deterministically extracts final answer to `runs/extracted/` |
-| [`save-findings.sh`](./save-findings.sh) | Writes per-run `findings/RUN_ID.md`; marks registry saved only for substantive answers |
+| [`REVIEW.md`](./REVIEW.md) | Salvage-first post-run loop |
+| [`finalize-run.sh`](./finalize-run.sh) | **Default post-run:** salvage → master → mark saved |
+| [`salvage-run.sh`](./salvage-run.sh) | Re-browse visited URLs + Qwen summarize |
+| [`review-run.sh`](./review-run.sh) | Log audit (sidecar) |
+| [`extract-findings.sh`](./extract-findings.sh) | LR final answer audit → `runs/extracted/` |
+| [`save-findings.sh`](./save-findings.sh) | Alias for `finalize-run.sh` |
 | [`driver-status.sh`](./driver-status.sh) | Concise deterministic status/recommended next step |
 | [`run-and-save-notify.sh`](./run-and-save-notify.sh) | Self-contained run → findings → Pi agent notification wrapper |
 | [`reviews/`](./reviews/) | Short review per run (read these, not raw logs) |

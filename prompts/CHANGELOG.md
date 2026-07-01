@@ -4,7 +4,8 @@ Minimal edits only. Link each change to a run review.
 
 | Date | Prompt | Run ID | Change | Reason |
 |------|--------|--------|--------|--------|
-| 2026-06-30 | J3-J4 | J4-20260630-183348 | Broadened from adventure/outdoor-only to multiday group travel leadership; preserve watchlist candidates | Up Norway/Norrøna signals are useful even without live postings |
+| 2026-06-30 | J1-J4 | batch-2 follow-up | Enforce ONE URL per visit tool call in all prompts | J3/J4 mega-batch visits blew context; salvage could not run |
+| 2026-06-30 | pipeline | local | Salvage-first default: `finalize-run.sh` auto after every run; marks saved on salvage ok | LR final answer never substantive; salvage is primary signal |
 | 2026-06-30 | J2-J4 | local setup | Added `seeds/` candidate lists; changed J3/J4 from broad discovery to specific candidate-set investigation | LiteResearcher is intended for ReAct deep investigation, not first-pass lead generation |
 | 2026-06-30 | LR stack | local setup | Raised LiteResearcher context 16k→32k and reduced visit content 10k→6k (49k segfaulted on this GPU) | align local setup closer to LiteResearcher long-trajectory intended use |
 | 2026-06-30 | J2 | J2-20260630-173011 | Tightened to 4–6 employers, 8 visits max, anchors-only, no Workabout | context_limit_no_format ended in tool_call/no final answer |

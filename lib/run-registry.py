@@ -156,9 +156,13 @@ def print_status() -> None:
         last = latest_run_for_prompt(data, pid)
         log = ps.get("last_log") or (last or {}).get("log") or "—"
         rev = ps.get("last_review_outcome") or "—"
+        sal = ps.get("last_salvage_status") or "—"
+        emp = ps.get("salvage_employer_count")
+        emp_s = str(emp) if emp is not None else "—"
         print(
             f"  {pid}: {ps.get('status', 'pending'):14} "
-            f"runs={ps.get('run_count', 0)}  review={rev}  last_log={log}"
+            f"runs={ps.get('run_count', 0)}  review={rev}  "
+            f"salvage={sal}({emp_s})  last_log={log}"
         )
     nxt = next_pending_prompt(data)
     print()
@@ -173,6 +177,7 @@ def print_status() -> None:
             print(
                 f"  {run.get('run_id')}  {run.get('status')}  "
                 f"exit={run.get('exit_code')}  review={run.get('review_outcome', '—')}  "
+                f"salvage={run.get('salvage_status', '—')}  saved={run.get('findings_saved', False)}  "
                 f"log={run.get('log')}"
             )
 

@@ -1,9 +1,13 @@
 # Findings
 
-Per-run findings live here. These files are generated/saved artifacts for individual LiteResearcher runs and may be partial.
+Per-run and merged employer findings.
 
-- `legacy.md` — old single-file findings archive
-- `RUN_ID.md` — per-run findings/salvage notes
-- `master.md` — curated deduped employer list (create/update manually when ready)
+| File | Role |
+|------|------|
+| `{run_id}-salvage.md` | **Primary signal** — re-browsed URLs + Qwen summary (auto after every run) |
+| `{run_id}.md` | Per-run rollup (salvage + review + LR audit) |
+| `master.md` | Merged deduped list (auto from salvage via `update-candidates.sh`) |
+| `candidates.json` | Structured candidate DB backing `master.md` |
+| `legacy.md` | Old single-file archive |
 
-Rule of thumb: raw logs are evidence, per-run findings are notes, `master.md` is conclusions.
+Raw logs are evidence. Salvage is conclusions. LR final answer is usually empty on this stack.

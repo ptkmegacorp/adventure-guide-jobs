@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run one prompt, write per-run findings, and notify the active Pi agent via pi-agent-notify.
+# Run one prompt (salvage-first finalize built in) and notify the active Pi agent.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 NOTIFY="${PI_AGENT_NOTIFY_BIN:-$HOME/.pi/agent/bin/pi-agent-notify}"
@@ -27,6 +27,7 @@ else
 fi
 
 DONE_JSON="$(grep 'AGENT_RUN_DONE' "$TMP" | tail -1 | sed 's/^.*AGENT_RUN_DONE //')"
+FINAL_JSON="$(grep 'AGENT_RUN_FINALIZED' "$TMP" | tail -1 | sed 's/^.*AGENT_RUN_FINALIZED //')"
 if [[ -z "$DONE_JSON" ]]; then
   MSG="${PROMPT_ID} finished but AGENT_RUN_DONE was not found. Check $TMP and ./driver-status.sh"
   [[ -x "$NOTIFY" ]] && "$NOTIFY" --title "Adventure Guide Jobs" --severity warning "$MSG" || true
@@ -36,21 +37,19 @@ fi
 
 RUN_ID="$(python3 - <<'PY' "$DONE_JSON"
 import json, sys
-print(json.loads(sys.argv[1]).get('run_id',''))
+print(json.loads(sys.argv[1]).get("run_id", ""))
 PY
 )"
 EXIT_CODE="$(python3 - <<'PY' "$DONE_JSON"
 import json, sys
-print(json.loads(sys.argv[1]).get('exit_code',''))
+print(json.loads(sys.argv[1]).get("exit_code", ""))
 PY
 )"
 
 if [[ -n "$RUN_ID" && "$EXIT_CODE" == "0" ]]; then
-  SAVE_OUT="$(./save-findings.sh --run-id "$RUN_ID" 2>&1 || true)"
-  STATUS="$(./driver-status.sh | tail -20)"
+  STATUS="$(./driver-status.sh | tail -25)"
   MSG="${PROMPT_ID} completed: ${RUN_ID}
-
-${SAVE_OUT}
+finalize: ${FINAL_JSON:-not captured}
 
 ${STATUS}"
   [[ -x "$NOTIFY" ]] && printf '%s' "$MSG" | "$NOTIFY" --title "Adventure Guide Jobs" || true

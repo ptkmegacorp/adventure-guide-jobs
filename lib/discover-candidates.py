@@ -30,6 +30,8 @@ def main():
     qfile=Path(args.queries) if args.queries else ROOT/'queries'/f'{args.id}.txt'
     if not qfile.exists() and args.id=='J4': qfile=ROOT/'queries'/'J4-nordics.txt'
     if not qfile.exists() and args.id=='J3': qfile=ROOT/'queries'/'J3-us-ca.txt'
+    if not qfile.exists() and args.id=='J2': qfile=ROOT/'queries'/'J2-nz.txt'
+    if not qfile.exists() and args.id=='J1': qfile=ROOT/'queries'/'J1-global.txt'
     qs=[l.strip() for l in qfile.read_text().splitlines() if l.strip() and not l.startswith('#')]
     seen=set(); rows=[]; raw=[]
     for q in qs:

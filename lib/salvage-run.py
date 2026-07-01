@@ -23,14 +23,19 @@ def find_run(d,rid):
 
 def visited_urls(log_text:str)->list[str]:
     urls=[]
-    for m in re.finditer(r'\[visit\]\s*(\{.+?\})(?=\n)', log_text):
+    for m in re.finditer(r'\[visit\]\s*(\{.+)', log_text):
+        chunk=m.group(1).split('\n',1)[0]
         try:
-            payload=json.loads(m.group(1)); u=payload.get('url') or []
+            payload=json.loads(chunk); u=payload.get('url') or []
             if isinstance(u,str): u=[u]
             urls += [x for x in u if isinstance(x,str)]
-        except Exception: pass
-    # also from extracted visited list
-    for u in re.findall(r'^- (https?://\S+)', log_text, re.M): urls.append(u)
+            continue
+        except Exception:
+            pass
+        for u in re.findall(r'https?://[^\s"\]\},]+', chunk):
+            urls.append(u.rstrip('",'))
+    for u in re.findall(r'^- (https?://\S+)', log_text, re.M):
+        urls.append(u)
     seen=set(); out=[]
     for u in urls:
         u=u.rstrip(').,')
@@ -48,6 +53,28 @@ def browse(url:str, goal:str)->str:
     out=post_json(BROWSE, {'url': url, 'goal': goal}, timeout=360)
     if not out.get('success'): return f'ERROR browsing {url}: {out.get("error")}'
     return out.get('result','')
+
+def count_employers(summary: str) -> int:
+    if not summary.strip():
+        return 0
+    n = len(re.findall(r"^#{1,4}\s+\d+\.\s+", summary, re.M))
+    if n:
+        return n
+    n = len(re.findall(r"^\*\s+\*\*Company:\*\*", summary, re.M))
+    if n:
+        return n
+    return max(0, 1 if len(summary.strip()) >= 200 else 0)
+
+
+def salvage_quality(summary: str) -> tuple[str, int]:
+    summary = (summary or "").strip()
+    count = count_employers(summary)
+    if count >= 1 and len(summary) >= 200:
+        return "ok", count
+    if summary:
+        return "partial", count
+    return "empty", 0
+
 
 def qwen_summary(run_id:str, evidence:str)->str:
     system='''You turn web evidence into concise adventure job findings. Be factual. Do not invent. If evidence is weak, say so.'''
@@ -101,9 +128,16 @@ def main():
 '''
     out.write_text(content, encoding='utf-8')
     rel=str(out.relative_to(ROOT))
-    r['salvage_path']=rel; r['salvage_status']='ok' if summary else 'empty'; r['salvaged_at']=now()
+    status, emp_count = salvage_quality(summary or '')
+    r['salvage_path']=rel
+    r['salvage_status']=status
+    r['salvage_employer_count']=emp_count
+    r['salvaged_at']=now()
     ps=d.setdefault('prompts',{}).setdefault(r.get('prompt_id','?'),{})
-    ps['last_salvage']=rel; ps['last_salvage_status']=r['salvage_status']
+    ps['last_salvage']=rel
+    ps['last_salvage_status']=status
+    ps['salvage_employer_count']=emp_count
     save(d)
     print(rel)
+    print(f"salvage_status={status} employers={emp_count}", file=__import__('sys').stderr)
 if __name__=='__main__': main()
