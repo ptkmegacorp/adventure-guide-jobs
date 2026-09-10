@@ -16,7 +16,7 @@ Task(subagent, run_in_background=true) → run ./run-next.sh J1 per AGENTS.md
 # Wait for AGENT_RUN_FINALIZED → findings/{run_id}-salvage.md + findings/master.md
 
 # Human — direct:
-cd /home/bot/adventure-guide-jobs
+cd /home/bot/projects/adventure-guide-jobs
 ./run-next.sh J3              # LR scout + auto salvage finalize
 ./run-batch.sh                # J1 → J2 → J3
 ./run-status.sh               # registry view
