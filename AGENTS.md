@@ -36,7 +36,7 @@ PARENT AGENT on "run J2" / "run research":
   2. LAUNCH background worker:
 
      Task(generalPurpose, run_in_background=true):
-       "In /home/bot/adventure-guide-jobs:
+       "In /home/bot/projects/adventure-guide-jobs:
         - Run ./run-and-save-notify.sh [--force] {prompt}
           (or ./run-next.sh {prompt} — finalize-run is built in)
         - Wait for AGENT_RUN_DONE and AGENT_RUN_FINALIZED
@@ -100,7 +100,7 @@ DO NOT read runs/*.log unless salvage missing
 ## Commands
 
 ```bash
-cd /home/bot/adventure-guide-jobs
+cd /home/bot/projects/adventure-guide-jobs
 
 ./run-next.sh J3                  # run + auto finalize (salvage)
 ./run-and-save-notify.sh --force J3
@@ -117,7 +117,7 @@ LiteResearcher stack: LR-4B `:8092` + Qwen3.5-4B `:8093` (both GPU). Profile: `~
 ## Subagent prompt template
 
 ```
-Project: /home/bot/adventure-guide-jobs
+Project: /home/bot/projects/adventure-guide-jobs
 Read AGENTS.md and ./driver-status.sh first.
 
 Run: ./run-and-save-notify.sh [--force] {PROMPT_ID}

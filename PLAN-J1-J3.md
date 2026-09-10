@@ -27,7 +27,7 @@ J1 first gives context; J2/J3 fill gaps J1 missed in their regions.
 - [ ] **Preview prompts** (optional):
 
 ```bash
-cd /home/bot/adventure-guide-jobs
+cd /home/bot/projects/adventure-guide-jobs
 ./run-next.sh --dry-run J1
 ./run-next.sh --dry-run J2
 ./run-next.sh --dry-run J3
@@ -44,7 +44,7 @@ cd /home/bot/adventure-guide-jobs
 ```
 Parent agent:
   Task(generalPurpose, run_in_background=true):
-    "Run /home/bot/adventure-guide-jobs/run-batch.sh (or run-next.sh J1).
+    "Run /home/bot/projects/adventure-guide-jobs/run-batch.sh (or run-next.sh J1).
      On AGENT_RUN_DONE: copy table to findings.md, --mark-findings, report status."
   Wait for subagent completion notification — not manual polling.
 ```
@@ -54,7 +54,7 @@ Subagent prompt template: [`AGENTS.md`](./AGENTS.md#subagent-prompt-template-cop
 ### Humans — direct terminal
 
 ```bash
-cd /home/bot/adventure-guide-jobs
+cd /home/bot/projects/adventure-guide-jobs
 ./run-batch.sh J1 J2 J3
 ```
 

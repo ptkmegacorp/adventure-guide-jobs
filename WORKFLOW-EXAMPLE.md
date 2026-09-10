@@ -5,7 +5,7 @@ LiteResearcher scouts URLs; **salvage produces the findings**. This is automatic
 ## Normal loop
 
 ```bash
-cd /home/bot/adventure-guide-jobs
+cd /home/bot/projects/adventure-guide-jobs
 ./driver-status.sh
 ```
 

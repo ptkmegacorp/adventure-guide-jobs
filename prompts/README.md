@@ -61,7 +61,7 @@ Each run can return bullets, short sections, prose, or a table. Capture: company
 **Humans:**
 
 ```bash
-cd /home/bot/adventure-guide-jobs
+cd /home/bot/projects/adventure-guide-jobs
 ./run-next.sh J1
 ./run-next.sh --mark-findings J1   # after useful notes are appended to findings.md
 ```
